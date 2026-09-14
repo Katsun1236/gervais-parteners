@@ -756,15 +756,18 @@ function closeTdsModal() {
  * Click "Request Sample" on a specific product
  */
 function requestProductSample(productId) {
-  closeTdsModal();
-  
   const select = document.getElementById('contactProduct');
   const sampleCheckbox = document.getElementById('checkSample');
   const contactSection = document.getElementById('contact');
 
-  if (select) select.value = productId;
-  if (sampleCheckbox) sampleCheckbox.checked = true;
-  if (contactSection) contactSection.scrollIntoView({ behavior: 'smooth' });
+  if (contactSection && select) {
+    select.value = productId;
+    if (sampleCheckbox) sampleCheckbox.checked = true;
+    contactSection.scrollIntoView({ behavior: 'smooth' });
+  } else {
+    // Navigate smoothly to contact page with product prefilled
+    window.location.href = 'contact.html?product=' + encodeURIComponent(productId) + '#contact';
+  }
 }
 
 function populateProductSelect() {
@@ -1020,4 +1023,60 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') {
     toggleSidebarMenu(false);
   }
+});
+
+
+/**
+ * Parallax Scroll Transition Engine
+ */
+function initParallaxEngine() {
+  const heroBg = document.querySelector('.hero-bg-img');
+  const siliciumBg = document.querySelector('#silicium-showcase');
+
+  let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+        if (heroBg && scrollY < window.innerHeight) {
+          heroBg.style.transform = `translate3d(0, ${scrollY * 0.28}px, 0)`;
+        }
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, { passive: true });
+
+  // Section entrance transitions
+  const sectionObs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('section-active');
+      }
+    });
+  }, { threshold: 0.06 });
+
+  document.querySelectorAll('main > section').forEach(sec => sectionObs.observe(sec));
+}
+
+// Auto-fill contact form from URL params across all pages
+document.addEventListener('DOMContentLoaded', () => {
+  try {
+    const urlParams = new URLSearchParams(window.location.search);
+    const prodParam = urlParams.get('product');
+    if (prodParam) {
+      const select = document.getElementById('contactProduct');
+      const sampleCheckbox = document.getElementById('checkSample');
+      if (select) select.value = prodParam;
+      if (sampleCheckbox) sampleCheckbox.checked = true;
+      const contactSec = document.getElementById('contact');
+      if (contactSec) {
+        setTimeout(() => {
+          contactSec.scrollIntoView({ behavior: 'smooth' });
+        }, 150);
+      }
+    }
+  } catch(e) {}
+
+  initParallaxEngine();
 });

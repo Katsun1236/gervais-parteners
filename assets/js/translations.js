@@ -43,7 +43,7 @@ const translations = {
       step4: "Gamme Clinique BioXtract®",
       step5: "Microscope & Pureté Cellulaire",
       step6: "Studio Interactif de Formulation",
-      step7: "Catalogue Complet & TDS",
+      step7: "Catalogue Complet",
       step8: "Synergie Galénique (Softgels & Gummies)",
       step9: "Direction & Gouvernance Directe",
       step10: "Hub Logistique Lasne (BE)",
@@ -74,9 +74,9 @@ const translations = {
       s4_title: "Analyses & CoA",
       s4_desc: "Certificats d'Analyse (CoA) libératoires systématiques par lot : titrage actif certifié par HPLC/UV, zéro métaux lourds et zéro pesticide.",
       s5_title: "Chaîne d'Approvisionnement",
-      s5_desc: "Stockage sécurisé et stock tampon à notre hub de Lasne (Belgique) garantissant des livraisons rapides sous température dirigée (24-48h).",
+      s5_desc: "Stockage sécurisé et stock tampon à notre hub de Lasne (Belgique) garantissant des livraisons rapides sous température dirigée (Délais Optimisés).",
       s6_title: "Support d'Échantillons",
-      s6_desc: "Mise à disposition rapide d'échantillons physiques R&D (100g à 500g) expédiés sous 24-48h pour vos essais de laboratoire."
+      s6_desc: "Mise à disposition rapide d'échantillons physiques R&D (100g à 500g) expédiés rapidement pour vos essais de laboratoire."
     },
 
     // Actualités & Événements Professionnels
@@ -199,7 +199,7 @@ const translations = {
       steoSub: "Consolidation osseuse & fractures vertébrales",
       steoDesc: "STEOSIL® soutient la guérison des fractures vertébrales mineures. Validé par une étude clinique STEOSIL®. Garantie d’un silicium hautement biodisponible. Petit mais puissant. Mécanisme triple : Activation – Absorption – Assimilation.",
       steoFormats: "Formes disponibles : TABLETS · CAPSULES · SOFTGELS · POWDERS",
-      viewTdsBtn: "Fiche Technique TDS",
+      viewTdsBtn: "Demander un Échantillon",
       requestSampleBtn: "Demander un Échantillon"
     },
     // BioXtract Section (Client Email 2)
@@ -246,7 +246,7 @@ const translations = {
       q1: "Comment obtenir des échantillons R&D pour nos tests de formulation ?",
       a1: "Vous pouvez demander des échantillons physiques (100g à 500g selon la référence) via notre formulaire ci-dessous ou par téléphone au +32 472 75 22 96. Chaque échantillon est expédié sous 24 à 48h ouvrées avec son certificat d'analyse (CoA) d'origine.",
       q2: "Quels sont les délais d'expédition et conditions de stockage ?",
-      a2: "Nos stocks sont centralisés à Lasne (Belgique) sous température dirigée (< 15°C ou 20°C selon matière). Nous livrons sous 24-48h dans le Benelux, 48h en France et Allemagne, et 72h dans toute l'Union Européenne.",
+      a2: "Nos stocks sont centralisés à Lasne (Belgique) sous température dirigée (< 15°C ou 20°C selon matière). Nous livrons sous Délais Optimisés dans le Benelux, 48h en France et Allemagne, et 72h dans toute l'Union Européenne.",
       q3: "Quelles sont les garanties réglementaires et contrôles fournis par lot ?",
       a3: "Chaque livraison s'accompagne d'une Fiche Technique (TDS) et d'un Certificat d'Analyse (CoA) libératoire complet : titrage HPLC, absence de métaux lourds (Pb, Cd, Hg, As), dépistage multi-résidus de pesticides conforme règlement n° 396/2005, contrôle microbiologique conforme Pharmacopée Européenne et attestation 100% sans OGM.",
       q4: "Proposez-vous le façonnage en marque blanche (produit fini) ?",
@@ -734,9 +734,9 @@ const translations = {
       s4_title: "Analytical Testing & CoA",
       s4_desc: "Batch-specific release Certificates of Analysis (CoA): certified HPLC/UV active assay, zero heavy metals, and zero pesticide residues.",
       s5_title: "Secure Supply Chain",
-      s5_desc: "Climate-controlled buffer stock at our Lasne logistics hub (Belgium) guaranteeing fast 24-48h dispatch across Europe.",
+      s5_desc: "Climate-controlled buffer stock at our Lasne logistics hub (Belgium) guaranteeing fast Délais Optimisés dispatch across Europe.",
       s6_title: "R&D Sample Support",
-      s6_desc: "Rapid delivery of physical R&D trial samples (100g-500g) dispatched within 24-48h for laboratory pilot testing."
+      s6_desc: "Rapid delivery of physical R&D trial samples (100g-500g) dispatched within Délais Optimisés for laboratory pilot testing."
     },
 
     // News & Trade Shows
