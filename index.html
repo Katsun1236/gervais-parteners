@@ -108,7 +108,7 @@
     @keyframes float { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(-8px)} }
     .scroll-indicator { position:absolute; bottom:32px; left:50%; transform:translateX(-50%); display:flex; flex-direction:column; align-items:center; gap:8px; color:rgba(255,255,255,0.45); font-size:10px; letter-spacing:.1em; text-transform:uppercase; z-index:10; animation:float 3s ease-in-out infinite; }
     .scroll-line { width:1px; height:40px; background:linear-gradient(180deg,rgba(255,255,255,0.4),transparent); }
-    .hero-bg-img { background-size:cover; background-position:left center; background-repeat:no-repeat; }
+    .hero-bg-img { background-size:cover; background-position:right center; background-repeat:no-repeat; }
     #tdsModal.hidden { display:none !important; }
     #confirmationModal.hidden { display:none !important; }
     .map-container { background:radial-gradient(circle at 50%,#15202e,#060b13); border-radius:16px; overflow:hidden; }
@@ -521,8 +521,8 @@
          HERO — Full viewport, photo nature immersive
     ═══════════════════════════════════════════════════ -->
     <section id="home" class="relative min-h-screen flex items-center overflow-hidden bg-forest-950">
-      <!-- Background photo: 100% natural, no filter, centered left -->
-      <div class="absolute inset-0 hero-bg-img bg-cover bg-left" style="background-image:url('assets/images/nature-botanical-dew.webp?v=20260914-06'); background-position:left center;" role="img" aria-label="Cultures botaniques et champ de plantes médicinales sous le soleil levant européen"></div>
+      <!-- Background photo: 100% natural, no filter, centered right -->
+      <div class="absolute inset-0 hero-bg-img bg-cover bg-right" style="background-image:url('assets/images/nature-botanical-dew.webp?v=20260914-07'); background-position:right center;" role="img" aria-label="Cultures botaniques et champ de plantes médicinales sous le soleil levant européen"></div>
 
       <!-- Content -->
       <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-36 w-full">
