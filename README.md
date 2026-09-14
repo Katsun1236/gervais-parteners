@@ -2,6 +2,10 @@
 
 > Fournisseur européen d'ingrédients botaniques de haute pureté, micro-algues et principes actifs titrés pour l'industrie pharmaceutique et nutraceutique.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/51e49e7b-a5a2-4577-836b-6c2a1c8bdb30/deploy-status)](https://app.netlify.com/projects/gervais-partenairs/deploys)
+🌐 **Site en ligne (Production)** : [https://gervais-partenairs.netlify.app](https://gervais-partenairs.netlify.app)
+💻 **Dépôt GitHub** : [https://github.com/Katsun1236/gervais-parteners](https://github.com/Katsun1236/gervais-parteners)
+
 ## 🌿 À propos de Gervais Partners
 Gervais Partners SRL est un fournisseur B2B d'ingrédients botaniques basé à Lasne (Brabant Wallon, Belgique). L'entreprise garantit une chaîne d'approvisionnement sécurisée au cœur de l'Europe, avec des matières premières conformes à la Pharmacopée Européenne, sans OGM, sans solvant toxique et accompagnées de certificats d'analyse (CoA) par lot.
 
