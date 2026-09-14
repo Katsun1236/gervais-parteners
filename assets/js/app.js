@@ -825,7 +825,9 @@ function initContactForm() {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: new URLSearchParams(formData).toString()
-      }).catch(err => // Netlify form fallback handled silently);
+      }).catch(err => {
+        // Netlify form fallback handled silently
+      });
     } catch (e) {
       // Offline / local preview fallback
     }
@@ -1011,6 +1013,7 @@ function toggleSidebarMenu(open) {
     document.body.style.overflow = '';
   }
 }
+window.toggleSidebarMenu = toggleSidebarMenu;
 
 // Close drawer on Escape key
 document.addEventListener('keydown', (e) => {

@@ -65,6 +65,27 @@
       }
     }
   </script>
+  <script>
+    function toggleSidebarMenu(open) {
+      var drawer = document.getElementById('sidebarDrawer');
+      var backdrop = document.getElementById('sidebarBackdrop');
+      if (!drawer || !backdrop) return;
+      if (open) {
+        backdrop.classList.remove('opacity-0', 'pointer-events-none');
+        backdrop.classList.add('opacity-100', 'pointer-events-auto');
+        drawer.classList.remove('translate-x-full');
+        drawer.classList.add('translate-x-0');
+        document.body.style.overflow = 'hidden';
+      } else {
+        backdrop.classList.add('opacity-0', 'pointer-events-none');
+        backdrop.classList.remove('opacity-100', 'pointer-events-auto');
+        drawer.classList.add('translate-x-full');
+        drawer.classList.remove('translate-x-0');
+        document.body.style.overflow = '';
+      }
+    }
+    window.toggleSidebarMenu = toggleSidebarMenu;
+  </script>
 
   <!-- Inline critical luxury styling -->
   <style>
@@ -1801,8 +1822,8 @@
 
 
   <!-- Scripts -->
-  <script src="assets/js/translations.js"></script>
-  <script src="assets/js/app.js"></script>
+  <script src="assets/js/translations.js?v=2.1"></script>
+  <script src="assets/js/app.js?v=2.1"></script>
   <script>
     // Year
     document.getElementById('currentYear').textContent = new Date().getFullYear();
