@@ -724,18 +724,18 @@
             </blockquote>
             <div class="grid grid-cols-2 gap-4 mb-8">
               <div class="bg-white rounded-2xl p-5 text-center shadow-sm border border-slate-100">
-                <span class="display text-4xl font-bold text-rose-500 block">6 000×</span>
+                <span class="display text-4xl font-bold text-rose-500 block counter-val" data-target="6000" data-suffix="×">0</span>
                 <span class="text-xs font-semibold text-slate-500 uppercase tracking-wide">vs Vitamine C</span>
               </div>
               <div class="bg-white rounded-2xl p-5 text-center shadow-sm border border-slate-100">
-                <span class="display text-4xl font-bold text-amber-500 block">550×</span>
+                <span class="display text-4xl font-bold text-amber-500 block counter-val" data-target="550" data-suffix="×">0</span>
                 <span class="text-xs font-semibold text-slate-500 uppercase tracking-wide">vs Vitamine E</span>
               </div>
             </div>
             <div class="flex flex-wrap gap-3">
-              <button onclick="openTdsModal('astaxanthin-axabio')" class="inline-flex items-center gap-2 bg-forest-950 hover:bg-forest-800 text-white font-bold text-sm px-6 py-3 rounded-full transition shadow-lg">
-                <svg class="w-4 h-4 text-limegold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-                <span>Fiche Technique (TDS)</span>
+              <button onclick="requestProductSample('astaxanthin-axabio')" class="inline-flex items-center gap-2 bg-forest-950 hover:bg-forest-800 text-white font-bold text-sm px-7 py-3.5 rounded-full transition shadow-lg">
+                <span>Demander un Échantillon R&D</span>
+                <svg class="w-4 h-4 text-limegold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
               </button>
             </div>
           </div>
@@ -758,9 +758,11 @@
                 <span class="text-xs font-bold text-rose-500 uppercase tracking-wide block mb-1">Axapure 5 · 10 · 15</span>
                 <h4 class="display text-lg font-bold text-slate-900 mb-1" data-i18n="astaxanthinSection.raw1_name">Oléorésine d'Astaxanthine</h4>
                 <p class="text-xs text-slate-500 leading-relaxed flex-1" data-i18n="astaxanthinSection.raw1_desc">Extrait CO₂ supercritique pour softgels. Soluble dans l'huile, goût neutre.</p>
-                <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-                  <span class="text-[11px] font-semibold text-slate-400">HPLC ≥ 5–15%</span>
-                  <button onclick="requestProductSample('astaxanthin-axabio')" class="text-xs font-bold text-forest-900 hover:text-forest-600 transition flex items-center gap-1">Échantillon R&amp;D →</button>
+                <div class="mt-4 pt-3 border-t border-slate-100">
+                  <button onclick="requestProductSample('astaxanthin-axabio')" class="w-full bg-forest-950 hover:bg-forest-800 text-white text-xs font-bold py-2.5 rounded-xl transition flex items-center justify-center gap-1.5 shadow-sm">
+                    <span>Échantillon R&amp;D</span>
+                    <svg class="w-3.5 h-3.5 text-limegold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                  </button>
                 </div>
               </div>
             </div>
@@ -775,9 +777,11 @@
                 <span class="text-xs font-bold text-rose-500 uppercase tracking-wide block mb-1">Axafine 2.5 &amp; 5</span>
                 <h4 class="display text-lg font-bold text-slate-900 mb-1" data-i18n="astaxanthinSection.raw2_name">Poudre CWD Dispersible</h4>
                 <p class="text-xs text-slate-500 leading-relaxed flex-1" data-i18n="astaxanthinSection.raw2_desc">Poudre eau froide pour shots, boissons, gélules dures et stick packs.</p>
-                <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-                  <span class="text-[11px] font-semibold text-slate-400">100% Hydrosoluble</span>
-                  <button onclick="requestProductSample('astaxanthin-axabio')" class="text-xs font-bold text-forest-900 hover:text-forest-600 transition flex items-center gap-1">Échantillon R&amp;D →</button>
+                <div class="mt-4 pt-3 border-t border-slate-100">
+                  <button onclick="requestProductSample('astaxanthin-axabio')" class="w-full bg-forest-950 hover:bg-forest-800 text-white text-xs font-bold py-2.5 rounded-xl transition flex items-center justify-center gap-1.5 shadow-sm">
+                    <span>Échantillon R&amp;D</span>
+                    <svg class="w-3.5 h-3.5 text-limegold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                  </button>
                 </div>
               </div>
             </div>
@@ -792,9 +796,11 @@
                 <span class="text-xs font-bold text-rose-500 uppercase tracking-wide block mb-1">Axapearls 5%</span>
                 <h4 class="display text-lg font-bold text-slate-900 mb-1" data-i18n="astaxanthinSection.raw3_name">Microcapsules N-Pearls</h4>
                 <p class="text-xs text-slate-500 leading-relaxed flex-1" data-i18n="astaxanthinSection.raw3_desc">Poudre 50 μm, stabilité renforcée, absorption optimisée intestin grêle.</p>
-                <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-                  <span class="text-[11px] font-semibold text-slate-400">50 μm Haute Stabilité</span>
-                  <button onclick="requestProductSample('astaxanthin-axabio')" class="text-xs font-bold text-forest-900 hover:text-forest-600 transition flex items-center gap-1">Échantillon R&amp;D →</button>
+                <div class="mt-4 pt-3 border-t border-slate-100">
+                  <button onclick="requestProductSample('astaxanthin-axabio')" class="w-full bg-forest-950 hover:bg-forest-800 text-white text-xs font-bold py-2.5 rounded-xl transition flex items-center justify-center gap-1.5 shadow-sm">
+                    <span>Échantillon R&amp;D</span>
+                    <svg class="w-3.5 h-3.5 text-limegold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                  </button>
                 </div>
               </div>
             </div>
@@ -809,9 +815,11 @@
                 <span class="text-xs font-bold text-rose-500 uppercase tracking-wide block mb-1">Standardisée 2.5–5.5%</span>
                 <h4 class="display text-lg font-bold text-slate-900 mb-1" data-i18n="astaxanthinSection.raw4_name">Biomasse Algale Séchée</h4>
                 <p class="text-xs text-slate-500 leading-relaxed flex-1" data-i18n="astaxanthinSection.raw4_desc">Séchée à froid, non transformée. Superfoods, boissons vertes, blends.</p>
-                <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-                  <span class="text-[11px] font-semibold text-slate-400">Séchage à froid</span>
-                  <button onclick="requestProductSample('astaxanthin-axabio')" class="text-xs font-bold text-forest-900 hover:text-forest-600 transition flex items-center gap-1">Échantillon R&amp;D →</button>
+                <div class="mt-4 pt-3 border-t border-slate-100">
+                  <button onclick="requestProductSample('astaxanthin-axabio')" class="w-full bg-forest-950 hover:bg-forest-800 text-white text-xs font-bold py-2.5 rounded-xl transition flex items-center justify-center gap-1.5 shadow-sm">
+                    <span>Échantillon R&amp;D</span>
+                    <svg class="w-3.5 h-3.5 text-limegold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                  </button>
                 </div>
               </div>
             </div>
@@ -980,11 +988,11 @@
         <!-- 4 Key Scientific Stats / Badges -->
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16 reveal">
           <div class="bg-white rounded-2xl p-6 text-center border border-slate-200/80 shadow-sm hover:shadow-md transition">
-            <span class="display text-4xl font-bold text-forest-900 block mb-1" data-i18n="siliciumSection.stat1_val">100%</span>
+            <span class="display text-4xl font-bold text-forest-900 block mb-1 counter-val" data-target="100" data-suffix="%" data-i18n="siliciumSection.stat1_val">0</span>
             <span class="text-xs font-bold text-slate-500 uppercase tracking-wider" data-i18n="siliciumSection.stat1_lbl">Biologique &amp; Végétal (Bambou)</span>
           </div>
           <div class="bg-white rounded-2xl p-6 text-center border border-slate-200/80 shadow-sm hover:shadow-md transition">
-            <span class="display text-4xl font-bold text-limegold-600 block mb-1" data-i18n="siliciumSection.stat2_val">6%</span>
+            <span class="display text-4xl font-bold text-limegold-600 block mb-1 counter-val" data-target="6" data-suffix="%" data-i18n="siliciumSection.stat2_val">0</span>
             <span class="text-xs font-bold text-slate-500 uppercase tracking-wider" data-i18n="siliciumSection.stat2_lbl">Silicium Soluble Absorbable</span>
           </div>
           <div class="bg-white rounded-2xl p-6 text-center border border-slate-200/80 shadow-sm hover:shadow-md transition">
@@ -1306,7 +1314,7 @@
             <img src="assets/images/galenic-showcase.webp" alt="Unité de façonnage galénique de softgels et gélules pharmaceutiques certifiée BPF/GMP" class="w-full h-[460px] object-cover">
             <div class="absolute bottom-5 left-5 right-5 flex items-center justify-between rounded-2xl p-4" style="background:rgba(5,35,19,0.88);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,0.08)">
               <span class="text-white/80 text-xs font-medium">Unité Galénique Française — Conforme BPF / GMP</span>
-              <a href="#contact" class="text-limegold-300 text-xs font-bold hover:underline">Consulter →</a>
+              <a href="contact.html" class="text-limegold-300 text-xs font-bold hover:underline">Consulter →</a>
             </div>
           </div>
         </div>

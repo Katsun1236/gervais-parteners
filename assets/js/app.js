@@ -1080,3 +1080,81 @@ document.addEventListener('DOMContentLoaded', () => {
 
   initParallaxEngine();
 });
+
+
+/**
+ * Animated Numbers Counter (Rolls up to the exact target)
+ */
+function initAnimatedCounters() {
+  const counters = document.querySelectorAll('.counter-val');
+  if (!counters.length) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
+        entry.target.classList.add('counted');
+        animateCounter(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  counters.forEach(c => observer.observe(c));
+
+  function animateCounter(el) {
+    const target = parseFloat(el.getAttribute('data-target') || '0');
+    const suffix = el.getAttribute('data-suffix') || '';
+    const prefix = el.getAttribute('data-prefix') || '';
+    const duration = 1600; // ms
+    const startTime = performance.now();
+
+    function updateCount(currentTime) {
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      
+      // Easing: easeOutExpo - rolls fast and settles gracefully on the target
+      const ease = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
+      const currentVal = Math.floor(ease * target);
+      
+      // Format with French thousands separator
+      el.textContent = prefix + currentVal.toLocaleString('fr-FR') + suffix;
+
+      if (progress < 1) {
+        requestAnimationFrame(updateCount);
+      } else {
+        el.textContent = prefix + target.toLocaleString('fr-FR') + suffix;
+      }
+    }
+
+    requestAnimationFrame(updateCount);
+  }
+}
+
+/**
+ * Universal Anchor Safe-Router: Prevents broken links on dedicated pages
+ */
+function initUniversalAnchorRouter() {
+  document.addEventListener('click', function(e) {
+    const link = e.target.closest('a');
+    if (!link) return;
+    const href = link.getAttribute('href');
+    if (href && href.startsWith('#')) {
+      const targetId = href.substring(1);
+      const targetEl = document.getElementById(targetId);
+      if (!targetEl) {
+        e.preventDefault();
+        if (targetId === 'contact') {
+          window.location.href = 'contact.html#contact';
+        } else if (targetId === 'home') {
+          window.location.href = 'index.html#home';
+        } else {
+          window.location.href = 'index.html#' + targetId;
+        }
+      }
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  initAnimatedCounters();
+  initUniversalAnchorRouter();
+});
