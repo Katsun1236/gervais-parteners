@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
   renderProducts();
   initCategoryFilters();
   initContactForm();
-  initMapVisualization();
   initMobileMenu();
   initFaqAccordion();
   applyTranslations();
