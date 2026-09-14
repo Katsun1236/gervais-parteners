@@ -242,17 +242,13 @@ const translations = {
     faq: {
       tag: "Foire Aux Questions B2B",
       title: "Questions Fréquentes des Laboratoires & Fabricants",
-      subtitle: "Tout ce que vous devez savoir pour démarrer une collaboration en approvisionnement ou façonnage.",
+      subtitle: "Informations techniques, réglementaires et opérationnelles pour démarrer vos approvisionnements.",
       q1: "Comment obtenir des échantillons R&D pour nos tests de formulation ?",
-      a1: "Vous pouvez demander des échantillons physiques (100g à 500g selon la référence) via notre formulaire ci-dessous ou par téléphone au +32 472 75 22 96. Chaque échantillon est expédié sous 24 à 48h ouvrées avec son certificat d'analyse (CoA) d'origine.",
-      q2: "Quels sont les délais d'expédition et conditions de stockage ?",
-      a2: "Nos stocks sont centralisés à Lasne (Belgique) sous température dirigée (< 15°C ou 20°C selon matière). Nous livrons sous Délais Optimisés dans le Benelux, 48h en France et Allemagne, et 72h dans toute l'Union Européenne.",
+      a1: "Vous pouvez demander des échantillons physiques (100g à 500g selon la référence) directement via notre formulaire en ligne ou par téléphone au +32 472 75 22 96. Chaque échantillon est expédié rapidement avec son certificat d'analyse (CoA) d'origine par lot.",
       q3: "Quelles sont les garanties réglementaires et contrôles fournis par lot ?",
-      a3: "Chaque livraison s'accompagne d'une Fiche Technique (TDS) et d'un Certificat d'Analyse (CoA) libératoire complet : titrage HPLC, absence de métaux lourds (Pb, Cd, Hg, As), dépistage multi-résidus de pesticides conforme règlement n° 396/2005, contrôle microbiologique conforme Pharmacopée Européenne et attestation 100% sans OGM.",
+      a3: "Chaque livraison s'accompagne d'un Certificat d'Analyse (CoA) libératoire complet : titrage HPLC/spectrométrique, absence de métaux lourds (Pb, Cd, Hg, As), dépistage multi-résidus de pesticides conforme au règlement n° 396/2005, contrôle microbiologique conforme à la Pharmacopée Européenne et attestation 100% sans OGM.",
       q4: "Proposez-vous le façonnage en marque blanche (produit fini) ?",
-      a4: "Absolument. Grâce à notre unité galénique partenaire en France certifiée BPF/GMP, nous prenons en charge la fabrication de vos produits finis : softgels véganes (Axagels), gummies sans sucre à la pectine (Axagums), gélules liquides ou blends synergiques, avec mise en flacon ou pilulier et étiquetage sous votre marque.",
-      q5: "Quelles sont les quantités minimales de commande (MOQ) ?",
-      a5: "Nos volumes s'adaptent à vos phases de croissance : échantillons R&D (100g-500g), lots pilotes (dès 5-10 kg en vrac ou 650 flacons en produit fini), et approvisionnement industriel par fûts de 25 kg ou cuves IBC 1000 litres sous contrat annuel garanti."
+      a4: "Absolument. Grâce à notre unité galénique partenaire en France certifiée BPF/GMP, nous prenons en charge la fabrication complète de vos produits finis : softgels véganes ou classiques, gummies sans sucre à la pectine, gélules liquides ou formules synergiques sur-mesure, avec conditionnement en pilulier ou flacon sous votre marque."
     },
 
     // Products Section (Curated Products Database)
@@ -901,18 +897,14 @@ const translations = {
     // B2B FAQ Section
     faq: {
       tag: "B2B Frequently Asked Questions",
-      title: "Common Questions from Laboratories & Brands",
-      subtitle: "Everything you need to know about partnering with Gervais Partners for raw materials or turn-key manufacturing.",
-      q1: "How can our laboratory request R&D trial samples?",
-      a1: "You can request physical test samples (100g to 500g depending on the reference) directly through our online B2B form or by phone at +32 472 75 22 96. Samples are dispatched within 24 to 48 hours accompanied by their batch Certificate of Analysis (CoA).",
-      q2: "What are your delivery lead times and warehousing conditions?",
-      a2: "Our inventory is centralized in Lasne (Belgium) under climate-controlled storage (< 15°C or 20°C depending on active). We deliver within 24-48 hours across Benelux, 48 hours to France and Germany, and 72 hours throughout the European Union.",
-      q3: "What regulatory dossiers and analytical quality records accompany each batch?",
-      a3: "Every shipment is accompanied by a full Technical Data Sheet (TDS) and batch release Certificate of Analysis (CoA): HPLC assay, heavy metals panel (Pb, Cd, Hg, As), multi-residue pesticide screening compliant with Regulation No. 396/2005, European Pharmacopoeia microbiological testing, and 100% Non-GMO certificate.",
-      q4: "Do you provide turn-key private-label galenic manufacturing?",
-      a4: "Yes. Through our sister industrial manufacturing plant in France certified GMP/BPF, we formulate and manufacture finished dietary supplements: vegan softgels (Axagels), sugar-free pectin gummies (Axagums), liquid capsules, and synergistic blends packaged in bottles or blister packs under your brand.",
-      q5: "What are the minimum order quantities (MOQ)?",
-      a5: "Our order tiers match your commercial scale: trial R&D samples (100g-500g), pilot batches (from 5-10 kg in bulk or 650 bottles for finished products), and commercial manufacturing in 25 kg fiber drums or 1,000L IBC tanks under reserved supply agreements."
+      title: "Frequently Asked Questions from Laboratories & Manufacturers",
+      subtitle: "Technical, regulatory, and operational information to start your sourcing.",
+      q1: "How to obtain R&D samples for our formulation trials?",
+      a1: "You can request physical samples (100g to 500g depending on reference) directly through our online form or by phone at +32 472 75 22 96. Each sample is dispatched promptly with its original lot Certificate of Analysis (CoA).",
+      q3: "What regulatory guarantees and quality controls accompany each batch?",
+      a3: "Every delivery includes a full release Certificate of Analysis (CoA): HPLC/spectrometric assay, heavy metals screening (Pb, Cd, Hg, As), pesticide multi-residue compliance under Regulation No 396/2005, European Pharmacopoeia microbiological testing, and 100% non-GMO certification.",
+      q4: "Do you offer private label finished product contract manufacturing?",
+      a4: "Absolutely. In partnership with our GMP-certified manufacturing facility in France, we manage full production of your finished supplements: vegan or traditional softgels, pectin sugar-free gummies, liquid capsules, or custom synergetic blends, bottled and labeled under your brand."
     },
 
     // Products Section
