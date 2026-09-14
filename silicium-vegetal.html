@@ -105,9 +105,9 @@
     .pulse-dot { display:inline-block; width:7px; height:7px; border-radius:50%; background:#84cc16; animation:pulse-glow 2s ease-in-out infinite; flex-shrink:0; }
     @keyframes pulse-glow { 0%,100%{box-shadow:0 0 0 0 rgba(132,204,22,0.5)} 50%{box-shadow:0 0 0 6px rgba(132,204,22,0)} }
     .reveal,.reveal-left,.reveal-right,.reveal-scale { opacity:1; transform:none; }
-    .reveal { transform:translateY(36px); }
-    .reveal-left { transform:translateX(-48px); }
-    .reveal-right { transform:translateX(48px); }
+    .reveal { transform:translateY(16px); }
+    .reveal-left { transform:translateX(-16px); }
+    .reveal-right { transform:translateX(16px); }
     .reveal-scale { transform:scale(0.94); }
     .reveal.visible,.reveal-left.visible,.reveal-right.visible,.reveal-scale.visible { opacity:1; transform:none; }
     .delay-100{transition-delay:.1s} .delay-200{transition-delay:.2s} .delay-300{transition-delay:.3s} .delay-400{transition-delay:.4s}
@@ -126,7 +126,7 @@
     .bx-card:hover::after { transform:scaleX(1); }
     .bx-card:hover { transform:translateY(-6px); box-shadow:0 30px 60px rgba(0,0,0,0.1); }
     .img-zoom { overflow:hidden; }
-    .img-zoom img { transition:transform .7s cubic-bezier(0.16,1,0.3,1); }
+    .img-zoom img { transition:transform 1.2s cubic-bezier(0.16,1,0.3,1); }
     .img-zoom:hover img { transform:scale(1.05); }
     .scrollbar-none::-webkit-scrollbar{display:none} .scrollbar-none{-ms-overflow-style:none;scrollbar-width:none}
     @media print { body *{visibility:hidden} #tdsModal,#tdsModal *{visibility:visible} #tdsModal{position:absolute;left:0;top:0;width:100%;padding:25px;background:#fff!important;color:#000!important} .no-print{display:none!important} .print-header,.print-footer{display:block!important} .tds-table td,.tds-table th{border:1px solid #cbd5e1!important;padding:8px 12px!important} }
@@ -831,8 +831,8 @@
 
 
   <!-- Scripts -->
-  <script src="assets/js/translations.js?v=20260914-17"></script>
-  <script src="assets/js/app.js?v=20260914-17"></script>
+  <script src="assets/js/translations.js?v=20260914-18"></script>
+  <script src="assets/js/app.js?v=20260914-18"></script>
   <script>
     // Year
     document.getElementById('currentYear').textContent = new Date().getFullYear();

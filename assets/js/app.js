@@ -1040,7 +1040,7 @@ function initParallaxEngine() {
       window.requestAnimationFrame(() => {
         const scrollY = window.pageYOffset || document.documentElement.scrollTop;
         if (heroBg && scrollY < window.innerHeight) {
-          heroBg.style.transform = `translate3d(0, ${scrollY * 0.28}px, 0)`;
+          heroBg.style.transform = `translate3d(0, ${scrollY * 0.08}px, 0)`;
         }
         ticking = false;
       });
@@ -1389,18 +1389,18 @@ document.addEventListener('DOMContentLoaded', () => {
       if (layer === 'fore') {
         this.spriteType = Math.random() > 0.5 ? 'bamboo' : 'herbal';
         this.scale = 0.50 + Math.random() * 0.45;
-        this.baseSpeed = 38 + Math.random() * 22;
+        this.baseSpeed = 22 + Math.random() * 12;
         this.alpha = 0.95;
       } else if (layer === 'mid') {
         const r = Math.random();
         this.spriteType = r < 0.45 ? 'bamboo' : (r < 0.8 ? 'herbal' : 'ginkgo');
         this.scale = 0.17 + Math.random() * 0.19;
-        this.baseSpeed = 22 + Math.random() * 16;
+        this.baseSpeed = 13 + Math.random() * 9;
         this.alpha = 0.95;
       } else {
         this.spriteType = 'spore';
         this.scale = 0.10 + Math.random() * 0.20;
-        this.baseSpeed = 15 + Math.random() * 20;
+        this.baseSpeed = 9 + Math.random() * 10;
         this.alpha = 0.4 + Math.random() * 0.5;
       }
 
@@ -1486,7 +1486,7 @@ document.addEventListener('DOMContentLoaded', () => {
     for (let i = 0; i < 65; i++) particles.push(new TransitionParticle(w, h, 'mid', false));
     for (let i = 0; i < 6; i++) particles.push(new TransitionParticle(w, h, 'fore', false));
 
-    const peakTime = 460;
+    const peakTime = 850;
     const startTime = performance.now();
     let navigated = false;
 
@@ -1559,7 +1559,7 @@ document.addEventListener('DOMContentLoaded', () => {
         try { sessionStorage.setItem('gp_leaf_transition', '1'); } catch(e) {}
         window.location.href = targetHref;
       }
-    }, 650);
+    }, 1100);
   }
 
   // 2. ARRIVAL ANIMATION: Disperses leaves & reveals the new scenery cleanly
@@ -1585,7 +1585,7 @@ document.addEventListener('DOMContentLoaded', () => {
     for (let i = 0; i < 65; i++) particles.push(new TransitionParticle(w, h, 'mid', true));
     for (let i = 0; i < 6; i++) particles.push(new TransitionParticle(w, h, 'fore', true));
 
-    const duration = 650;
+    const duration = 900;
     const startTime = performance.now();
 
     function render(now) {
