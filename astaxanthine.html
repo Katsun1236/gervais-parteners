@@ -674,40 +674,79 @@
             <span data-i18n="astaxanthinSection.finishedTitle">4 Produits Finis Prêts à Commercialiser (Marque Blanche)</span>
           </h3>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            <div class="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all flex flex-col">
-              <img src="assets/images/products/axabio-astaxanthin-gummies.webp" alt="Axagums - Bonbons gélifiés véganes à l'astaxanthine" class="w-full h-40 object-contain bg-slate-50 p-4">
+            <!-- 1. Axagums -->
+            <div class="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden hover:shadow-xl hover:-translate-y-1.5 transition-all flex flex-col group">
+              <div class="relative h-44 bg-slate-50 overflow-hidden flex items-center justify-center p-3 border-b border-slate-100">
+                <img src="assets/images/products/axabio-astaxanthin-gummies.webp" alt="Axagums - Bonbons gélifiés véganes à l'astaxanthine" class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105">
+                <span class="absolute top-2.5 right-2.5 bg-rose-950/90 text-rose-300 text-[10px] font-bold px-2.5 py-1 rounded-full border border-rose-500/30">Gummies</span>
+              </div>
               <div class="p-5 flex flex-col flex-1">
                 <span class="text-xs font-bold text-rose-500 uppercase tracking-wide mb-1">4 mg · Pectine Vegan</span>
                 <h4 class="display text-lg font-semibold text-slate-900 mb-1" data-i18n="astaxanthinSection.fin1_name">Axagums Vegan Gummies</h4>
                 <p class="text-xs text-slate-500 leading-relaxed flex-1" data-i18n="astaxanthinSection.fin1_desc">Sans sucre, cerise-citron. Dès 650 flacons ou 40 000 gummies bulk.</p>
-                <button onclick="requestProductSample('astaxanthin-axabio')" class="mt-3 w-full bg-forest-950 text-white text-xs font-bold py-2.5 rounded-xl hover:bg-forest-800 transition">Demander un Échantillon</button>
+                <div class="mt-4 pt-3 border-t border-slate-100">
+                  <button onclick="requestProductSample('astaxanthin-axabio')" class="w-full bg-forest-950 hover:bg-forest-800 text-white text-xs font-bold py-2.5 rounded-xl transition flex items-center justify-center gap-1.5 shadow-sm">
+                    <span>Échantillon R&amp;D</span>
+                    <svg class="w-3.5 h-3.5 text-limegold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                  </button>
+                </div>
               </div>
             </div>
-            <div class="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all flex flex-col">
-              <div class="h-40 bg-slate-50 flex items-center justify-center text-5xl">💊</div>
+
+            <!-- 2. Axagels Vegan Softgels -->
+            <div class="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden hover:shadow-xl hover:-translate-y-1.5 transition-all flex flex-col group">
+              <div class="relative h-44 bg-slate-50 overflow-hidden flex items-center justify-center p-2 border-b border-slate-100">
+                <img src="assets/images/products/axagels-vegan-softgels.webp" alt="Axagels - Softgels véganes d'astaxanthine naturelle" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <span class="absolute top-2.5 right-2.5 bg-rose-950/90 text-rose-300 text-[10px] font-bold px-2.5 py-1 rounded-full border border-rose-500/30">Vegan Softgels</span>
+              </div>
               <div class="p-5 flex flex-col flex-1">
                 <span class="text-xs font-bold text-rose-500 uppercase tracking-wide mb-1">8 mg · MCT + Vit E</span>
                 <h4 class="display text-lg font-semibold text-slate-900 mb-1" data-i18n="astaxanthinSection.fin2_name">Axagels Vegan Softgels</h4>
                 <p class="text-xs text-slate-500 leading-relaxed flex-1" data-i18n="astaxanthinSection.fin2_desc">Capsules molles véganes sans sucre. Flacons 30 softgels ou bulk dès 49 000.</p>
-                <button onclick="requestProductSample('astaxanthin-axabio')" class="mt-3 w-full border-2 border-forest-950 text-forest-950 text-xs font-bold py-2.5 rounded-xl hover:bg-forest-950 hover:text-white transition">Demander un Échantillon</button>
+                <div class="mt-4 pt-3 border-t border-slate-100">
+                  <button onclick="requestProductSample('astaxanthin-axabio')" class="w-full bg-forest-950 hover:bg-forest-800 text-white text-xs font-bold py-2.5 rounded-xl transition flex items-center justify-center gap-1.5 shadow-sm">
+                    <span>Échantillon R&amp;D</span>
+                    <svg class="w-3.5 h-3.5 text-limegold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                  </button>
+                </div>
               </div>
             </div>
-            <div class="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all flex flex-col">
-              <div class="h-40 bg-slate-50 flex items-center justify-center text-5xl">💧</div>
+
+            <!-- 3. Axacaps Liquid Capsules -->
+            <div class="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden hover:shadow-xl hover:-translate-y-1.5 transition-all flex flex-col group">
+              <div class="relative h-44 bg-slate-50 overflow-hidden flex items-center justify-center p-2 border-b border-slate-100">
+                <img src="assets/images/products/axacaps-liquid-capsules.webp" alt="Axacaps - Gélules liquides d'astaxanthine naturelle" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <span class="absolute top-2.5 right-2.5 bg-rose-950/90 text-rose-300 text-[10px] font-bold px-2.5 py-1 rounded-full border border-rose-500/30">Liquid Caps</span>
+              </div>
               <div class="p-5 flex flex-col flex-1">
                 <span class="text-xs font-bold text-rose-500 uppercase tracking-wide mb-1">8 mg · Huile MCT Coco</span>
                 <h4 class="display text-lg font-semibold text-slate-900 mb-1" data-i18n="astaxanthinSection.fin3_name">Axacaps Liquid Capsules</h4>
                 <p class="text-xs text-slate-500 leading-relaxed flex-1" data-i18n="astaxanthinSection.fin3_desc">DLUO 24 mois, fabrication Europe. Bouteilles dès 1 650 unités ou bulk dès 50 000.</p>
-                <button onclick="requestProductSample('astaxanthin-axabio')" class="mt-3 w-full border-2 border-forest-950 text-forest-950 text-xs font-bold py-2.5 rounded-xl hover:bg-forest-950 hover:text-white transition">Demander un Échantillon</button>
+                <div class="mt-4 pt-3 border-t border-slate-100">
+                  <button onclick="requestProductSample('astaxanthin-axabio')" class="w-full bg-forest-950 hover:bg-forest-800 text-white text-xs font-bold py-2.5 rounded-xl transition flex items-center justify-center gap-1.5 shadow-sm">
+                    <span>Échantillon R&amp;D</span>
+                    <svg class="w-3.5 h-3.5 text-limegold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                  </button>
+                </div>
               </div>
             </div>
-            <div class="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all flex flex-col">
-              <div class="h-40 bg-slate-50 flex items-center justify-center text-5xl">🧠</div>
+
+            <!-- 4. Axafocus Synergetic Blend -->
+            <div class="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden hover:shadow-xl hover:-translate-y-1.5 transition-all flex flex-col group">
+              <div class="relative h-44 bg-slate-50 overflow-hidden flex items-center justify-center p-2 border-b border-slate-100">
+                <img src="assets/images/products/axafocus-synergetic-blend.webp" alt="Axafocus - Formule synergique astaxanthine et oméga-3 algaux" class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105">
+                <span class="absolute top-2.5 right-2.5 bg-rose-950/90 text-rose-300 text-[10px] font-bold px-2.5 py-1 rounded-full border border-rose-500/30">Synergie</span>
+              </div>
               <div class="p-5 flex flex-col flex-1">
                 <span class="text-xs font-bold text-rose-500 uppercase tracking-wide mb-1">8 mg + 275 mg DHA</span>
                 <h4 class="display text-lg font-semibold text-slate-900 mb-1" data-i18n="astaxanthinSection.fin4_name">Axafocus Synergetic Blend</h4>
                 <p class="text-xs text-slate-500 leading-relaxed flex-1" data-i18n="astaxanthinSection.fin4_desc">Astaxanthine + Oméga-3 algaux, HPMC vegan. Allégations EFSA validées.</p>
-                <button onclick="requestProductSample('astaxanthin-axabio')" class="mt-3 w-full border-2 border-forest-950 text-forest-950 text-xs font-bold py-2.5 rounded-xl hover:bg-forest-950 hover:text-white transition">Demander un Échantillon</button>
+                <div class="mt-4 pt-3 border-t border-slate-100">
+                  <button onclick="requestProductSample('astaxanthin-axabio')" class="w-full bg-forest-950 hover:bg-forest-800 text-white text-xs font-bold py-2.5 rounded-xl transition flex items-center justify-center gap-1.5 shadow-sm">
+                    <span>Échantillon R&amp;D</span>
+                    <svg class="w-3.5 h-3.5 text-limegold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -791,8 +830,8 @@
 
 
   <!-- Scripts -->
-  <script src="assets/js/translations.js?v=20260914-12"></script>
-  <script src="assets/js/app.js?v=20260914-12"></script>
+  <script src="assets/js/translations.js?v=20260914-13"></script>
+  <script src="assets/js/app.js?v=20260914-13"></script>
   <script>
     // Year
     document.getElementById('currentYear').textContent = new Date().getFullYear();
