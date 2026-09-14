@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    if (window.location.hostname.includes('design--')) {
+      window.location.replace('https://gervais-partenairs.netlify.app' + window.location.pathname + window.location.search + window.location.hash);
+    }
+  </script>
 
   <!-- ═══════════════════════════════════════════════════════════════
        ADVANCED B2B SEO META TAGS
@@ -103,7 +108,7 @@
     @keyframes float { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(-8px)} }
     .scroll-indicator { position:absolute; bottom:32px; left:50%; transform:translateX(-50%); display:flex; flex-direction:column; align-items:center; gap:8px; color:rgba(255,255,255,0.45); font-size:10px; letter-spacing:.1em; text-transform:uppercase; z-index:10; animation:float 3s ease-in-out infinite; }
     .scroll-line { width:1px; height:40px; background:linear-gradient(180deg,rgba(255,255,255,0.4),transparent); }
-    .hero-bg-img { background-size:cover; background-position:center; background-repeat:no-repeat; }
+    .hero-bg-img { background-size:cover; background-position:left center; background-repeat:no-repeat; }
     #tdsModal.hidden { display:none !important; }
     #confirmationModal.hidden { display:none !important; }
     .map-container { background:radial-gradient(circle at 50%,#15202e,#060b13); border-radius:16px; overflow:hidden; }
@@ -516,21 +521,19 @@
          HERO — Full viewport, photo nature immersive
     ═══════════════════════════════════════════════════ -->
     <section id="home" class="relative min-h-screen flex items-center overflow-hidden bg-forest-950">
-      <!-- Background photo -->
-      <div class="absolute inset-0 hero-bg-img bg-cover bg-center" style="background-image:url('assets/images/nature-botanical-dew.webp?v=20260914-05')" role="img" aria-label="Cultures botaniques et champ de plantes médicinales sous le soleil levant européen"></div>
-      <!-- Dark overlay gradient -->
-      <div class="absolute inset-0" style="background:linear-gradient(135deg,rgba(5,35,19,0.92) 0%,rgba(5,35,19,0.72) 50%,rgba(11,70,41,0.65) 100%)"></div>
+      <!-- Background photo: 100% natural, no filter, centered left -->
+      <div class="absolute inset-0 hero-bg-img bg-cover bg-left" style="background-image:url('assets/images/nature-botanical-dew.webp?v=20260914-06'); background-position:left center;" role="img" aria-label="Cultures botaniques et champ de plantes médicinales sous le soleil levant européen"></div>
 
       <!-- Content -->
       <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-36 w-full">
 
         <!-- Unique H1 for SEO -->
-        <h1 class="display text-4xl sm:text-6xl lg:text-7xl font-light text-white tracking-tight leading-[1.08] mb-6 max-w-3xl" data-i18n="hero.title">
+        <h1 class="display text-4xl sm:text-6xl lg:text-7xl font-light text-white tracking-tight leading-[1.08] mb-6 max-w-3xl" style="text-shadow: 0 2px 14px rgba(0,0,0,0.85), 0 1px 4px rgba(0,0,0,0.95);" data-i18n="hero.title">
           Distribution d'Ingrédients <em class="text-limegold-300 not-italic font-normal">Nutraceutiques</em>, Micro-Algues &amp; Façonnage Galénique B2B
         </h1>
 
         <!-- Subtitle -->
-        <p class="text-base sm:text-lg text-white/75 mb-10 max-w-xl leading-relaxed font-light" data-i18n="hero.subtitle">
+        <p class="text-base sm:text-lg text-white mb-10 max-w-xl leading-relaxed font-light" style="text-shadow: 0 1px 8px rgba(0,0,0,0.85);" data-i18n="hero.subtitle">
           Gervais Partners fournit aux laboratoires pharmaceutiques des principes actifs végétaux d'une pureté absolue — de la biotechnologie des micro-algues aux extraits cliniquement prouvés.
         </p>
 
