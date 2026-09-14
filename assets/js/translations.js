@@ -131,7 +131,7 @@ const translations = {
     // Astaxanthin Feature Section (Client Email 3)
     astaxanthinSection: {
       tag: "Biotechnologie des Micro-Algues",
-      title: "L'Astaxanthine Naturelle : Le Plus Puissant Protecteur Cellulaire",
+      title: "L'Astaxanthine : Le Plus Puissant Anti-Oxydant",
       introQuote: "L'astaxanthine est un pigment caroténoïde naturel produit principalement par la microalgue Haematococcus pluvialis lorsqu'elle est soumise à un stress environnemental. L'astaxanthine est particulièrement précieuse pour la santé de la peau, grâce à son extraordinaire structure moléculaire - une structure qui lui confère des capacités antioxydantes jusqu'à 6 000 fois plus puissantes que celles de la vitamine C et 550 fois plus puissantes que celles de la vitamine E.",
       photobioCaption: "Culture biotechnologique fermée sous photobioréacteurs haute technologie à spectre LED contrôlé",
       rawTitle: "4 Matières Premières en Vrac (Bulk Ingredients)",
@@ -558,8 +558,8 @@ const translations = {
     galenicSection: {
       tag: "Synergie Groupe Clé en Main",
       title: "De la Matière Première Botanique au Produit Fini Galénique",
-      subtitle: "Grâce à la nouvelle société sœur française de notre dirigeant spécialisée dans les galéniques (softgels, gélules, enrobage) prévue dans 3 mois, nous vous proposons une chaîne intégrée complète : de la fourniture d'extraits purs au façonnage de formes prêtes à l'emploi et private label.",
-      sisterNotice: "Portail direct de la société sœur française en cours de déploiement (ouverture sous 3 mois). Projets galéniques pris en charge dès aujourd'hui par Gervais Partners.",
+      subtitle: "Grâce à la nouvelle société sœur française de notre dirigeant spécialisée dans les galéniques (softgels, gélules, enrobage) prévue prochainement, nous vous proposons une chaîne intégrée complète : de la fourniture d'extraits purs au façonnage de formes prêtes à l'emploi et private label.",
+      sisterNotice: "Portail direct de la société sœur française en cours de déploiement (ouverture prévue prochainement). Projets galéniques pris en charge dès aujourd'hui par Gervais Partners.",
       step1_title: "1. Matière Première Titrée",
       step1_desc: "Sélection de nos ingrédients purs en vrac (astaxanthine, phycocyanine, curcumine, berbérine) avec dossiers techniques complets et stockage en Belgique.",
       step2_title: "2. Façonnage Galénique Haute Précision",
@@ -614,7 +614,9 @@ const translations = {
       volGalenic: "Projet complet Produit Fini Galénique (Gummies / Softgels)",
       fieldMessage: "Détails de votre Formulation ou Demande Spécifique",
       placeholderMessage: "Indiquez vos besoins de titrage, forme galénique visée, contraintes réglementaires...",
+      checkTds: "Je souhaite recevoir les fiches techniques des produits",
       checkSample: "Je souhaite recevoir un échantillon physique expédié à l'adresse de notre laboratoire",
+      placeholderVolume: "Ex: 50 kg / an, lot pilote 5 kg, 25 000 flacons...",
       submitBtn: "Envoyer la Demande Professionnelle",
       privacyNotice: "Vos données professionnelles sont strictement confidentielles et traitées directement par notre direction.",
       successModalTitle: "Demande B2B Enregistrée avec Succès !",

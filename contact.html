@@ -662,22 +662,22 @@
               </div>
               <div>
                 <label for="contactVolume" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2" data-i18n="contact.fieldVolume">Volume Estimé / Type de Besoin</label>
-                <select id="contactVolume" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:ring-2 focus:ring-forest-700 focus:outline-none transition">
-                  <option value="sample" data-i18n="contact.volSample">Échantillon d'essai R&D (100g–500g)</option>
-                  <option value="pilot" data-i18n="contact.volPilot">Lot Pilote (25 kg / 650 flacons)</option>
-                  <option value="medium" data-i18n="contact.volMedium">Production moyenne (100–500 kg)</option>
-                  <option value="bulk" data-i18n="contact.volBulk">Production industrielle (&gt; 1 000 kg)</option>
-                  <option value="galenic" data-i18n="contact.volGalenic">Projet complet Produit Fini Galénique</option>
-                </select>
+                <input type="text" id="contactVolume" name="volume" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:ring-2 focus:ring-forest-700 focus:outline-none transition" data-i18n="contact.placeholderVolume" placeholder="Ex: 50 kg / an, lot pilote 5 kg, 25 000 flacons...">
               </div>
             </div>
             <div class="mb-5">
               <label for="contactMessage" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2" data-i18n="contact.fieldMessage">Détails de votre Formulation ou Demande Spécifique</label>
               <textarea id="contactMessage" rows="4" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:ring-2 focus:ring-forest-700 focus:outline-none transition" data-i18n="contact.placeholderMessage" placeholder="Indiquez vos exigences de titrage actif, forme galénique visée, contraintes réglementaires..."></textarea>
             </div>
-            <div class="flex items-start gap-3 bg-forest-50 border border-forest-200 rounded-xl p-4 mb-6">
-              <input type="checkbox" id="checkSample" checked class="w-5 h-5 rounded text-forest-700 accent-forest-700 mt-0.5 flex-shrink-0 cursor-pointer">
-              <label for="checkSample" class="text-sm text-forest-900 cursor-pointer" data-i18n="contact.checkSample">Je souhaite recevoir un échantillon physique expédié à l'adresse de notre laboratoire</label>
+            <div class="space-y-3 mb-6">
+              <div class="flex items-start gap-3 bg-forest-50 border border-forest-200 rounded-xl p-4 hover:border-forest-400 transition cursor-pointer">
+                <input type="checkbox" id="checkTds" name="checkTds" checked class="w-5 h-5 rounded text-forest-700 accent-forest-700 mt-0.5 flex-shrink-0 cursor-pointer">
+                <label for="checkTds" class="text-sm font-semibold text-forest-950 cursor-pointer" data-i18n="contact.checkTds">Je souhaite recevoir les fiches techniques des produits</label>
+              </div>
+              <div class="flex items-start gap-3 bg-forest-50 border border-forest-200 rounded-xl p-4 hover:border-forest-400 transition cursor-pointer">
+                <input type="checkbox" id="checkSample" name="checkSample" checked class="w-5 h-5 rounded text-forest-700 accent-forest-700 mt-0.5 flex-shrink-0 cursor-pointer">
+                <label for="checkSample" class="text-sm text-forest-900 cursor-pointer" data-i18n="contact.checkSample">Je souhaite recevoir un échantillon physique expédié à l'adresse de notre laboratoire</label>
+              </div>
             </div>
             <button type="submit" class="w-full bg-forest-950 hover:bg-forest-800 text-white font-extrabold text-sm py-4 px-6 rounded-xl transition shadow-lg hover:shadow-xl flex items-center justify-center gap-2">
               <svg class="w-5 h-5 text-limegold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
@@ -765,8 +765,8 @@
 
 
   <!-- Scripts -->
-  <script src="assets/js/translations.js?v=2.1"></script>
-  <script src="assets/js/app.js?v=2.1"></script>
+  <script src="assets/js/translations.js?v=20260914-09"></script>
+  <script src="assets/js/app.js?v=20260914-09"></script>
   <script>
     // Year
     document.getElementById('currentYear').textContent = new Date().getFullYear();

@@ -19,6 +19,7 @@ let ambientGainNode = null;
 // Initialize app when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
   initLanguageSwitcher();
+  initAnimatedCounters();
   renderProducts();
   initCategoryFilters();
   initContactForm();
@@ -1089,22 +1090,50 @@ function initAnimatedCounters() {
   const counters = document.querySelectorAll('.counter-val');
   if (!counters.length) return;
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
-        entry.target.classList.add('counted');
-        animateCounter(entry.target);
+  function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+    return rect.top <= windowHeight && rect.bottom >= 0;
+  }
+
+  function checkAndAnimate() {
+    counters.forEach(el => {
+      if (!el.classList.contains('counted') && isElementInViewport(el)) {
+        el.classList.add('counted');
+        animateCounter(el);
       }
     });
-  }, { threshold: 0.15 });
+  }
 
-  counters.forEach(c => observer.observe(c));
+  // Immediate check on load + timeouts when reveal animations complete
+  checkAndAnimate();
+  setTimeout(checkAndAnimate, 150);
+  setTimeout(checkAndAnimate, 450);
+  setTimeout(checkAndAnimate, 900);
+
+  // Check on user scroll and resize
+  window.addEventListener('scroll', checkAndAnimate, { passive: true });
+  window.addEventListener('resize', checkAndAnimate, { passive: true });
+
+  // IntersectionObserver as well
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
+          entry.target.classList.add('counted');
+          animateCounter(entry.target);
+        }
+      });
+    }, { rootMargin: '80px 0px 80px 0px', threshold: 0.01 });
+
+    counters.forEach(c => observer.observe(c));
+  }
 
   function animateCounter(el) {
     const target = parseFloat(el.getAttribute('data-target') || '0');
     const suffix = el.getAttribute('data-suffix') || '';
     const prefix = el.getAttribute('data-prefix') || '';
-    const duration = 1600; // ms
+    const duration = 1700; // ms
     const startTime = performance.now();
 
     function updateCount(currentTime) {
@@ -1129,9 +1158,6 @@ function initAnimatedCounters() {
   }
 }
 
-/**
- * Universal Anchor Safe-Router: Prevents broken links on dedicated pages
- */
 function initUniversalAnchorRouter() {
   document.addEventListener('click', function(e) {
     const link = e.target.closest('a');
