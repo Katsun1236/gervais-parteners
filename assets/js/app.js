@@ -1188,303 +1188,536 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /**
  * ══════════════════════════════════════════════════════════════
- * CINEMATIC BOTANICAL LEAF-WIND PAGE TRANSITION ENGINE
- * « Des feuilles soufflées qui changent le décor derrière elles »
+ * CINEMATIC BOTANICAL LEAF-WIND SPA ENGINE (ULTRA-FLUIDE & 60 FPS)
+ * « Des feuilles soufflées impressionnantes qui changent le décor sans aucun lag »
  * ══════════════════════════════════════════════════════════════
  */
 (function initBotanicalLeafWindEngine() {
-  // Leaf definition for 3D turbulence animation
-  class WindLeaf {
-    constructor(w, h, isArrival) {
-      this.type = Math.floor(Math.random() * 3); // 0: bamboo, 1: herb, 2: golden spore
+  // Pre-rendered offscreen canvas sprites for ultra-high FPS (Zero GC pressure)
+  const sprites = {};
+
+  function initSprites() {
+    // 1. Bamboo Blade Sprite (Dual chlorophyll gradient, dark rib, micro-veins, stem)
+    {
+      const cvs = document.createElement('canvas');
+      cvs.width = 120;
+      cvs.height = 360;
+      const ctx = cvs.getContext('2d');
+      const cx = 60, cy = 180;
+      ctx.save();
+      ctx.translate(cx, cy);
+
+      // Left lamina (deep forest green)
+      const gradLeft = ctx.createLinearGradient(-30, 0, 0, 0);
+      gradLeft.addColorStop(0, '#14532d');
+      gradLeft.addColorStop(1, '#22c55e');
+
+      ctx.beginPath();
+      ctx.moveTo(0, -160);
+      ctx.bezierCurveTo(-45, -60, -35, 80, 0, 150);
+      ctx.lineTo(0, -160);
+      ctx.fillStyle = gradLeft;
+      ctx.fill();
+
+      // Right lamina (vivid lime with sunlight sheen)
+      const gradRight = ctx.createLinearGradient(0, 0, 30, 0);
+      gradRight.addColorStop(0, '#4ade80');
+      gradRight.addColorStop(1, '#15803d');
+
+      ctx.beginPath();
+      ctx.moveTo(0, -160);
+      ctx.bezierCurveTo(45, -60, 35, 80, 0, 150);
+      ctx.lineTo(0, -160);
+      ctx.fillStyle = gradRight;
+      ctx.fill();
+
+      // Central stem / rib
+      ctx.beginPath();
+      ctx.moveTo(0, -165);
+      ctx.lineTo(0, 175);
+      ctx.strokeStyle = '#052e16';
+      ctx.lineWidth = 2.5;
+      ctx.stroke();
+
+      // Stem extension
+      ctx.beginPath();
+      ctx.moveTo(0, 150);
+      ctx.lineTo(0, 175);
+      ctx.strokeStyle = '#854d0e';
+      ctx.lineWidth = 3.5;
+      ctx.stroke();
+
+      // Secondary micro-veins
+      ctx.strokeStyle = 'rgba(255, 255, 255, 0.28)';
+      ctx.lineWidth = 1;
+      for (let y = -120; y < 130; y += 20) {
+        ctx.beginPath();
+        ctx.moveTo(0, y);
+        ctx.lineTo(-22, y - 12);
+        ctx.moveTo(0, y);
+        ctx.lineTo(22, y - 12);
+        ctx.stroke();
+      }
+
+      ctx.restore();
+      sprites.bamboo = cvs;
+    }
+
+    // 2. Broad Medicinal Herbal Leaf Sprite (Ovate contour, rich venation, serrated rim)
+    {
+      const cvs = document.createElement('canvas');
+      cvs.width = 240;
+      cvs.height = 280;
+      const ctx = cvs.getContext('2d');
+      const cx = 120, cy = 140;
+
+      ctx.save();
+      ctx.translate(cx, cy);
+
+      const grad = ctx.createRadialGradient(0, 0, 10, 0, 0, 120);
+      grad.addColorStop(0, '#22c55e');
+      grad.addColorStop(0.6, '#15803d');
+      grad.addColorStop(1, '#052e16');
+
+      ctx.beginPath();
+      ctx.moveTo(0, -115);
+      ctx.bezierCurveTo(85, -60, 95, 55, 0, 115);
+      ctx.bezierCurveTo(-95, 55, -85, -60, 0, -115);
+      ctx.fillStyle = grad;
+      ctx.fill();
+
+      // Translucent rim
+      ctx.strokeStyle = 'rgba(134, 239, 172, 0.6)';
+      ctx.lineWidth = 2;
+      ctx.stroke();
+
+      // Central rachis
+      ctx.beginPath();
+      ctx.moveTo(0, -115);
+      ctx.lineTo(0, 135);
+      ctx.strokeStyle = '#14532d';
+      ctx.lineWidth = 3.5;
+      ctx.stroke();
+
+      // Branching veins
+      ctx.strokeStyle = 'rgba(187, 247, 208, 0.45)';
+      ctx.lineWidth = 1.5;
+      for (let y = -80; y < 80; y += 24) {
+        ctx.beginPath();
+        ctx.moveTo(0, y);
+        ctx.quadraticCurveTo(35, y - 5, 55, y - 25);
+        ctx.moveTo(0, y);
+        ctx.quadraticCurveTo(-35, y - 5, -55, y - 25);
+        ctx.stroke();
+      }
+
+      ctx.restore();
+      sprites.herbal = cvs;
+    }
+
+    // 3. Golden Ginkgo Biloba / Curcuma Gold Leaf Sprite
+    {
+      const cvs = document.createElement('canvas');
+      cvs.width = 220;
+      cvs.height = 220;
+      const ctx = cvs.getContext('2d');
+      const cx = 110, cy = 110;
+
+      ctx.save();
+      ctx.translate(cx, cy);
+
+      const grad = ctx.createLinearGradient(0, -90, 0, 90);
+      grad.addColorStop(0, '#fef08a');
+      grad.addColorStop(0.5, '#f59e0b');
+      grad.addColorStop(1, '#b45309');
+
+      ctx.beginPath();
+      ctx.moveTo(0, 80);
+      ctx.lineTo(-10, 30);
+      ctx.bezierCurveTo(-75, -20, -75, -70, -20, -85);
+      ctx.quadraticCurveTo(0, -70, 20, -85);
+      ctx.bezierCurveTo(75, -70, 75, -20, 10, 30);
+      ctx.closePath();
+      ctx.fillStyle = grad;
+      ctx.fill();
+
+      // Radiating golden striations
+      ctx.strokeStyle = 'rgba(254, 240, 138, 0.55)';
+      ctx.lineWidth = 1.2;
+      for (let a = -1.1; a <= 1.1; a += 0.18) {
+        ctx.beginPath();
+        ctx.moveTo(0, 35);
+        ctx.lineTo(Math.sin(a) * 75, -Math.cos(a) * 75);
+        ctx.stroke();
+      }
+
+      // Petiole
+      ctx.beginPath();
+      ctx.moveTo(0, 30);
+      ctx.lineTo(0, 95);
+      ctx.strokeStyle = '#92400e';
+      ctx.lineWidth = 3;
+      ctx.stroke();
+
+      ctx.restore();
+      sprites.ginkgo = cvs;
+    }
+
+    // 4. Luminous Active Spores & Pollen Sprite
+    {
+      const cvs = document.createElement('canvas');
+      cvs.width = 80;
+      cvs.height = 80;
+      const ctx = cvs.getContext('2d');
+      const cx = 40, cy = 40;
+
+      const grad = ctx.createRadialGradient(cx, cy, 2, cx, cy, 38);
+      grad.addColorStop(0, '#ffffff');
+      grad.addColorStop(0.2, '#fef08a');
+      grad.addColorStop(0.5, 'rgba(245, 158, 11, 0.7)');
+      grad.addColorStop(0.8, 'rgba(217, 119, 6, 0.2)');
+      grad.addColorStop(1, 'rgba(217, 119, 6, 0)');
+
+      ctx.fillStyle = grad;
+      ctx.beginPath();
+      ctx.arc(cx, cy, 38, 0, Math.PI * 2);
+      ctx.fill();
+
+      sprites.spore = cvs;
+    }
+  }
+
+  // Particle Class with 3D Depth
+  class TransitionParticle {
+    constructor(w, h, layer) {
       this.w = w;
       this.h = h;
-      this.size = 14 + Math.random() * 22;
-      this.baseSpeed = 20 + Math.random() * 22;
+      this.layer = layer;
+
+      if (layer === 'fore') {
+        // Foreground giant macro leaves (rush past camera with extreme speed)
+        this.spriteType = Math.random() > 0.5 ? 'bamboo' : 'herbal';
+        this.scale = 0.50 + Math.random() * 0.45;
+        this.baseSpeed = 38 + Math.random() * 22;
+        this.alpha = 0.95;
+      } else if (layer === 'mid') {
+        // Midground leaves
+        const r = Math.random();
+        this.spriteType = r < 0.45 ? 'bamboo' : (r < 0.8 ? 'herbal' : 'ginkgo');
+        this.scale = 0.17 + Math.random() * 0.19;
+        this.baseSpeed = 22 + Math.random() * 16;
+        this.alpha = 0.95;
+      } else {
+        // Background micro-spores & golden dust
+        this.spriteType = 'spore';
+        this.scale = 0.10 + Math.random() * 0.20;
+        this.baseSpeed = 15 + Math.random() * 20;
+        this.alpha = 0.4 + Math.random() * 0.5;
+      }
+
+      this.x = -150 - Math.random() * (w * 0.85);
+      this.y = h * (0.2 + Math.random() * 0.95);
       this.vx = this.baseSpeed;
-      this.vy = -(this.baseSpeed * (0.22 + Math.random() * 0.35));
-      
+      this.vy = -(this.baseSpeed * (0.26 + Math.random() * 0.36));
+
       this.rotZ = Math.random() * Math.PI * 2;
       this.rotX = Math.random() * Math.PI * 2;
       this.rotY = Math.random() * Math.PI * 2;
-      this.rotSpeedZ = (Math.random() - 0.5) * 0.14;
-      this.rotSpeedX = (Math.random() - 0.5) * 0.10;
+      this.rotSpeedZ = (Math.random() - 0.5) * 0.15;
+      this.rotSpeedX = (Math.random() - 0.5) * 0.12;
       this.rotSpeedY = (Math.random() - 0.5) * 0.18;
-      
-      this.phase = Math.random() * Math.PI * 2;
+
+      this.flutterPhase = Math.random() * Math.PI * 2;
+      this.flutterAmp = 6 + Math.random() * 10;
       this.flutterFreq = 0.04 + Math.random() * 0.04;
-      this.flutterAmp = 4 + Math.random() * 7;
-
-      if (!isArrival) {
-        // Departure: leaves enter from bottom-left
-        this.x = -100 - Math.random() * (w * 0.6);
-        this.y = h * (0.2 + Math.random() * 0.9);
-      } else {
-        // Arrival: leaves start mid-screen and rush towards top-right exit
-        this.x = (w * 0.2) + Math.random() * (w * 0.8);
-        this.y = h * (0.05 + Math.random() * 0.8);
-      }
-
-      if (this.type === 0) {
-        // Bamboo blade (emerald/lime)
-        this.color = '#367329';
-        this.highlight = '#65a30d';
-        this.vein = '#1f4816';
-      } else if (this.type === 1) {
-        // Broad botanical leaf
-        this.color = '#15803d';
-        this.highlight = '#4ade80';
-        this.vein = '#14532d';
-      } else {
-        // Golden botanical active spore / amber petal
-        this.color = '#d97706';
-        this.highlight = '#fbbf24';
-        this.vein = '#b45309';
-      }
     }
 
     update(time) {
       this.x += this.vx;
-      this.y += this.vy + Math.sin(time * this.flutterFreq + this.phase) * this.flutterAmp;
+      this.y += this.vy + Math.sin(time * this.flutterFreq + this.flutterPhase) * this.flutterAmp;
       this.rotZ += this.rotSpeedZ;
       this.rotX += this.rotSpeedX;
       this.rotY += this.rotSpeedY;
     }
 
     draw(ctx) {
+      const sprite = sprites[this.spriteType];
+      if (!sprite) return;
+
       ctx.save();
       ctx.translate(this.x, this.y);
       ctx.rotate(this.rotZ);
-      
-      // 3D tumbling scale
-      const sx = Math.cos(this.rotY);
-      const sy = Math.cos(this.rotX);
+
+      // 3D Perspective tumbling
+      const sx = Math.cos(this.rotY) * this.scale;
+      const sy = Math.cos(this.rotX) * this.scale;
       ctx.scale(sx, sy);
-      
-      const s = this.size;
 
-      if (this.type === 0) {
-        // Bamboo blade
-        ctx.beginPath();
-        ctx.moveTo(0, -s);
-        ctx.quadraticCurveTo(s * 0.28, -s * 0.2, s * 0.18, s * 0.6);
-        ctx.lineTo(0, s);
-        ctx.lineTo(-s * 0.18, s * 0.6);
-        ctx.quadraticCurveTo(-s * 0.28, -s * 0.2, 0, -s);
-        ctx.fillStyle = this.color;
-        ctx.fill();
-        
-        ctx.beginPath();
-        ctx.moveTo(0, -s * 0.85);
-        ctx.lineTo(0, s * 0.9);
-        ctx.strokeStyle = this.vein;
-        ctx.lineWidth = 1;
-        ctx.stroke();
-      } else if (this.type === 1) {
-        // Broad herbal leaf
-        ctx.beginPath();
-        ctx.moveTo(0, -s);
-        ctx.bezierCurveTo(s * 0.55, -s * 0.4, s * 0.65, s * 0.3, 0, s);
-        ctx.bezierCurveTo(-s * 0.65, s * 0.3, -s * 0.55, -s * 0.4, 0, -s);
-        ctx.fillStyle = this.color;
-        ctx.fill();
-        
-        ctx.strokeStyle = this.highlight;
-        ctx.lineWidth = 0.8;
-        ctx.stroke();
+      ctx.globalAlpha = this.alpha;
 
-        ctx.beginPath();
-        ctx.moveTo(0, -s * 0.8);
-        ctx.lineTo(0, s * 0.85);
-        ctx.strokeStyle = this.vein;
-        ctx.lineWidth = 1.2;
-        ctx.stroke();
-      } else {
-        // Glowing Golden Spore
-        ctx.beginPath();
-        ctx.arc(0, 0, s * 0.35, 0, Math.PI * 2);
-        ctx.fillStyle = this.highlight;
-        ctx.shadowColor = '#f59e0b';
-        ctx.shadowBlur = 8;
-        ctx.fill();
-      }
+      const sw = sprite.width;
+      const sh = sprite.height;
+      ctx.drawImage(sprite, -sw / 2, -sh / 2, sw, sh);
 
       ctx.restore();
     }
   }
 
-  // Create or get global overlay canvas
-  function getCanvas() {
-    let canvas = document.getElementById('botanicalLeafWindCanvas');
-    if (!canvas) {
-      canvas = document.createElement('canvas');
-      canvas.id = 'botanicalLeafWindCanvas';
-      canvas.style.cssText = 'position:fixed;inset:0;width:100vw;height:100vh;z-index:999999;pointer-events:none;';
-      document.body.appendChild(canvas);
+  let activeCanvas = null;
+  let isTransitioning = false;
+
+  function getOverlayCanvas() {
+    if (!activeCanvas) {
+      activeCanvas = document.createElement('canvas');
+      activeCanvas.id = 'botanicalLeafWindCanvas';
+      activeCanvas.style.cssText = 'position:fixed;inset:0;width:100vw;height:100vh;z-index:999999;pointer-events:none;';
+      document.body.appendChild(activeCanvas);
     }
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-    return canvas;
+    activeCanvas.width = window.innerWidth;
+    activeCanvas.height = window.innerHeight;
+    return activeCanvas;
   }
 
-  // 1. DEPARTURE GUST: Leaves blow in, sweeping the changing scenery curtain
-  function launchLeafWindDeparture(targetHref) {
-    const canvas = getCanvas();
+  // Master Botanical Transition Execution
+  function executeBotanicalLeafTransition(onPeakCallback, onCompleteCallback) {
+    if (isTransitioning) return;
+    isTransitioning = true;
+
+    if (!sprites.bamboo) initSprites();
+
+    const canvas = getOverlayCanvas();
     const ctx = canvas.getContext('2d');
     const w = canvas.width;
     const h = canvas.height;
 
-    const leaves = [];
-    for (let i = 0; i < 85; i++) {
-      leaves.push(new WindLeaf(w, h, false));
-    }
+    // Spawn 3 layers of particles
+    const particles = [];
+    for (let i = 0; i < 90; i++) particles.push(new TransitionParticle(w, h, 'back'));
+    for (let i = 0; i < 65; i++) particles.push(new TransitionParticle(w, h, 'mid'));
+    for (let i = 0; i < 6; i++) particles.push(new TransitionParticle(w, h, 'fore'));
 
-    const duration = 650; // ms to sweep full scenery
+    const duration = 1050; // Total ms for the gust to sweep and clear
+    const peakTime = 460;  // Exact peak moment scenery curtain covers screen
     const startTime = performance.now();
-    let navigated = false;
+    let scenerySwapped = false;
 
-    function anim(now) {
-      const elapsed = now - startTime;
-      const progress = Math.min(elapsed / (duration * 0.7), 1);
-
-      ctx.clearRect(0, 0, w, h);
-
-      // Scenery Wind Curtain (Deep botanical forest veil swept by the leaves)
-      if (progress > 0) {
-        const leadX = (w + 450) * progress - 150;
-        const grad = ctx.createLinearGradient(leadX - 350, 0, leadX + 60, 0);
-        grad.addColorStop(0, 'rgba(5, 35, 19, 0.98)');
-        grad.addColorStop(0.75, 'rgba(5, 35, 19, 0.94)');
-        grad.addColorStop(1, 'rgba(5, 35, 19, 0)');
-
-        ctx.save();
-        ctx.fillStyle = grad;
-        ctx.fillRect(0, 0, leadX + 60, h);
-        ctx.restore();
-      }
-
-      // Render leaves
-      leaves.forEach(leaf => {
-        leaf.update(now * 0.05);
-        leaf.draw(ctx);
-      });
-
-      // At full scenery cover, transition to new page
-      if (progress >= 1 && !navigated) {
-        navigated = true;
-        try {
-          sessionStorage.setItem('gp_leaf_wind_arrive', 'true');
-        } catch(e) {}
-        window.location.href = targetHref;
-        return;
-      }
-
-      if (elapsed < duration + 400) {
-        requestAnimationFrame(anim);
-      }
-    }
-
-    requestAnimationFrame(anim);
-
-    // Fallback navigation timeout in case RAF is paused
-    setTimeout(() => {
-      if (!navigated) {
-        navigated = true;
-        try { sessionStorage.setItem('gp_leaf_wind_arrive', 'true'); } catch(e) {}
-        window.location.href = targetHref;
-      }
-    }, 750);
-  }
-
-  // 2. ARRIVAL GUST: Leaves and veil disperse into the distance, unveiling new scenery
-  function checkLeafWindArrival() {
-    let wasTransition = false;
-    try {
-      wasTransition = sessionStorage.getItem('gp_leaf_wind_arrive') === 'true';
-      sessionStorage.removeItem('gp_leaf_wind_arrive');
-    } catch(e) {}
-
-    if (!wasTransition) return;
-
-    const canvas = getCanvas();
-    const ctx = canvas.getContext('2d');
-    const w = canvas.width;
-    const h = canvas.height;
-
-    const leaves = [];
-    for (let i = 0; i < 75; i++) {
-      leaves.push(new WindLeaf(w, h, true));
-    }
-
-    const duration = 600; // ms to clear view
-    const startTime = performance.now();
-
-    function anim(now) {
+    function render(now) {
       const elapsed = now - startTime;
       const progress = Math.min(elapsed / duration, 1);
-      const alpha = 1 - progress;
 
       ctx.clearRect(0, 0, w, h);
 
-      // Curtain receding to reveal the new page scenery
-      if (alpha > 0) {
-        const leftX = (w + 400) * progress;
-        const grad = ctx.createLinearGradient(leftX, 0, w + 400, 0);
-        grad.addColorStop(0, 'rgba(5, 35, 19, 0)');
-        grad.addColorStop(0.3, `rgba(5, 35, 19, ${0.85 * alpha})`);
-        grad.addColorStop(1, `rgba(5, 35, 19, ${0.98 * alpha})`);
+      // 1. Aerodynamic Botanical Mist Wave & Scenery Veil
+      const waveX = (w + 600) * (elapsed / (peakTime * 1.5)) - 300;
+
+      if (elapsed < peakTime) {
+        // Covering phase: wave expands across screen
+        const coverProgress = Math.min(elapsed / peakTime, 1);
+        const curX = (w + 400) * coverProgress;
+
+        const grad = ctx.createLinearGradient(curX - 450, 0, curX + 100, 0);
+        grad.addColorStop(0, 'rgba(5, 35, 19, 0.99)');
+        grad.addColorStop(0.7, 'rgba(5, 35, 19, 0.96)');
+        grad.addColorStop(0.9, 'rgba(16, 75, 41, 0.85)');
+        grad.addColorStop(1, 'rgba(16, 75, 41, 0)');
 
         ctx.save();
         ctx.fillStyle = grad;
-        ctx.fillRect(leftX, 0, w - leftX + 400, h);
+        ctx.beginPath();
+        ctx.moveTo(0, 0);
+        ctx.lineTo(curX + 60, 0);
+        ctx.bezierCurveTo(curX + 130, h * 0.35, curX - 30, h * 0.7, curX + 100, h);
+        ctx.lineTo(0, h);
+        ctx.closePath();
+        ctx.fill();
         ctx.restore();
+      } else {
+        // Revealing phase: veil withdraws towards top-right
+        const revealElapsed = elapsed - peakTime;
+        const revealProgress = Math.min(revealElapsed / (duration - peakTime), 1);
+        const curX = (w + 500) * revealProgress;
+        const alpha = 1 - revealProgress;
+
+        if (alpha > 0) {
+          const grad = ctx.createLinearGradient(curX - 100, 0, curX + 450, 0);
+          grad.addColorStop(0, 'rgba(5, 35, 19, 0)');
+          grad.addColorStop(0.25, `rgba(16, 75, 41, ${0.82 * alpha})`);
+          grad.addColorStop(0.55, `rgba(5, 35, 19, ${0.96 * alpha})`);
+          grad.addColorStop(1, `rgba(5, 35, 19, ${0.99 * alpha})`);
+
+          ctx.save();
+          ctx.fillStyle = grad;
+          ctx.beginPath();
+          ctx.moveTo(curX, 0);
+          ctx.bezierCurveTo(curX + 90, h * 0.35, curX - 40, h * 0.7, curX + 50, h);
+          ctx.lineTo(w, h);
+          ctx.lineTo(w, 0);
+          ctx.closePath();
+          ctx.fill();
+          ctx.restore();
+        }
       }
 
-      // Leaves blowing off-screen
-      leaves.forEach(leaf => {
-        leaf.update(now * 0.05);
-        leaf.draw(ctx);
+      // 2. Luminous Golden Wind Streamlines
+      ctx.save();
+      ctx.strokeStyle = 'rgba(250, 204, 21, 0.20)';
+      ctx.lineWidth = 1.5;
+      const t = elapsed * 0.003;
+      for (let j = 0; j < 5; j++) {
+        const sy = (h * (j + 1)) / 6 + Math.sin(t + j) * 25;
+        ctx.beginPath();
+        ctx.moveTo(waveX - 350, sy + 50);
+        ctx.bezierCurveTo(waveX - 100, sy - 35, waveX + 100, sy + 25, waveX + 250, sy - 15);
+        ctx.stroke();
+      }
+      ctx.restore();
+
+      // 3. Render all botanical leaves & spores
+      particles.forEach(p => {
+        p.update(elapsed * 0.05);
+        p.draw(ctx);
       });
 
+      // 4. Trigger Scenery Swap exactly at peak veil coverage
+      if (elapsed >= peakTime && !scenerySwapped) {
+        scenerySwapped = true;
+        if (typeof onPeakCallback === 'function') {
+          onPeakCallback();
+        }
+      }
+
       if (progress < 1) {
-        requestAnimationFrame(anim);
+        requestAnimationFrame(render);
       } else {
         ctx.clearRect(0, 0, w, h);
-        if (canvas.parentNode) canvas.parentNode.removeChild(canvas);
+        isTransitioning = false;
+        if (typeof onCompleteCallback === 'function') {
+          onCompleteCallback();
+        }
       }
     }
 
-    requestAnimationFrame(anim);
+    requestAnimationFrame(render);
   }
 
-  // Intercept internal page links
+  // Re-initialize all interactive page modules after DOM swap
+  function reinitInteractiveModules() {
+    if (typeof initLanguageSwitcher === 'function') initLanguageSwitcher();
+    if (typeof initAnimatedCounters === 'function') initAnimatedCounters();
+    if (typeof renderProducts === 'function') renderProducts();
+    if (typeof initCategoryFilters === 'function') initCategoryFilters();
+    if (typeof initContactForm === 'function') initContactForm();
+    if (typeof initMobileMenu === 'function') initMobileMenu();
+    if (typeof initFaqAccordion === 'function') initFaqAccordion();
+    if (typeof applyTranslations === 'function') applyTranslations();
+    if (typeof initInteractiveMicroscope === 'function') initInteractiveMicroscope();
+    if (typeof initFormulationStudio === 'function') initFormulationStudio();
+    if (typeof initParallaxEngine === 'function') initParallaxEngine();
+    if (typeof initBotanicalVineTracker === 'function') initBotanicalVineTracker();
+
+    const yEl = document.getElementById('currentYear');
+    if (yEl) yEl.textContent = new Date().getFullYear();
+
+    // Close mobile drawer if opened
+    const drawer = document.getElementById('sidebarDrawer');
+    const backdrop = document.getElementById('sidebarBackdrop');
+    if (drawer && drawer.classList.contains('translate-x-0')) {
+      drawer.classList.remove('translate-x-0');
+      drawer.classList.add('translate-x-full');
+    }
+    if (backdrop && !backdrop.classList.contains('pointer-events-none')) {
+      backdrop.classList.add('opacity-0', 'pointer-events-none');
+    }
+  }
+
+  // Fluid SPA Fetch Navigation (Zero Lag, 60 FPS)
+  function navigateTo(targetHref, isPopState) {
+    if (isTransitioning) return;
+
+    // Concurrently fetch the new page in background
+    let fetchedData = null;
+    const fetchPromise = fetch(targetHref, { credentials: 'same-origin' })
+      .then(res => {
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        return res.text();
+      })
+      .then(html => {
+        fetchedData = html;
+      })
+      .catch(err => {
+        console.warn('[LeafEngine] Fetch failed, falling back to standard navigation:', err);
+      });
+
+    // Start 60 FPS leaf gust immediately (zero wait time!)
+    executeBotanicalLeafTransition(() => {
+      // Called at PEAK curtain coverage (~460ms)
+      if (fetchedData) {
+        try {
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(fetchedData, 'text/html');
+
+          const newMain = doc.querySelector('main');
+          const currentMain = document.querySelector('main');
+
+          if (newMain && currentMain) {
+            currentMain.innerHTML = newMain.innerHTML;
+
+            // Update title
+            const newTitle = doc.querySelector('title');
+            if (newTitle) document.title = newTitle.textContent;
+
+            // Update URL if not popstate
+            if (!isPopState) {
+              window.history.pushState({ path: targetHref }, '', targetHref);
+            }
+
+            // Reset scroll to top
+            window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+
+            // Re-bind interactive modules
+            reinitInteractiveModules();
+            return;
+          }
+        } catch (e) {
+          console.error('[LeafEngine] DOM swap error:', e);
+        }
+      }
+
+      // Hard fallback if fetch was not ready or error
+      window.location.href = targetHref;
+    });
+  }
+
+  // Intercept all internal navigation clicks
   document.addEventListener('click', (e) => {
     const link = e.target.closest('a');
     if (!link) return;
 
+    // Ignore middle clicks, ctrl/cmd clicks (open in new tab)
+    if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    if (link.target && link.target !== '_self') return;
+
     const href = link.getAttribute('href');
     if (!href) return;
 
-    // Ignore external, tel, mailto, javascript, or pure in-page anchors
-    if (href.startsWith('tel:') || href.startsWith('mailto:') || href.startsWith('javascript:') || href.startsWith('http://') || href.startsWith('https://')) return;
-    if (href.startsWith('#')) return; // handled by in-page smooth scroll
+    // Ignore external, mailto, tel, javascript, or in-page hash anchors
+    if (href.startsWith('http://') || href.startsWith('https://') || href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('javascript:')) return;
+    if (href.startsWith('#')) return; // smooth anchor scroll handled separately
 
     // Target is an internal page (e.g. astaxanthine.html, contact.html, index.html)
     e.preventDefault();
-    launchLeafWindDeparture(href);
+    navigateTo(href, false);
   });
 
-  // On page load or back-forward cache restore
+  // Handle browser Back / Forward buttons
+  window.addEventListener('popstate', (e) => {
+    navigateTo(window.location.pathname + window.location.search, true);
+  });
+
+  // Pre-initialize sprites in background
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', checkLeafWindArrival);
+    document.addEventListener('DOMContentLoaded', initSprites);
   } else {
-    checkLeafWindArrival();
+    initSprites();
   }
-
-  window.addEventListener('pageshow', (e) => {
-    if (e.persisted) {
-      const c = document.getElementById('botanicalLeafWindCanvas');
-      if (c && c.parentNode) c.parentNode.removeChild(c);
-    }
-  });
 })();

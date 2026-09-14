@@ -676,8 +676,20 @@
       </div>
     </section>
 
-    <!-- ══ TRANSITION 1 : Fondu Atmosphérique Soyeux (Services -> Astaxanthine) ══ -->
-    <div class="w-full h-20 sm:h-28 pointer-events-none -mb-px" style="background: linear-gradient(180deg, #ffffff 0%, #fffdfd 35%, #fff8f8 70%, #FFF6F7 100%);"></div>
+        <!-- ══ TRANSITION ONDULANTE LIGNE : ServicesToAstaxanthine ══ -->
+    <div class="relative w-full overflow-hidden leading-none z-20 pointer-events-none -mb-1" style="background-color: #ffffff;">
+      <svg class="block w-full h-14 sm:h-20 lg:h-24" viewBox="0 0 1440 90" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="waveLineGrad_ServicesToAstaxanthine" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#f43f5e" stop-opacity="0.25"/>
+            <stop offset="50%" stop-color="#fb7185" stop-opacity="0.8"/>
+            <stop offset="100%" stop-color="#f43f5e" stop-opacity="0.25"/>
+          </linearGradient>
+        </defs>
+        <path d="M0,38 C180,72 300,10 480,38 C660,68 840,12 1020,40 C1200,68 1320,18 1440,38 L1440,90 L0,90 Z" fill="#FFF6F7"/>
+        <path d="M0,38 C180,72 300,10 480,38 C660,68 840,12 1020,40 C1200,68 1320,18 1440,38" fill="none" stroke="url(#waveLineGrad_ServicesToAstaxanthine)" stroke-width="2"/>
+      </svg>
+    </div>
 
     <!-- ═══════════════════════════════════════════════════
          ASTAXANTHINE AXABIO — Or Rouge
@@ -906,9 +918,19 @@
       </div>
     </section>
 
-    <!-- ══ TRANSITION 2 : Dissolution Atmosphérique Saphir Profonde (Astaxanthine -> Phycocyanine) ══ -->
-    <div class="relative w-full h-36 sm:h-48 overflow-hidden pointer-events-none -mb-px" style="background: linear-gradient(180deg, #FFF6F7 0%, #e2e8f0 18%, #475569 45%, #1e293b 72%, #0a1628 100%);">
-      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_100%,rgba(56,189,248,0.22),transparent_70%)]"></div>
+        <!-- ══ TRANSITION ONDULANTE LIGNE : AstaxanthineToPhyco ══ -->
+    <div class="relative w-full overflow-hidden leading-none z-20 pointer-events-none -mb-1" style="background-color: #FFF6F7;">
+      <svg class="block w-full h-14 sm:h-20 lg:h-24" viewBox="0 0 1440 90" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="waveLineGrad_AstaxanthineToPhyco" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#0284c7" stop-opacity="0.3"/>
+            <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.85"/>
+            <stop offset="100%" stop-color="#0284c7" stop-opacity="0.3"/>
+          </linearGradient>
+        </defs>
+        <path d="M0,38 C180,72 300,10 480,38 C660,68 840,12 1020,40 C1200,68 1320,18 1440,38 L1440,90 L0,90 Z" fill="#0a1628"/>
+        <path d="M0,38 C180,72 300,10 480,38 C660,68 840,12 1020,40 C1200,68 1320,18 1440,38" fill="none" stroke="url(#waveLineGrad_AstaxanthineToPhyco)" stroke-width="2"/>
+      </svg>
     </div>
 
     <!-- ═══════════════════════════════════════════════════
@@ -990,9 +1012,19 @@
       </div>
     </section>
 
-    <!-- ══ TRANSITION 3 : Brume Nocturne & Canopée Végétale (Phycocyanine -> Silicium Bambou) ══ -->
-    <div class="relative w-full h-32 sm:h-44 overflow-hidden pointer-events-none -mb-px" style="background: linear-gradient(180deg, #071220 0%, #081a28 25%, #052313 70%, #052313 100%);">
-      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_0%,rgba(163,230,53,0.15),transparent_70%)]"></div>
+        <!-- ══ TRANSITION ONDULANTE LIGNE : PhycoToSilicium ══ -->
+    <div class="relative w-full overflow-hidden leading-none z-20 pointer-events-none -mb-1" style="background-color: #071220;">
+      <svg class="block w-full h-14 sm:h-20 lg:h-24" viewBox="0 0 1440 90" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="waveLineGrad_PhycoToSilicium" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#84cc16" stop-opacity="0.3"/>
+            <stop offset="50%" stop-color="#a3e635" stop-opacity="0.85"/>
+            <stop offset="100%" stop-color="#10b981" stop-opacity="0.3"/>
+          </linearGradient>
+        </defs>
+        <path d="M0,38 C180,72 300,10 480,38 C660,68 840,12 1020,40 C1200,68 1320,18 1440,38 L1440,90 L0,90 Z" fill="#052313"/>
+        <path d="M0,38 C180,72 300,10 480,38 C660,68 840,12 1020,40 C1200,68 1320,18 1440,38" fill="none" stroke="url(#waveLineGrad_PhycoToSilicium)" stroke-width="2"/>
+      </svg>
     </div>
 
     <!-- ═══════════════════════════════════════════════════
@@ -1217,9 +1249,19 @@
       </div>
     </section>
 
-    <!-- ══ TRANSITION 4 : Brume Botanique & Fondu Doré (Silicium -> BioXtract) ══ -->
-    <div class="relative w-full h-32 sm:h-44 overflow-hidden pointer-events-none -mb-px" style="background: linear-gradient(180deg, #052313 0%, #1c2c1a 35%, #8c734b 75%, #FFF6EE 100%);">
-      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_100%,rgba(245,158,11,0.18),transparent_70%)]"></div>
+        <!-- ══ TRANSITION ONDULANTE LIGNE : SiliciumToBioxtract ══ -->
+    <div class="relative w-full overflow-hidden leading-none z-20 pointer-events-none -mb-1" style="background-color: #052313;">
+      <svg class="block w-full h-14 sm:h-20 lg:h-24" viewBox="0 0 1440 90" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="waveLineGrad_SiliciumToBioxtract" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.3"/>
+            <stop offset="50%" stop-color="#fbbf24" stop-opacity="0.85"/>
+            <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.3"/>
+          </linearGradient>
+        </defs>
+        <path d="M0,38 C180,72 300,10 480,38 C660,68 840,12 1020,40 C1200,68 1320,18 1440,38 L1440,90 L0,90 Z" fill="#FFF6EE"/>
+        <path d="M0,38 C180,72 300,10 480,38 C660,68 840,12 1020,40 C1200,68 1320,18 1440,38" fill="none" stroke="url(#waveLineGrad_SiliciumToBioxtract)" stroke-width="2"/>
+      </svg>
     </div>
 
     <!-- ═══════════════════════════════════════════════════
@@ -1313,9 +1355,19 @@
       </div>
     </section>
 
-    <!-- ══ TRANSITION 5 : Immersion Industrielle Haute Précision (BioXtract -> Galénique France) ══ -->
-    <div class="relative w-full h-36 sm:h-48 overflow-hidden pointer-events-none -mb-px" style="background: linear-gradient(180deg, #FFF6EE 0%, #ebe1d1 20%, #3b5440 55%, #133320 80%, #052313 100%);">
-      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_100%,rgba(163,230,53,0.22),transparent_70%)]"></div>
+        <!-- ══ TRANSITION ONDULANTE LIGNE : BioxtractToGalenic ══ -->
+    <div class="relative w-full overflow-hidden leading-none z-20 pointer-events-none -mb-1" style="background-color: #FFF6EE;">
+      <svg class="block w-full h-14 sm:h-20 lg:h-24" viewBox="0 0 1440 90" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="waveLineGrad_BioxtractToGalenic" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#84cc16" stop-opacity="0.3"/>
+            <stop offset="50%" stop-color="#bef264" stop-opacity="0.85"/>
+            <stop offset="100%" stop-color="#84cc16" stop-opacity="0.3"/>
+          </linearGradient>
+        </defs>
+        <path d="M0,38 C180,72 300,10 480,38 C660,68 840,12 1020,40 C1200,68 1320,18 1440,38 L1440,90 L0,90 Z" fill="#052313"/>
+        <path d="M0,38 C180,72 300,10 480,38 C660,68 840,12 1020,40 C1200,68 1320,18 1440,38" fill="none" stroke="url(#waveLineGrad_BioxtractToGalenic)" stroke-width="2"/>
+      </svg>
     </div>
 
     <!-- ═══════════════════════════════════════════════════
@@ -1394,8 +1446,20 @@
       </div>
     </section>
 
-    <!-- ══ TRANSITION 6 : Clarté Institutionnelle (Galénique -> Direction & Équipe) ══ -->
-    <div class="relative w-full h-28 sm:h-36 overflow-hidden pointer-events-none -mb-px" style="background: linear-gradient(180deg, #052313 0%, #163622 30%, #a4b3a8 75%, #FAF7F2 100%);"></div>
+        <!-- ══ TRANSITION ONDULANTE LIGNE : GalenicToLeadership ══ -->
+    <div class="relative w-full overflow-hidden leading-none z-20 pointer-events-none -mb-1" style="background-color: #052313;">
+      <svg class="block w-full h-14 sm:h-20 lg:h-24" viewBox="0 0 1440 90" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="waveLineGrad_GalenicToLeadership" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#a3e635" stop-opacity="0.2"/>
+            <stop offset="50%" stop-color="#a3e635" stop-opacity="0.65"/>
+            <stop offset="100%" stop-color="#a3e635" stop-opacity="0.2"/>
+          </linearGradient>
+        </defs>
+        <path d="M0,38 C180,72 300,10 480,38 C660,68 840,12 1020,40 C1200,68 1320,18 1440,38 L1440,90 L0,90 Z" fill="#FAF7F2"/>
+        <path d="M0,38 C180,72 300,10 480,38 C660,68 840,12 1020,40 C1200,68 1320,18 1440,38" fill="none" stroke="url(#waveLineGrad_GalenicToLeadership)" stroke-width="2"/>
+      </svg>
+    </div>
 
     <!-- ═══════════════════════════════════════════════════
          DIRECTION & ÉQUIPE — PHOTO CLEAN SANS BADGE FLOTTANT
@@ -1451,10 +1515,25 @@
       </div>
     </section>
 
+        <!-- ══ TRANSITION ONDULANTE LIGNE : LeadershipToFaq ══ -->
+    <div class="relative w-full overflow-hidden leading-none z-20 pointer-events-none -mb-1" style="background-color: #FAF7F2;">
+      <svg class="block w-full h-14 sm:h-20 lg:h-24" viewBox="0 0 1440 90" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="waveLineGrad_LeadershipToFaq" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#cbd5e1" stop-opacity="0.4"/>
+            <stop offset="50%" stop-color="#94a3b8" stop-opacity="0.75"/>
+            <stop offset="100%" stop-color="#cbd5e1" stop-opacity="0.4"/>
+          </linearGradient>
+        </defs>
+        <path d="M0,38 C180,72 300,10 480,38 C660,68 840,12 1020,40 C1200,68 1320,18 1440,38 L1440,90 L0,90 Z" fill="#ffffff"/>
+        <path d="M0,38 C180,72 300,10 480,38 C660,68 840,12 1020,40 C1200,68 1320,18 1440,38" fill="none" stroke="url(#waveLineGrad_LeadershipToFaq)" stroke-width="2"/>
+      </svg>
+    </div>
+
     <!-- ═══════════════════════════════════════════════════
          F.A.Q. B2B — OPTIMISATION SEO MAJEURE & RÉASSURANCE
     ═══════════════════════════════════════════════════ -->
-    <section id="faq" class="py-24 bg-white border-t border-slate-200">
+    <section id="faq" class="pt-16 pb-24 bg-white">
       <div class="max-w-4xl mx-auto px-6 lg:px-8">
 
         <div class="text-center mb-16 reveal">
@@ -1509,10 +1588,25 @@
     </section>
 
 
+        <!-- ══ TRANSITION ONDULANTE LIGNE : FaqToLocation ══ -->
+    <div class="relative w-full overflow-hidden leading-none z-20 pointer-events-none -mb-1" style="background-color: #ffffff;">
+      <svg class="block w-full h-14 sm:h-20 lg:h-24" viewBox="0 0 1440 90" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="waveLineGrad_FaqToLocation" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#84cc16" stop-opacity="0.3"/>
+            <stop offset="50%" stop-color="#bef264" stop-opacity="0.85"/>
+            <stop offset="100%" stop-color="#84cc16" stop-opacity="0.3"/>
+          </linearGradient>
+        </defs>
+        <path d="M0,38 C180,72 300,10 480,38 C660,68 840,12 1020,40 C1200,68 1320,18 1440,38 L1440,90 L0,90 Z" fill="#052313"/>
+        <path d="M0,38 C180,72 300,10 480,38 C660,68 840,12 1020,40 C1200,68 1320,18 1440,38" fill="none" stroke="url(#waveLineGrad_FaqToLocation)" stroke-width="2"/>
+      </svg>
+    </div>
+
     <!-- ═══════════════════════════════════════════════════
          HUB LOGISTIQUE LASNE (BELGIQUE)
     ═══════════════════════════════════════════════════ -->
-    <section id="location" class="py-28 bg-forest-950 text-white">
+    <section id="location" class="pt-16 pb-28 bg-forest-950 text-white">
       <div class="max-w-7xl mx-auto px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 items-start">
 
@@ -1600,10 +1694,25 @@
     </section>
 
 
+        <!-- ══ TRANSITION ONDULANTE LIGNE : LocationToContact ══ -->
+    <div class="relative w-full overflow-hidden leading-none z-20 pointer-events-none -mb-1" style="background-color: #052313;">
+      <svg class="block w-full h-14 sm:h-20 lg:h-24" viewBox="0 0 1440 90" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="waveLineGrad_LocationToContact" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#a3e635" stop-opacity="0.2"/>
+            <stop offset="50%" stop-color="#bef264" stop-opacity="0.6"/>
+            <stop offset="100%" stop-color="#a3e635" stop-opacity="0.2"/>
+          </linearGradient>
+        </defs>
+        <path d="M0,38 C180,72 300,10 480,38 C660,68 840,12 1020,40 C1200,68 1320,18 1440,38 L1440,90 L0,90 Z" fill="#FAF7F2"/>
+        <path d="M0,38 C180,72 300,10 480,38 C660,68 840,12 1020,40 C1200,68 1320,18 1440,38" fill="none" stroke="url(#waveLineGrad_LocationToContact)" stroke-width="2"/>
+      </svg>
+    </div>
+
     <!-- ═══════════════════════════════════════════════════
          CONTACT & DEMANDE D'ÉCHANTILLONS B2B
     ═══════════════════════════════════════════════════ -->
-    <section id="contact" class="py-28 bg-cream-dark">
+    <section id="contact" class="pt-16 pb-28 bg-cream">
       <div class="max-w-4xl mx-auto px-6 lg:px-8 reveal-scale">
         <div class="bg-white rounded-3xl overflow-hidden shadow-2xl border border-slate-200">
 
@@ -1755,8 +1864,8 @@
 
 
   <!-- Scripts -->
-  <script src="assets/js/translations.js?v=20260914-14"></script>
-  <script src="assets/js/app.js?v=20260914-14"></script>
+  <script src="assets/js/translations.js?v=20260914-16"></script>
+  <script src="assets/js/app.js?v=20260914-16"></script>
   <script>
     // Year
     document.getElementById('currentYear').textContent = new Date().getFullYear();
