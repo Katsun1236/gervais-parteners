@@ -108,7 +108,7 @@
     @keyframes float { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(-8px)} }
     .scroll-indicator { position:absolute; bottom:32px; left:50%; transform:translateX(-50%); display:flex; flex-direction:column; align-items:center; gap:8px; color:rgba(255,255,255,0.45); font-size:10px; letter-spacing:.1em; text-transform:uppercase; z-index:10; animation:float 3s ease-in-out infinite; }
     .scroll-line { width:1px; height:40px; background:linear-gradient(180deg,rgba(255,255,255,0.4),transparent); }
-    .hero-bg-img { background-size:cover; background-position:right center; background-repeat:no-repeat; }
+    .hero-bg-img { background-size:cover; background-position:left center; background-repeat:no-repeat; }
     #tdsModal.hidden { display:none !important; }
     #confirmationModal.hidden { display:none !important; }
     .map-container { background:radial-gradient(circle at 50%,#15202e,#060b13); border-radius:16px; overflow:hidden; }
@@ -507,10 +507,11 @@
     ═══════════════════════════════════════════════════ -->
     <section id="home" class="relative min-h-screen flex items-center overflow-hidden bg-forest-950">
       <!-- Background photo: 100% natural, no filter, centered right -->
-      <div class="absolute inset-0 hero-bg-img bg-cover bg-right" style="background-image:url('assets/images/nature-botanical-dew.webp?v=20260914-07'); background-position:right center;" role="img" aria-label="Cultures botaniques et champ de plantes médicinales sous le soleil levant européen"></div>
+      <div class="absolute inset-0 hero-bg-img bg-cover bg-left" style="background-image:url('assets/images/nature-botanical-dew.webp?v=20260914-07'); background-position:left center;" role="img" aria-label="Cultures botaniques et champ de plantes médicinales sous le soleil levant européen"></div>
 
-      <!-- Content -->
-      <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-36 w-full">
+      <!-- Content (Framed on the right of the image) -->
+      <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-36 w-full flex justify-start md:justify-end">
+        <div class="max-w-2xl text-left">
 
         <!-- Unique H1 for SEO: Focus on Astaxanthin -->
         <h1 class="display text-4xl sm:text-6xl lg:text-7xl font-light text-white tracking-tight leading-[1.08] mb-6 max-w-3xl" style="text-shadow: 0 2px 14px rgba(0,0,0,0.85), 0 1px 4px rgba(0,0,0,0.95);" data-i18n="hero.title">
@@ -532,6 +533,7 @@
             <svg class="w-4 h-4 text-limegold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
             <span>Demander un Échantillon R&amp;D</span>
           </a>
+        </div>
         </div>
       </div>
 
@@ -752,7 +754,7 @@
 
         <!-- 4 Matières premières -->
         <div class="reveal">
-          <h3 class="text-xs font-bold uppercase tracking-widest text-slate-500 mb-6 flex items-center gap-3">
+          <h3 class="text-xs font-bold uppercase tracking-widest text-white mb-6 flex items-center gap-3" style="text-shadow: 0 1px 6px rgba(0,0,0,0.85);">
             <span class="w-4 h-px bg-rose-400"></span>
             <span data-i18n="astaxanthinSection.rawTitle">4 Matières Premières en Vrac (Bulk)</span>
           </h3>
@@ -829,7 +831,7 @@
 
         <!-- 4 Produits finis -->
         <div class="mt-16 reveal">
-          <h3 class="text-xs font-bold uppercase tracking-widest text-slate-500 mb-6 flex items-center gap-3">
+          <h3 class="text-xs font-bold uppercase tracking-widest text-white mb-6 flex items-center gap-3" style="text-shadow: 0 1px 6px rgba(0,0,0,0.85);">
             <span class="w-4 h-px bg-rose-400"></span>
             <span data-i18n="astaxanthinSection.finishedTitle">4 Produits Finis Prêts à Commercialiser (Marque Blanche)</span>
           </h3>
@@ -962,7 +964,9 @@
     <!-- ═══════════════════════════════════════════════════
          SILICIUM VÉGÉTAL BREVETÉ EYTELIA — Or Minéral Végétal
     ═══════════════════════════════════════════════════ -->
-    <section id="silicium-showcase" class="py-28 border-t border-slate-200/80 relative overflow-hidden" style="background-color: #FAFAF7; background-image: url('assets/images/pattern-bamboo-silicium.svg'); background-repeat: repeat;">
+    <section id="silicium-showcase" class="py-28 border-t border-slate-200/80 relative overflow-hidden bg-cover bg-center" style="background-image: url('assets/images/bamboo-forest.webp');">
+      <!-- Translucent luxury emerald overlay -->
+      <div class="absolute inset-0 bg-forest-950/45 backdrop-blur-[1px]"></div>
       <!-- Subtle Decorative Background Glow -->
       <div class="absolute -top-32 -left-32 w-96 h-96 bg-limegold-300/15 rounded-full blur-3xl pointer-events-none"></div>
       <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-forest-200/20 rounded-full blur-3xl pointer-events-none"></div>
@@ -981,10 +985,10 @@
             <span class="w-2 h-2 rounded-full bg-limegold-500 animate-pulse"></span>
             <span data-i18n="siliciumSection.tag">Innovation Brevetée Eytelia · 100% Végétal &amp; Biologique</span>
           </div>
-          <h2 class="display text-5xl lg:text-6xl font-semibold text-slate-900 mx-auto max-w-3xl leading-tight" data-i18n="siliciumSection.title">
+          <h2 class="display text-5xl lg:text-6xl font-semibold text-white mx-auto max-w-3xl leading-tight" style="text-shadow: 0 2px 14px rgba(0,0,0,0.85);" data-i18n="siliciumSection.title">
             Silicium Végétal Breveté : <em class="text-limegold-600 not-italic">Le Premier Silicium Solide</em> Hautement Soluble
           </h2>
-          <p class="text-slate-600 text-base leading-relaxed mt-4 max-w-2xl mx-auto" data-i18n="siliciumSection.subtitle">
+          <p class="text-white/95 text-base leading-relaxed mt-4 max-w-2xl mx-auto font-light" style="text-shadow: 0 1px 8px rgba(0,0,0,0.85);" data-i18n="siliciumSection.subtitle">
             Breveté par EYTELIA SILICIUM · Silice de bambou hautement soluble qui stimule la production naturelle de collagène. Ingrédient breveté et exclusif pour beautyceuticals, nutraceutiques et régénération cellulaire.
           </p>
         </div>
@@ -1075,7 +1079,7 @@
 
         <!-- 3 Silicium Products Cards -->
         <div class="reveal">
-          <h3 class="text-xs font-bold uppercase tracking-widest text-slate-500 mb-6 flex items-center gap-3">
+          <h3 class="text-xs font-bold uppercase tracking-widest text-white mb-6 flex items-center gap-3" style="text-shadow: 0 1px 6px rgba(0,0,0,0.85);">
             <span class="w-4 h-px bg-forest-600"></span>
             <span>Les 3 Ingrédients Officiels de la Gamme Silicium Eytelia</span>
           </h3>

@@ -10,6 +10,7 @@
 
 const translations = {
   fr: {
+    backBtn: "Retour en arrière",
     // Navigation
     nav: {
       home: "Accueil",
@@ -669,6 +670,7 @@ const translations = {
   },
 
   en: {
+    backBtn: "Go Back",
     // Navigation
     nav: {
       home: "Home",
