@@ -990,3 +990,31 @@ function initMobileMenu() {
     });
   });
 }
+
+// Lateral Drawer Menu Controller
+function toggleSidebarMenu(open) {
+  const drawer = document.getElementById('sidebarDrawer');
+  const backdrop = document.getElementById('sidebarBackdrop');
+  if (!drawer || !backdrop) return;
+
+  if (open) {
+    backdrop.classList.remove('opacity-0', 'pointer-events-none');
+    backdrop.classList.add('opacity-100', 'pointer-events-auto');
+    drawer.classList.remove('translate-x-full');
+    drawer.classList.add('translate-x-0');
+    document.body.style.overflow = 'hidden';
+  } else {
+    backdrop.classList.add('opacity-0', 'pointer-events-none');
+    backdrop.classList.remove('opacity-100', 'pointer-events-auto');
+    drawer.classList.add('translate-x-full');
+    drawer.classList.remove('translate-x-0');
+    document.body.style.overflow = '';
+  }
+}
+
+// Close drawer on Escape key
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    toggleSidebarMenu(false);
+  }
+});

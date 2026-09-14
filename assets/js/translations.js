@@ -88,6 +88,27 @@ const translations = {
       event1_desc: "Retrouvez Christian et l'équipe de direction pour découvrir en avant-première nos innovations : Astaxanthine Axabio, Phycocyanine X-ION >51%, Silicium Végétal Eytelia et Gamme Clinique BioXtract®.",
       event1_cta: "Réserver un Échange sur le Salon"
     },
+        drawer: {
+      title: "Menu",
+      catActives: "Portefeuille Ingrédients Purs",
+      p1: "Astaxanthine Naturelle Axabio (6000×)",
+      p2: "Phycocyanine X-ION (>51% Pureté)",
+      p3: "Silicium Végétal Eytelia (Bloosil, Steosil)",
+      p4: "Gamme Clinique BioXtract® (Curcumine)",
+      viewCatalog: "Consulter le Catalogue Complet & Fiches TDS →",
+      catServices: "Expertise Industrielle",
+      about: "Présentation Gervais Partners (Depuis 2009)",
+      quality: "Standards Qualité & Pharmacopée Européenne",
+      galenic: "Façonnage Galénique France (BPF/GMP)",
+      leadership: "Direction & Gouvernance",
+      faq: "Foire Aux Questions B2B",
+      catContact: "Siège & Accès Direct",
+      address: "Rue de la Gendarmerie 4, 1380 Lasne (Belgique)",
+      phone: "+32 472 75 22 96",
+      mapsLink: "Voir sur Google Maps ↗",
+      requestSampleBtn: "Demander un Échantillon R&D"
+    },
+
     // Hero Section
     hero: {
       badge: "Ingrédients Botaniques d'Excellence · 100% Éco-Extraction · B2B Europe",
@@ -726,6 +747,27 @@ const translations = {
       event1_desc: "Connect with Christian and our executive leadership to explore our latest botanical breakthroughs: Axabio Astaxanthin, X-ION Phycocyanin >51%, Eytelia Plant Silicon, and the Clinical BioXtract® Range.",
       event1_cta: "Schedule a Meeting at the Event"
     },
+        drawer: {
+      title: "Menu",
+      catActives: "Pure Botanical Ingredients",
+      p1: "Axabio Natural Astaxanthin (6000×)",
+      p2: "X-ION Phycocyanin (>51% Purity)",
+      p3: "Eytelia Plant Silicon (Bloosil, Steosil)",
+      p4: "BioXtract® Clinical Range (Curcumin)",
+      viewCatalog: "Browse Full Catalog & TDS →",
+      catServices: "Industrial Capabilities",
+      about: "About Gervais Partners (Since 2009)",
+      quality: "EU Pharmacopoeia & Quality Assays",
+      galenic: "Galenic Turn-key Manufacturing (France GMP)",
+      leadership: "Executive Leadership & Direction",
+      faq: "B2B Frequently Asked Questions",
+      catContact: "Headquarters & Direct Access",
+      address: "Rue de la Gendarmerie 4, 1380 Lasne (Belgium)",
+      phone: "+32 472 75 22 96",
+      mapsLink: "View on Google Maps ↗",
+      requestSampleBtn: "Request an R&D Sample"
+    },
+
     // Hero Section
     hero: {
       badge: "Pure Botanical Actives · 100% Eco-Extraction · B2B Europe",
