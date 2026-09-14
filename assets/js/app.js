@@ -653,7 +653,7 @@ function openTdsModal(productId) {
 
     <!-- Product Image & Quick Highlight -->
     <div class="my-4 p-4 bg-slate-50 rounded-2xl border border-slate-200 flex flex-col md:flex-row items-center gap-4">
-      <img src="${prod.image}" alt="${prod.name}" class="w-24 h-24 rounded-xl object-cover border border-slate-200 shadow-sm shrink-0">
+      <img src="${prod.image}" alt="${prod.name}" class="w-24 h-24 rounded-xl object-contain bg-white p-1 border border-slate-200 shadow-sm shrink-0">
       <div>
         <h4 class="text-sm font-bold text-slate-900 mb-1">Standardisation & Titrage Actif :</h4>
         <p class="text-sm text-emerald-800 font-bold mb-1">${tds.assay}</p>
