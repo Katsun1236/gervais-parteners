@@ -549,39 +549,30 @@
         </div>
       </div>
 
-      <!-- Scroll indicator -->
-      <div class="scroll-indicator">
-        <div class="scroll-line"></div>
-        <span>Découvrir</span>
-      </div>
-    </section>
-
-
-    <!-- ═══════════════════════════════════════════════════
-         NORMES RÉGLEMENTAIRES EUROPÉENNES (EXPLICITEMENT DEMANDÉ PAR LE CLIENT)
-    ═══════════════════════════════════════════════════ -->
-    <section class="py-6 bg-[#faf7f2] border-b border-slate-200/80" aria-label="Normes Réglementaires Européennes">
-      <div class="max-w-2xl mx-auto px-6">
-        <!-- Bandeau de Certification : Les 4 Sigles Officiels (Icônes Uniquement) -->
-        <div class="bg-white rounded-2xl py-3.5 px-6 sm:px-10 border border-slate-200/90 shadow-sm flex items-center justify-between gap-4 sm:gap-6">
+      <!-- Capsule Sigles Réglementaires Européens (Directement sur l'image du Hero) -->
+      <div class="absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 z-20 w-full max-w-xl px-4">
+        <div class="bg-white/85 backdrop-blur-md rounded-2xl py-3 px-6 sm:px-10 border border-white/50 shadow-2xl flex items-center justify-between gap-4 sm:gap-6">
           <div class="flex items-center justify-center flex-1" title="Pharmacopée Ph. Eur.">
-            <img src="assets/images/icons/shield-quality.png" alt="Pharmacopée Ph. Eur." class="w-10 h-10 sm:w-12 sm:h-12 object-contain hover:scale-110 transition-transform">
+            <img src="assets/images/icons/shield-quality.png" alt="Pharmacopée Ph. Eur." class="w-9 h-9 sm:w-11 sm:h-11 object-contain hover:scale-110 transition-transform">
           </div>
-          <div class="w-px h-7 bg-slate-200"></div>
+          <div class="w-px h-6 bg-slate-300/70"></div>
           <div class="flex items-center justify-center flex-1" title="Règlement n° 396/2005">
-            <img src="assets/images/icons/european-excellence.png" alt="Règlement n° 396/2005" class="w-10 h-10 sm:w-12 sm:h-12 object-contain hover:scale-110 transition-transform">
+            <img src="assets/images/icons/european-excellence.png" alt="Règlement n° 396/2005" class="w-9 h-9 sm:w-11 sm:h-11 object-contain hover:scale-110 transition-transform">
           </div>
-          <div class="w-px h-7 bg-slate-200"></div>
+          <div class="w-px h-6 bg-slate-300/70"></div>
           <div class="flex items-center justify-center flex-1" title="100% Sans OGM">
-            <img src="assets/images/icons/botanical-solutions.png" alt="100% Sans OGM" class="w-10 h-10 sm:w-12 sm:h-12 object-contain hover:scale-110 transition-transform">
+            <img src="assets/images/icons/botanical-solutions.png" alt="100% Sans OGM" class="w-9 h-9 sm:w-11 sm:h-11 object-contain hover:scale-110 transition-transform">
           </div>
-          <div class="w-px h-7 bg-slate-200"></div>
+          <div class="w-px h-6 bg-slate-300/70"></div>
           <div class="flex items-center justify-center flex-1" title="CoA Systématique">
-            <img src="assets/images/icons/reliable-supply.png" alt="CoA Systématique" class="w-10 h-10 sm:w-12 sm:h-12 object-contain hover:scale-110 transition-transform">
+            <img src="assets/images/icons/reliable-supply.png" alt="CoA Systématique" class="w-9 h-9 sm:w-11 sm:h-11 object-contain hover:scale-110 transition-transform">
           </div>
         </div>
       </div>
     </section>
+
+
+
 
     <!-- ═══════════════════════════════════════════════════
          PRÉSENTATION OFFICIELLE DE L'ENTREPRISE (DEPUIS 2009)
@@ -932,11 +923,9 @@
             </div>
 
             <div class="flex flex-wrap gap-3">
-              <button onclick="openTdsModal('phycocyanine-xion')" class="inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-400 text-white font-bold text-sm px-6 py-3 rounded-full transition shadow-lg">
-                Fiche Technique Phycocyanine
-              </button>
-              <button onclick="requestProductSample('phycocyanine-xion')" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/25 text-white font-semibold text-sm px-6 py-3 rounded-full transition">
-                Demander un Échantillon
+              <button onclick="requestProductSample('phycocyanine-xion')" class="inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-400 text-white font-bold text-sm px-7 py-3.5 rounded-full transition shadow-lg">
+                <span>Demander un Échantillon R&D</span>
+                <svg class="w-4 h-4 text-sky-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
               </button>
             </div>
           </div>
@@ -1636,12 +1625,12 @@
         <div>
           <h3 class="text-white font-bold text-xs uppercase tracking-widest mb-5" data-i18n="footer.col1_title">Ingrédients Clés</h3>
           <ul class="space-y-2.5 text-xs">
-            <li><a href="#astaxanthin-showcase" onclick="openTdsModal('astaxanthin-axabio')" class="hover:text-white transition">Astaxanthine Axabio 6000×</a></li>
-            <li><a href="#phycocyanin-showcase" onclick="openTdsModal('phycocyanine-xion')" class="hover:text-white transition">Phycocyanine X-ION (&gt;51%)</a></li>
-            <li><a href="#bioxtract-showcase" onclick="openTdsModal('arantal-clear')" class="hover:text-white transition">ARANTAL Clear® Articulations</a></li>
-            <li><a href="#bioxtract-showcase" onclick="openTdsModal('nasaler-allergy')" class="hover:text-white transition">NASALER® Rhinite</a></li>
-            <li><a href="#bioxtract-showcase" onclick="openTdsModal('rifencin-gut')" class="hover:text-white transition">RIFENCIN® Intestin Irritable</a></li>
-            <li><a href="#bioxtract-showcase" onclick="openTdsModal('cognityl-mental')" class="hover:text-white transition">COGNITYL® Focus Mental</a></li>
+            <li><a href="#astaxanthin-showcase" class="hover:text-white transition">Astaxanthine Axabio 6000×</a></li>
+            <li><a href="#phycocyanin-showcase" class="hover:text-white transition">Phycocyanine X-ION (&gt;51%)</a></li>
+            <li><a href="#bioxtract-showcase" class="hover:text-white transition">ARANTAL Clear® Articulations</a></li>
+            <li><a href="#bioxtract-showcase" class="hover:text-white transition">NASALER® Rhinite</a></li>
+            <li><a href="#bioxtract-showcase" class="hover:text-white transition">RIFENCIN® Intestin Irritable</a></li>
+            <li><a href="#bioxtract-showcase" class="hover:text-white transition">COGNITYL® Focus Mental</a></li>
           </ul>
         </div>
         <div>
