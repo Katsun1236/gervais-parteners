@@ -322,7 +322,7 @@
             "name": "Quels documents réglementaires et qualité accompagnent chaque livraison ?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Chaque lot est accompagné d'un Certificat d'Analyse (CoA) officiel comprenant : identification chromatographique (HPLC/UV), teneur en principe actif titré, screening des métaux lourds (Pb, Cd, Hg, As), recherche multi-résidus de pesticides conforme CE 396/2005, contrôle microbiologique conforme Pharmacopée Européenne et attestation 100% sans OGM."
+              "text": "Chaque lot est accompagné d'un Certificat d'Analyse (CoA) officiel comprenant : identification chromatographique (HPLC/UV), teneur en principe actif titré, screening des métaux lourds (Pb, Cd, Hg, As), recherche multi-résidus de pesticides conforme règlement n° 396/2005, contrôle microbiologique conforme Pharmacopée Européenne et attestation 100% sans OGM."
             }
           },
           {
@@ -359,12 +359,17 @@
         <img src="assets/images/logo-gervais.svg" alt="Gervais Partners - Ingrédients Botaniques B2B" class="h-11 sm:h-12 w-auto object-contain hover:opacity-90 transition">
       </a>
 
-      <!-- Clean Airy Desktop Navigation (Essential shortcuts) -->
-      <nav class="hidden lg:flex items-center gap-8" aria-label="Navigation Principale">
-        <a href="#products" class="text-sm font-semibold text-slate-700 hover:text-forest-900 transition flex items-center gap-1.5" data-i18n="nav.products">Catalogue &amp; TDS</a>
-        <a href="#galenic" class="text-sm font-semibold text-slate-700 hover:text-forest-900 transition flex items-center gap-1.5" data-i18n="nav.galenic">Façonnage Galénique</a>
-        <a href="#services" class="text-sm font-semibold text-slate-700 hover:text-forest-900 transition flex items-center gap-1.5" data-i18n="nav.services">Qualité &amp; BPF</a>
-        <a href="#contact" class="text-sm font-semibold text-slate-700 hover:text-forest-900 transition flex items-center gap-1.5" data-i18n="nav.contact">Contact &amp; Devis</a>
+      <!-- Clean Airy Desktop Navigation (Chaque bouton renvoie vers sa propre page) -->
+      <nav class="hidden lg:flex items-center gap-5 xl:gap-7" aria-label="Navigation Principale">
+        <a href="astaxanthine.html" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-limegold-400/20 text-forest-950 border border-limegold-500/40 font-bold text-xs shadow-sm hover:bg-limegold-400 transition" data-i18n="nav.astaxanthin">
+          <span class="w-1.5 h-1.5 rounded-full bg-rose-600 animate-pulse"></span>
+          <span>Astaxanthine Axabio 6000×</span>
+        </a>
+        <a href="silicium-vegetal.html" class="text-xs xl:text-sm font-semibold text-slate-700 hover:text-forest-900 transition" data-i18n="nav.silicium">Silicium Eytelia</a>
+        <a href="bioxtract.html" class="text-xs xl:text-sm font-semibold text-slate-700 hover:text-forest-900 transition" data-i18n="nav.bioxtract">Gamme BioXtract®</a>
+        <a href="faconnage-galenique.html" class="text-xs xl:text-sm font-semibold text-slate-700 hover:text-forest-900 transition" data-i18n="nav.galenic">Façonnage Galénique</a>
+        <a href="a-propos.html" class="text-xs xl:text-sm font-semibold text-slate-700 hover:text-forest-900 transition" data-i18n="nav.about">L'Entreprise</a>
+        <a href="contact.html" class="text-xs xl:text-sm font-semibold text-slate-700 hover:text-forest-900 transition" data-i18n="nav.contact">Contact</a>
       </nav>
 
       <!-- Right Controls: Lang + CTA + Lateral Menu Toggle Button -->
@@ -413,73 +418,53 @@
     <!-- Drawer Navigation Links by Category -->
     <div class="p-6 space-y-8 flex-1">
       
-      <!-- Section 1: Ingrédients Actifs -->
+      <!-- Section 1: Pages Dédiées Ingrédients -->
       <div>
-        <span class="text-[11px] font-bold uppercase tracking-widest text-limegold-400 block mb-3" data-i18n="drawer.catActives">Portefeuille Ingrédients Purs</span>
-        <ul class="space-y-1.5 text-sm">
+        <span class="text-[11px] font-bold uppercase tracking-widest text-limegold-400 block mb-3" data-i18n="drawer.catActives">Pages Ingrédients Clés</span>
+        <ul class="space-y-2 text-sm">
           <li>
-            <a href="#astaxanthin-showcase" onclick="toggleSidebarMenu(false)" class="flex items-center justify-between p-2.5 rounded-xl hover:bg-white/5 transition text-white/90 hover:text-limegold-300 group">
-              <span class="font-medium" data-i18n="drawer.p1">Astaxanthine Naturelle Axabio (6000×)</span>
-              <span class="text-xs text-white/40 group-hover:text-limegold-400 group-hover:translate-x-1 transition-all">→</span>
+            <a href="astaxanthine.html" class="flex items-center justify-between p-3 rounded-xl bg-limegold-400/20 border border-limegold-400/50 text-white font-bold hover:bg-limegold-400 hover:text-forest-950 transition group">
+              <span class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-rose-500 animate-pulse"></span>
+                <span>Astaxanthine Axabio 6000× (Vedette)</span>
+              </span>
+              <span class="text-xs font-bold group-hover:translate-x-1 transition-all">→</span>
             </a>
           </li>
           <li>
-            <a href="#phycocyanin-showcase" onclick="toggleSidebarMenu(false)" class="flex items-center justify-between p-2.5 rounded-xl hover:bg-white/5 transition text-white/90 hover:text-limegold-300 group">
-              <span class="font-medium" data-i18n="drawer.p2">Phycocyanine X-ION (>51% Pureté)</span>
-              <span class="text-xs text-white/40 group-hover:text-limegold-400 group-hover:translate-x-1 transition-all">→</span>
-            </a>
-          </li>
-          <li>
-            <a href="#silicium-showcase" onclick="toggleSidebarMenu(false)" class="flex items-center justify-between p-2.5 rounded-xl hover:bg-white/5 transition text-white/90 hover:text-limegold-300 group">
+            <a href="silicium-vegetal.html" class="flex items-center justify-between p-2.5 rounded-xl hover:bg-white/5 transition text-white/90 hover:text-limegold-300 group">
               <span class="font-medium" data-i18n="drawer.p3">Silicium Végétal Eytelia (Bloosil, Steosil)</span>
               <span class="text-xs text-white/40 group-hover:text-limegold-400 group-hover:translate-x-1 transition-all">→</span>
             </a>
           </li>
           <li>
-            <a href="#bioxtract-showcase" onclick="toggleSidebarMenu(false)" class="flex items-center justify-between p-2.5 rounded-xl hover:bg-white/5 transition text-white/90 hover:text-limegold-300 group">
+            <a href="bioxtract.html" class="flex items-center justify-between p-2.5 rounded-xl hover:bg-white/5 transition text-white/90 hover:text-limegold-300 group">
               <span class="font-medium" data-i18n="drawer.p4">Gamme Clinique BioXtract® (Curcumine)</span>
               <span class="text-xs text-white/40 group-hover:text-limegold-400 group-hover:translate-x-1 transition-all">→</span>
             </a>
           </li>
-          <li class="pt-1">
-            <a href="#products" onclick="toggleSidebarMenu(false)" class="flex items-center gap-2 p-2.5 text-xs text-limegold-400 font-bold hover:underline" data-i18n="drawer.viewCatalog">
-              <span>Consulter le Catalogue Complet &amp; Fiches TDS →</span>
+          <li>
+            <a href="faconnage-galenique.html" class="flex items-center justify-between p-2.5 rounded-xl hover:bg-white/5 transition text-white/90 hover:text-limegold-300 group">
+              <span class="font-medium" data-i18n="drawer.galenic">Façonnage Galénique France (BPF/GMP)</span>
+              <span class="text-xs text-white/40 group-hover:text-limegold-400 group-hover:translate-x-1 transition-all">→</span>
             </a>
           </li>
         </ul>
       </div>
 
-      <!-- Section 2: Services & Façonnage -->
+      <!-- Section 2: Société & Contact -->
       <div>
-        <span class="text-[11px] font-bold uppercase tracking-widest text-limegold-400 block mb-3" data-i18n="drawer.catServices">Expertise Industrielle</span>
+        <span class="text-[11px] font-bold uppercase tracking-widest text-limegold-400 block mb-3" data-i18n="drawer.catServices">Entreprise &amp; Contact</span>
         <ul class="space-y-1.5 text-sm">
           <li>
-            <a href="#about" onclick="toggleSidebarMenu(false)" class="flex items-center justify-between p-2.5 rounded-xl hover:bg-white/5 transition text-white/90 hover:text-limegold-300 group">
-              <span class="font-medium" data-i18n="drawer.about">Présentation Gervais Partners (Depuis 2009)</span>
+            <a href="a-propos.html" class="flex items-center justify-between p-2.5 rounded-xl hover:bg-white/5 transition text-white/90 hover:text-limegold-300 group">
+              <span class="font-medium" data-i18n="drawer.about">Présentation Gervais Partners &amp; Hub Lasne</span>
               <span class="text-xs text-white/40 group-hover:text-limegold-400 group-hover:translate-x-1 transition-all">→</span>
             </a>
           </li>
           <li>
-            <a href="#services" onclick="toggleSidebarMenu(false)" class="flex items-center justify-between p-2.5 rounded-xl hover:bg-white/5 transition text-white/90 hover:text-limegold-300 group">
-              <span class="font-medium" data-i18n="drawer.quality">Standards Qualité &amp; Pharmacopée Européenne</span>
-              <span class="text-xs text-white/40 group-hover:text-limegold-400 group-hover:translate-x-1 transition-all">→</span>
-            </a>
-          </li>
-          <li>
-            <a href="#galenic" onclick="toggleSidebarMenu(false)" class="flex items-center justify-between p-2.5 rounded-xl hover:bg-white/5 transition text-white/90 hover:text-limegold-300 group">
-              <span class="font-medium" data-i18n="drawer.galenic">Façonnage Galénique France (BPF/GMP)</span>
-              <span class="text-xs text-white/40 group-hover:text-limegold-400 group-hover:translate-x-1 transition-all">→</span>
-            </a>
-          </li>
-          <li>
-            <a href="#leadership" onclick="toggleSidebarMenu(false)" class="flex items-center justify-between p-2.5 rounded-xl hover:bg-white/5 transition text-white/90 hover:text-limegold-300 group">
-              <span class="font-medium" data-i18n="drawer.leadership">Direction &amp; Gouvernance</span>
-              <span class="text-xs text-white/40 group-hover:text-limegold-400 group-hover:translate-x-1 transition-all">→</span>
-            </a>
-          </li>
-          <li>
-            <a href="#faq" onclick="toggleSidebarMenu(false)" class="flex items-center justify-between p-2.5 rounded-xl hover:bg-white/5 transition text-white/90 hover:text-limegold-300 group">
-              <span class="font-medium" data-i18n="drawer.faq">Foire Aux Questions B2B</span>
+            <a href="contact.html" class="flex items-center justify-between p-2.5 rounded-xl hover:bg-white/5 transition text-white/90 hover:text-limegold-300 group">
+              <span class="font-medium" data-i18n="drawer.contact">Demandes d'Échantillons R&amp;D &amp; Devis</span>
               <span class="text-xs text-white/40 group-hover:text-limegold-400 group-hover:translate-x-1 transition-all">→</span>
             </a>
           </li>
@@ -527,46 +512,26 @@
       <!-- Content -->
       <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-36 w-full">
 
-        <!-- Unique H1 for SEO -->
+        <!-- Unique H1 for SEO: Focus on Astaxanthin -->
         <h1 class="display text-4xl sm:text-6xl lg:text-7xl font-light text-white tracking-tight leading-[1.08] mb-6 max-w-3xl" style="text-shadow: 0 2px 14px rgba(0,0,0,0.85), 0 1px 4px rgba(0,0,0,0.95);" data-i18n="hero.title">
-          Distribution d'Ingrédients <em class="text-limegold-300 not-italic font-normal">Nutraceutiques</em>, Micro-Algues &amp; Façonnage Galénique B2B
+          Astaxanthine Naturelle <em class="text-limegold-300 not-italic font-normal">Haute Pureté</em> &amp; Ingrédients Botaniques B2B
         </h1>
 
-        <!-- Subtitle -->
+        <!-- Subtitle: Centered only on Astaxanthin -->
         <p class="text-base sm:text-lg text-white mb-10 max-w-xl leading-relaxed font-light" style="text-shadow: 0 1px 8px rgba(0,0,0,0.85);" data-i18n="hero.subtitle">
-          Gervais Partners fournit aux laboratoires pharmaceutiques des principes actifs végétaux d'une pureté absolue — de la biotechnologie des micro-algues aux extraits cliniquement prouvés.
+          Gervais Partners fournit aux laboratoires pharmaceutiques et nutraceutiques européens une Astaxanthine naturelle d'exception issue de culture fermée stérile d'Haematococcus pluvialis.
         </p>
 
-        <!-- Buttons -->
-        <div class="flex flex-wrap gap-4 mb-16">
-          <a href="#products" class="inline-flex items-center gap-2 bg-limegold-500 hover:bg-limegold-400 text-forest-950 font-bold text-sm px-8 py-4 rounded-full transition shadow-lg hover:shadow-xl" data-i18n="hero.btnCatalog">
-            Explorer Nos Ingrédients &amp; TDS
+        <!-- Buttons: No TDS button here -->
+        <div class="flex flex-wrap gap-4 mb-4">
+          <a href="astaxanthine.html" class="inline-flex items-center gap-2 bg-limegold-500 hover:bg-limegold-400 text-forest-950 font-bold text-sm px-8 py-4 rounded-full transition shadow-lg hover:shadow-xl" data-i18n="hero.btnExplore">
+            <span>Découvrir l'Astaxanthine Axabio 6000×</span>
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
           </a>
-          <a href="#contact" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/25 text-white font-semibold text-sm px-7 py-4 rounded-full transition backdrop-blur-sm">
+          <a href="contact.html" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/25 text-white font-semibold text-sm px-7 py-4 rounded-full transition backdrop-blur-sm" data-i18n="hero.btnSample">
             <svg class="w-4 h-4 text-limegold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
-            Demander un Échantillon R&amp;D
+            <span>Demander un Échantillon R&amp;D</span>
           </a>
-        </div>
-
-        <!-- Key Metrics Cards -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-px bg-white/10 rounded-2xl overflow-hidden max-w-2xl border border-white/10">
-          <div class="bg-white/5 backdrop-blur-sm px-6 py-5">
-            <span class="display text-3xl font-bold text-limegold-300 block" data-i18n="hero.stat1_val">6 000x</span>
-            <span class="text-xs font-medium text-white/60 uppercase tracking-wider" data-i18n="hero.stat1_lbl">Antioxydant vs Vit C</span>
-          </div>
-          <div class="bg-white/5 backdrop-blur-sm px-6 py-5">
-            <span class="display text-3xl font-bold text-sky-300 block" data-i18n="hero.stat2_val">&gt; 51%</span>
-            <span class="text-xs font-medium text-white/60 uppercase tracking-wider" data-i18n="hero.stat2_lbl">Pureté Phycocyanine</span>
-          </div>
-          <div class="bg-white/5 backdrop-blur-sm px-6 py-5">
-            <span class="display text-3xl font-bold text-limegold-300 block" data-i18n="hero.stat3_val">100%</span>
-            <span class="text-xs font-medium text-white/60 uppercase tracking-wider" data-i18n="hero.stat3_lbl">Éco-Extraction</span>
-          </div>
-          <div class="bg-white/5 backdrop-blur-sm px-6 py-5">
-            <span class="display text-3xl font-bold text-limegold-300 block" data-i18n="hero.stat4_val">48h</span>
-            <span class="text-xs font-medium text-white/60 uppercase tracking-wider" data-i18n="hero.stat4_lbl">Expédition Lasne</span>
-          </div>
         </div>
       </div>
 
@@ -597,7 +562,7 @@
           <div class="flex items-center gap-3 p-4 rounded-2xl bg-cream border border-slate-100 hover:shadow-md transition-shadow">
             <img src="assets/images/icons/european-excellence.png" alt="Conformité Réglementation CE 396/2005" class="w-12 h-12 object-contain flex-shrink-0">
             <div>
-              <h3 class="text-xs font-bold text-slate-900" data-i18n="qualityBanner.ceTitle">Règlement CE n°396</h3>
+              <h3 class="text-xs font-bold text-slate-900" data-i18n="qualityBanner.ceTitle">Règlement n°396</h3>
               <p class="text-[11px] text-slate-500" data-i18n="qualityBanner.ceDesc">Zéro résidu de pesticides</p>
             </div>
           </div>
@@ -660,6 +625,12 @@
     <section id="services" class="py-24 bg-white border-b border-slate-200">
       <div class="max-w-7xl mx-auto px-6 lg:px-8">
         <div class="text-center mb-16 reveal">
+          <div class="flex items-center justify-center mb-6">
+            <div class="inline-flex items-center gap-3 px-4 py-2 rounded-2xl bg-forest-950/5 border border-forest-950/10">
+              <img src="assets/images/logo-gervais-seal.svg" alt="Sceau d'Excellence Gervais Partners" class="w-8 h-8 object-contain">
+              <span class="text-xs font-bold uppercase tracking-wider text-forest-900">Excellence Analytique &amp; Pureté Botanique Certifiée</span>
+            </div>
+          </div>
           <div class="inline-flex items-center gap-2 text-forest-700 text-xs font-bold uppercase tracking-widest mb-4">
             <span class="w-6 h-px bg-forest-500"></span>
             <span data-i18n="servicesSection.tag">Qualité &amp; Services B2B</span>
@@ -673,9 +644,9 @@
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
-          <!-- 1. Développé -->
+          <!-- 01. Développé -->
           <div class="bg-cream rounded-3xl p-8 border border-slate-200/80 hover:shadow-lg transition flex flex-col">
             <div class="w-12 h-12 rounded-2xl bg-forest-950 text-limegold-300 flex items-center justify-center font-bold text-lg mb-6 shadow-md">
               01
@@ -686,7 +657,7 @@
             </p>
           </div>
 
-          <!-- 2. Contrôlé -->
+          <!-- 02. Contrôlé -->
           <div class="bg-cream rounded-3xl p-8 border border-slate-200/80 hover:shadow-lg transition flex flex-col">
             <div class="w-12 h-12 rounded-2xl bg-forest-950 text-limegold-300 flex items-center justify-center font-bold text-lg mb-6 shadow-md">
               02
@@ -697,47 +668,25 @@
             </p>
           </div>
 
-          <!-- 3. Supports Documentaires -->
+          <!-- 03. Supports Documentaires (TDS disponibles sur demande) -->
           <div class="bg-cream rounded-3xl p-8 border border-slate-200/80 hover:shadow-lg transition flex flex-col">
             <div class="w-12 h-12 rounded-2xl bg-forest-950 text-limegold-300 flex items-center justify-center font-bold text-lg mb-6 shadow-md">
               03
             </div>
             <h3 class="display text-2xl font-bold text-slate-900 mb-3" data-i18n="servicesSection.s3_title">Supports Documentaires</h3>
             <p class="text-xs text-slate-600 leading-relaxed flex-1" data-i18n="servicesSection.s3_desc">
-              Dossiers réglementaires complets, allégations de santé EFSA validées, déclarations sans allergènes et conformité CE.
+              Dossiers réglementaires complets, allégations de santé validées et fiches techniques (TDS disponibles sur demande).
             </p>
           </div>
 
-          <!-- 4. Analyses -->
+          <!-- 04. Support d'Échantillons (sans mention 24-48h) -->
           <div class="bg-cream rounded-3xl p-8 border border-slate-200/80 hover:shadow-lg transition flex flex-col">
             <div class="w-12 h-12 rounded-2xl bg-forest-950 text-limegold-300 flex items-center justify-center font-bold text-lg mb-6 shadow-md">
               04
             </div>
-            <h3 class="display text-2xl font-bold text-slate-900 mb-3" data-i18n="servicesSection.s4_title">Analyses &amp; CoA</h3>
+            <h3 class="display text-2xl font-bold text-slate-900 mb-3" data-i18n="servicesSection.s4_title">Support d'Échantillons</h3>
             <p class="text-xs text-slate-600 leading-relaxed flex-1" data-i18n="servicesSection.s4_desc">
-              Certificats d'Analyse (CoA) libératoires systématiques par lot : titrage actif certifié par HPLC/UV, zéro métaux lourds et zéro pesticide.
-            </p>
-          </div>
-
-          <!-- 5. Chaîne d'Approvisionnement -->
-          <div class="bg-cream rounded-3xl p-8 border border-slate-200/80 hover:shadow-lg transition flex flex-col">
-            <div class="w-12 h-12 rounded-2xl bg-forest-950 text-limegold-300 flex items-center justify-center font-bold text-lg mb-6 shadow-md">
-              05
-            </div>
-            <h3 class="display text-2xl font-bold text-slate-900 mb-3" data-i18n="servicesSection.s5_title">Chaîne d'Approvisionnement</h3>
-            <p class="text-xs text-slate-600 leading-relaxed flex-1" data-i18n="servicesSection.s5_desc">
-              Stockage sécurisé et stock tampon à notre hub de Lasne (Belgique) garantissant des livraisons rapides sous température dirigée (24-48h).
-            </p>
-          </div>
-
-          <!-- 6. Support d'Échantillons -->
-          <div class="bg-cream rounded-3xl p-8 border border-slate-200/80 hover:shadow-lg transition flex flex-col">
-            <div class="w-12 h-12 rounded-2xl bg-forest-950 text-limegold-300 flex items-center justify-center font-bold text-lg mb-6 shadow-md">
-              06
-            </div>
-            <h3 class="display text-2xl font-bold text-slate-900 mb-3" data-i18n="servicesSection.s6_title">Support d'Échantillons</h3>
-            <p class="text-xs text-slate-600 leading-relaxed flex-1" data-i18n="servicesSection.s6_desc">
-              Mise à disposition rapide d'échantillons physiques R&amp;D (100g à 500g) expédiés sous 24-48h pour vos essais de laboratoire.
+              Mise à disposition d'échantillons physiques R&amp;D (100g à 500g) pour vos essais de formulation et pilotes de laboratoire.
             </p>
           </div>
 
@@ -750,7 +699,7 @@
     <!-- ═══════════════════════════════════════════════════
          ASTAXANTHINE AXABIO — Or Rouge
     ═══════════════════════════════════════════════════ -->
-    <section id="astaxanthin-showcase" class="py-28 bg-cream">
+    <section id="astaxanthin-showcase" class="py-28 border-t border-rose-100" style="background-color: #FFF6F7;">
       <div class="max-w-7xl mx-auto px-6 lg:px-8">
 
         <!-- Header -->
@@ -759,8 +708,8 @@
             <span class="w-6 h-px bg-rose-500"></span>
             <span data-i18n="astaxanthinSection.tag">Biotechnologie des Micro-Algues · Gamme Axabio</span>
           </div>
-          <h2 class="display text-5xl lg:text-6xl font-semibold text-slate-900 max-w-2xl" data-i18n="astaxanthinSection.title">
-            L'Astaxanthine Naturelle : <em>Le Protecteur Cellulaire</em> le Plus Puissant
+          <h2 class="display text-5xl lg:text-6xl font-semibold text-slate-900 max-w-3xl" data-i18n="astaxanthinSection.title">
+            L'Astaxanthine Naturelle 6 000× : <em>Le Protecteur Cellulaire</em> Ultime
           </h2>
         </div>
 
@@ -794,11 +743,8 @@
             </div>
             <div class="flex flex-wrap gap-3">
               <button onclick="openTdsModal('astaxanthin-axabio')" class="inline-flex items-center gap-2 bg-forest-950 hover:bg-forest-800 text-white font-bold text-sm px-6 py-3 rounded-full transition shadow-lg">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-                Fiche Technique (TDS)
-              </button>
-              <button onclick="requestProductSample('astaxanthin-axabio')" class="inline-flex items-center gap-2 border-2 border-forest-950 text-forest-950 hover:bg-forest-950 hover:text-white font-bold text-sm px-6 py-3 rounded-full transition">
-                Demander un Échantillon
+                <svg class="w-4 h-4 text-limegold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                <span>Fiche Technique (TDS)</span>
               </button>
             </div>
           </div>
@@ -1016,7 +962,7 @@
     <!-- ═══════════════════════════════════════════════════
          SILICIUM VÉGÉTAL BREVETÉ EYTELIA — Or Minéral Végétal
     ═══════════════════════════════════════════════════ -->
-    <section id="silicium-showcase" class="py-28 bg-gradient-to-b from-cream via-white to-cream border-t border-slate-200/60 relative overflow-hidden">
+    <section id="silicium-showcase" class="py-28 border-t border-slate-200/80 relative overflow-hidden" style="background-color: #FAFAF7; background-image: url('assets/images/pattern-bamboo-silicium.svg'); background-repeat: repeat;">
       <!-- Subtle Decorative Background Glow -->
       <div class="absolute -top-32 -left-32 w-96 h-96 bg-limegold-300/15 rounded-full blur-3xl pointer-events-none"></div>
       <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-forest-200/20 rounded-full blur-3xl pointer-events-none"></div>
@@ -1025,6 +971,12 @@
 
         <!-- Header -->
         <div class="text-center mb-16 reveal">
+          <div class="flex items-center justify-center mb-6">
+            <div class="inline-flex items-center gap-3 px-4 py-2 rounded-2xl bg-forest-950/5 border border-forest-950/10">
+              <img src="assets/images/logo-gervais-seal.svg" alt="Sceau d'Excellence Gervais Partners" class="w-8 h-8 object-contain">
+              <span class="text-xs font-bold uppercase tracking-wider text-forest-900">Excellence Analytique &amp; Pureté Botanique Certifiée</span>
+            </div>
+          </div>
           <div class="inline-flex items-center gap-2 text-forest-800 text-xs font-bold uppercase tracking-widest mb-4 bg-forest-50 border border-forest-200/60 px-4 py-1.5 rounded-full shadow-sm">
             <span class="w-2 h-2 rounded-full bg-limegold-500 animate-pulse"></span>
             <span data-i18n="siliciumSection.tag">Innovation Brevetée Eytelia · 100% Végétal &amp; Biologique</span>
@@ -1132,9 +1084,7 @@
             <!-- BLOOSIL -->
             <div class="bg-white rounded-3xl border border-slate-200/90 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all p-7 flex flex-col justify-between group">
               <div>
-                <div class="relative h-48 bg-slate-50 rounded-2xl overflow-hidden mb-5 border border-slate-100 flex items-center justify-center p-3">
-                  <img src="assets/images/products/bloosil-vegetal-silicon.webp" alt="BLOOSIL® Silicium Végétal Eytelia - Beauté Peau & Collagène" class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105" loading="lazy">
-                </div>
+
                 <div class="flex items-center justify-between mb-4">
                   <span class="bg-emerald-100 text-emerald-800 text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wide">
                     Beautyceutical &amp; Sil'Innov
@@ -1171,9 +1121,7 @@
             <!-- MESOPOROSIL -->
             <div class="bg-white rounded-3xl border border-slate-200/90 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all p-7 flex flex-col justify-between group">
               <div>
-                <div class="relative h-48 bg-slate-50 rounded-2xl overflow-hidden mb-5 border border-slate-100 flex items-center justify-center p-3">
-                  <img src="assets/images/products/mesoporosil-porous-silicon.webp" alt="MESOPOROSIL® Poudre Poreuse Microscopique Eytelia" class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105" loading="lazy">
-                </div>
+
                 <div class="flex items-center justify-between mb-4">
                   <span class="bg-sky-100 text-sky-800 text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wide">
                     Technologie Brevetée
@@ -1253,10 +1201,16 @@
     <!-- ═══════════════════════════════════════════════════
          BIOXTRACT® — Formules Cliniques Brevetées
     ═══════════════════════════════════════════════════ -->
-    <section id="bioxtract-showcase" class="py-28 bg-white">
+    <section id="bioxtract-showcase" class="py-28 border-t border-amber-200/60" style="background-color: #FFF6EE;">
       <div class="max-w-7xl mx-auto px-6 lg:px-8">
 
         <div class="text-center mb-16 reveal">
+          <div class="flex items-center justify-center mb-6">
+            <div class="inline-flex items-center gap-3 px-4 py-2 rounded-2xl bg-forest-950/5 border border-forest-950/10">
+              <img src="assets/images/logo-gervais-seal.svg" alt="Sceau d'Excellence Gervais Partners" class="w-8 h-8 object-contain">
+              <span class="text-xs font-bold uppercase tracking-wider text-forest-900">Excellence Analytique &amp; Pureté Botanique Certifiée</span>
+            </div>
+          </div>
           <div class="inline-flex items-center gap-2 text-amber-700 text-xs font-bold uppercase tracking-widest mb-4">
             <span class="w-6 h-px bg-amber-500"></span>
             <span data-i18n="bioxtractSection.tag">Efficacité Clinique Prouvée · Formules Brevetées</span>
@@ -1394,6 +1348,9 @@
             <div class="inline-flex items-center gap-2 text-limegold-400 text-xs font-bold uppercase tracking-widest mb-6">
               <span class="w-6 h-px bg-limegold-500"></span>
               <span data-i18n="galenicSection.tag">Synergie Groupe Clé en Main</span>
+          <div class="mb-4">
+            <img src="assets/images/logo-gervais-gold.svg" alt="Gervais Partners Industrie" class="h-8 w-auto opacity-90">
+          </div>
             </div>
             <h2 class="display text-5xl lg:text-6xl font-semibold text-white mb-6 leading-tight" data-i18n="galenicSection.title">
               De la Matière Première au <em class="text-limegold-300 not-italic">Produit Fini Galénique</em>
@@ -1407,7 +1364,20 @@
               <span class="bg-white/10 border border-white/15 px-4 py-2 rounded-full flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-limegold-400"></span> <span data-i18n="galenicSection.badge3">Liquid Capsules Véganes</span></span>
               <span class="bg-white/10 border border-white/15 px-4 py-2 rounded-full flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-limegold-400"></span> <span data-i18n="galenicSection.badge4">Unité France BPF/GMP</span></span>
             </div>
-            <a href="#contact" class="inline-flex items-center gap-2 bg-limegold-500 hover:bg-limegold-400 text-forest-950 font-bold text-sm px-7 py-3.5 rounded-full transition shadow-lg">
+            <!-- Encadré Spécifique Étude & Mise en Galénique -->
+            <div class="bg-white/10 border border-limegold-400/30 rounded-2xl p-5 mb-8 backdrop-blur-sm">
+              <div class="flex items-start gap-3.5">
+                <span class="w-8 h-8 rounded-lg bg-limegold-500 text-forest-950 font-bold text-sm flex items-center justify-center flex-shrink-0 mt-0.5">✦</span>
+                <div>
+                  <h4 class="text-sm font-bold text-white mb-1">Mise en place d'une étude &amp; développement galénique</h4>
+                  <p class="text-xs text-white/70 leading-relaxed">
+                    Possibilité de mettre en place une étude de faisabilité, des tests de stabilité et le développement galénique complet de vos formules propriétaires. Contactez notre équipe technique pour calibrer votre projet.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <a href="contact.html" class="inline-flex items-center gap-2 bg-limegold-500 hover:bg-limegold-400 text-forest-950 font-bold text-sm px-7 py-3.5 rounded-full transition shadow-lg">
               Demander une Étude Galénique
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
             </a>
@@ -1505,6 +1475,12 @@
       <div class="max-w-4xl mx-auto px-6 lg:px-8">
 
         <div class="text-center mb-16 reveal">
+          <div class="flex items-center justify-center mb-6">
+            <div class="inline-flex items-center gap-3 px-4 py-2 rounded-2xl bg-forest-950/5 border border-forest-950/10">
+              <img src="assets/images/logo-gervais-seal.svg" alt="Sceau d'Excellence Gervais Partners" class="w-8 h-8 object-contain">
+              <span class="text-xs font-bold uppercase tracking-wider text-forest-900">Excellence Analytique &amp; Pureté Botanique Certifiée</span>
+            </div>
+          </div>
           <div class="inline-flex items-center gap-2 text-forest-700 text-xs font-bold uppercase tracking-widest mb-4">
             <span class="w-6 h-px bg-limegold-500"></span>
             <span data-i18n="faq.tag">Foire Aux Questions B2B</span>
@@ -1513,68 +1489,34 @@
           <h2 class="display text-4xl sm:text-5xl font-semibold text-slate-900 mx-auto" data-i18n="faq.title">
             Questions Fréquentes des Laboratoires &amp; Fabricants
           </h2>
-          <p class="text-slate-500 text-base mt-3" data-i18n="faq.subtitle">Tout ce que vous devez savoir pour démarrer une collaboration en approvisionnement ou façonnage.</p>
+          <p class="text-slate-500 text-base mt-3" data-i18n="faq.subtitle">Informations logistiques et opérationnelles pour démarrer vos approvisionnements.</p>
         </div>
 
         <div class="space-y-4 reveal">
 
-          <!-- FAQ Item 1 -->
+          <!-- FAQ Item 1: Délais d'expédition et conditions de stockage -->
           <div class="border border-slate-200 rounded-2xl overflow-hidden bg-slate-50/50">
-            <button type="button" class="faq-toggle w-full px-6 py-5 text-left font-bold text-slate-900 text-base flex justify-between items-center hover:text-forest-800 transition" aria-expanded="false">
-              <span data-i18n="faq.q1">Comment obtenir des échantillons R&amp;D pour nos tests de formulation ?</span>
-              <svg class="faq-icon w-5 h-5 text-forest-700 transition-transform duration-300 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-            </button>
-            <div class="hidden px-6 pb-5 pt-1 text-sm text-slate-600 leading-relaxed border-t border-slate-200/60" data-i18n="faq.a1">
-              Vous pouvez demander des échantillons physiques (100g à 500g selon la référence) via notre formulaire ci-dessous ou par téléphone au +32 472 75 22 96. Chaque échantillon est expédié sous 24 à 48h ouvrées avec son certificat d'analyse (CoA) d'origine.
-            </div>
-          </div>
-
-          <!-- FAQ Item 2 -->
-          <div class="border border-slate-200 rounded-2xl overflow-hidden bg-slate-50/50">
-            <button type="button" class="faq-toggle w-full px-6 py-5 text-left font-bold text-slate-900 text-base flex justify-between items-center hover:text-forest-800 transition" aria-expanded="false">
+            <button type="button" class="faq-toggle w-full px-6 py-5 text-left font-bold text-slate-900 text-base flex justify-between items-center hover:text-forest-800 transition" aria-expanded="true">
               <span data-i18n="faq.q2">Quels sont les délais d'expédition et conditions de stockage ?</span>
-              <svg class="faq-icon w-5 h-5 text-forest-700 transition-transform duration-300 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              <svg class="faq-icon w-5 h-5 text-forest-700 transition-transform duration-300 flex-shrink-0 ml-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
             </button>
-            <div class="hidden px-6 pb-5 pt-1 text-sm text-slate-600 leading-relaxed border-t border-slate-200/60" data-i18n="faq.a2">
-              Nos stocks sont centralisés à Lasne (Belgique) sous température dirigée (&lt; 15°C ou 20°C selon matière). Nous livrons sous 24-48h dans le Benelux, 48h en France et Allemagne, et 72h dans toute l'Union Européenne.
+            <div class="px-6 pb-5 pt-1 text-sm text-slate-600 leading-relaxed border-t border-slate-200/60" data-i18n="faq.a2">
+              Nos stocks sont centralisés à Lasne (Belgique) sous température dirigée (&lt; 15°C ou 20°C selon matière) avec respect rigoureux de la chaîne du froid. Les expéditions sont déclenchées de façon rapide et sécurisée vers l'ensemble des laboratoires de l'Union Européenne.
             </div>
           </div>
 
-          <!-- FAQ Item 3 -->
-          <div class="border border-slate-200 rounded-2xl overflow-hidden bg-slate-50/50">
-            <button type="button" class="faq-toggle w-full px-6 py-5 text-left font-bold text-slate-900 text-base flex justify-between items-center hover:text-forest-800 transition" aria-expanded="false">
-              <span data-i18n="faq.q3">Quelles sont les garanties réglementaires et contrôles fournis par lot ?</span>
-              <svg class="faq-icon w-5 h-5 text-forest-700 transition-transform duration-300 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-            </button>
-            <div class="hidden px-6 pb-5 pt-1 text-sm text-slate-600 leading-relaxed border-t border-slate-200/60" data-i18n="faq.a3">
-              Chaque livraison s'accompagne d'une Fiche Technique (TDS) et d'un Certificat d'Analyse (CoA) libératoire complet : titrage HPLC, absence de métaux lourds (Pb, Cd, Hg, As), dépistage multi-résidus de pesticides conforme CE n° 396/2005, contrôle microbiologique conforme Pharmacopée Européenne et attestation 100% sans OGM.
-            </div>
-          </div>
-
-          <!-- FAQ Item 4 -->
-          <div class="border border-slate-200 rounded-2xl overflow-hidden bg-slate-50/50">
-            <button type="button" class="faq-toggle w-full px-6 py-5 text-left font-bold text-slate-900 text-base flex justify-between items-center hover:text-forest-800 transition" aria-expanded="false">
-              <span data-i18n="faq.q4">Proposez-vous le façonnage en marque blanche (produit fini) ?</span>
-              <svg class="faq-icon w-5 h-5 text-forest-700 transition-transform duration-300 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-            </button>
-            <div class="hidden px-6 pb-5 pt-1 text-sm text-slate-600 leading-relaxed border-t border-slate-200/60" data-i18n="faq.a4">
-              Absolument. Grâce à notre unité galénique partenaire en France certifiée BPF/GMP, nous prenons en charge la fabrication de vos produits finis : softgels véganes (Axagels), gummies sans sucre à la pectine (Axagums), gélules liquides ou blends synergiques, avec mise en flacon ou pilulier et étiquetage sous votre marque.
-            </div>
-          </div>
-
-          <!-- FAQ Item 5 -->
+          <!-- FAQ Item 2: Quantités minimales de commande (MOQ) -->
           <div class="border border-slate-200 rounded-2xl overflow-hidden bg-slate-50/50">
             <button type="button" class="faq-toggle w-full px-6 py-5 text-left font-bold text-slate-900 text-base flex justify-between items-center hover:text-forest-800 transition" aria-expanded="false">
               <span data-i18n="faq.q5">Quelles sont les quantités minimales de commande (MOQ) ?</span>
               <svg class="faq-icon w-5 h-5 text-forest-700 transition-transform duration-300 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
             </button>
             <div class="hidden px-6 pb-5 pt-1 text-sm text-slate-600 leading-relaxed border-t border-slate-200/60" data-i18n="faq.a5">
-              Nos volumes s'adaptent à vos phases de croissance : échantillons R&amp;D (100g-500g), lots pilotes (dès 5-10 kg en vrac ou 650 flacons en produit fini), et approvisionnement industriel par fûts de 25 kg ou cuves IBC 1000 litres sous contrat annuel garanti.
+              En matières premières en vrac, le MOQ commence dès 5 kg ou 10 kg selon les références. Pour les produits finis galéniques (softgels, gummies), les lots pilotes débutent dès 650 flacons ou 40 000 capsules pour tester vos marchés en toute souplesse.
             </div>
           </div>
 
         </div>
-
       </div>
     </section>
 
@@ -1615,16 +1557,16 @@
 
             <div class="grid grid-cols-3 gap-2 text-center text-xs">
               <div class="bg-white/5 border border-white/10 rounded-xl py-3.5">
-                <span class="display text-2xl font-bold text-limegold-300 block">24–48h</span>
-                <span class="text-white/50">Benelux</span>
+                <span class="display text-lg sm:text-xl font-bold text-limegold-300 block">Stock Tampon</span>
+                <span class="text-white/50 text-[11px]">Lasne (Belgique)</span>
               </div>
               <div class="bg-white/5 border border-white/10 rounded-xl py-3.5">
-                <span class="display text-2xl font-bold text-limegold-300 block">48h</span>
-                <span class="text-white/50">France &amp; All.</span>
+                <span class="display text-lg sm:text-xl font-bold text-limegold-300 block">Température</span>
+                <span class="text-white/50 text-[11px]">Dirigée &amp; Inerte</span>
               </div>
               <div class="bg-white/5 border border-white/10 rounded-xl py-3.5">
-                <span class="display text-2xl font-bold text-limegold-300 block">72h</span>
-                <span class="text-white/50">Reste UE</span>
+                <span class="display text-lg sm:text-xl font-bold text-limegold-300 block">Europe</span>
+                <span class="text-white/50 text-[11px]">Sécurisé UE</span>
               </div>
             </div>
           </div>
@@ -1774,7 +1716,7 @@
           <h3 class="text-white font-bold text-xs uppercase tracking-widest mb-5" data-i18n="footer.col2_title">Garanties &amp; Qualité</h3>
           <div class="space-y-2.5 text-xs text-slate-400">
             <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-limegold-500 flex-shrink-0"></span> Pharmacopée Européenne (Ph. Eur.)</div>
-            <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-limegold-500 flex-shrink-0"></span> Règlement CE n° 396/2005 (Pesticides)</div>
+            <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-limegold-500 flex-shrink-0"></span> Règlement n° 396/2005 (Pesticides)</div>
             <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-limegold-500 flex-shrink-0"></span> 100% Sans OGM &amp; Non Irradié</div>
             <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-limegold-500 flex-shrink-0"></span> Certificat d'Analyse (CoA) par Lot</div>
             <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-limegold-500 flex-shrink-0"></span> Façonnage France BPF/GMP</div>
