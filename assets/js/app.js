@@ -818,6 +818,19 @@ function initContactForm() {
 
     const refNumber = 'GP-' + Math.floor(100000 + Math.random() * 900000);
 
+    // Asynchronous submission to Netlify Forms if available
+    try {
+      const formData = new FormData(form);
+      formData.append('refNumber', refNumber);
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData).toString()
+      }).catch(err => console.log('Netlify form submit notice:', err));
+    } catch (e) {
+      // Offline / local preview fallback
+    }
+
     showConfirmationModal({
       refNumber,
       company,
@@ -838,7 +851,7 @@ function showConfirmationModal(data) {
   document.getElementById('confirmRef').textContent = data.refNumber;
   document.getElementById('confirmCompany').textContent = data.company;
   document.getElementById('confirmEmail').textContent = data.email;
-  document.getElementById('confirmTargetMail').textContent = 'aida@gervaispartners.com';
+  document.getElementById('confirmTargetMail').textContent = 'aida@gervaispartners.com, Christian@gervaispartners.com, Mathieu@gervaispartner.com';
 
   modal.classList.remove('hidden');
 }

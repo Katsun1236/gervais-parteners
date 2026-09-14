@@ -13,6 +13,9 @@ const translations = {
     // Navigation
     nav: {
       home: "Accueil",
+      about: "Présentation",
+      services: "Qualité & Services",
+      events: "Salons & Vitafoods",
       astaxanthin: "Astaxanthine",
       phycocyanin: "Phycocyanine X-ION",
       silicium: "Silicium Végétal",
@@ -25,7 +28,7 @@ const translations = {
       location: "Hub Belgique",
       contact: "Contact & Devis",
       requestSample: "Demander un Échantillon",
-      heritageTag: "Héritage Nutryalis",
+      heritageTag: "Gervais Partners (anciennement Nutrialist)",
       soundOn: "🍃 Ambiance Nature : Active",
       soundOff: "🍃 Ambiance Nature : Silence"
     },
@@ -46,6 +49,45 @@ const translations = {
       step11: "Demande d'Échantillons & Devis"
     },
 
+
+    // Présentation Officielle de l'Entreprise (Brief Mot à Mot)
+    aboutSection: {
+      tag: "Présentation Officielle · Active Depuis 2009",
+      title: "Gervais Partners : <em class=\"text-limegold-500 not-italic\">Conseil &amp; Distribution</em> d'Ingrédients Naturels Premium",
+      body: "Gervais Partners est une entreprise basée en Belgique spécialisée sur la filière nutraceutique et pharmacologique. Elle conseille et organise la commercialisation d'ingrédients naturels premium. Active sur le marché depuis 2009, nous représentons également des marques européennes de renommée, reconnues pour leur excellence et leurs essais cliniques rigoureux. Notre portefeuille combine des solutions innovantes à forte valeur scientifique ainsi qu'une gamme d'ingrédients de commodité. Nous élargissons également notre offre avec des galéniques prêtes à l'emploi et des services de Private label, pour accompagner nos partenaires de l'idée au produit fini.",
+      badgeSince: "Depuis 2009 sur le Marché Européen",
+      badgeClinical: "Essais Cliniques R&D Rigoureux"
+    },
+
+    // Qualité & Services B2B (Les 6 Piliers Requis)
+    servicesSection: {
+      tag: "Qualité & Services B2B",
+      title: "Notre Accompagnement de l'Idée au Produit Fini",
+      subtitle: "Un ensemble complet de services techniques et documentaires pour sécuriser le développement de vos compléments alimentaires.",
+      s1_title: "Développé",
+      s1_desc: "Conseil scientifique, étude galénique et sélection d'ingrédients naturels premium pour concevoir des formules performantes et conformes.",
+      s2_title: "Contrôlé",
+      s2_desc: "Contrôles qualité stricts sous accréditation GMP et conformité intégrale avec les monographies de la Pharmacopée Européenne.",
+      s3_title: "Supports Documentaires",
+      s3_desc: "Dossiers réglementaires complets, allégations de santé EFSA validées, déclarations sans allergènes et conformité CE.",
+      s4_title: "Analyses & CoA",
+      s4_desc: "Certificats d'Analyse (CoA) libératoires systématiques par lot : titrage actif certifié par HPLC/UV, zéro métaux lourds et zéro pesticide.",
+      s5_title: "Chaîne d'Approvisionnement",
+      s5_desc: "Stockage sécurisé et stock tampon à notre hub de Lasne (Belgique) garantissant des livraisons rapides sous température dirigée (24-48h).",
+      s6_title: "Support d'Échantillons",
+      s6_desc: "Mise à disposition rapide d'échantillons physiques R&D (100g à 500g) expédiés sous 24-48h pour vos essais de laboratoire."
+    },
+
+    // Actualités & Événements Professionnels
+    eventsSection: {
+      tag: "Actualités & Événements",
+      title: "Rencontrez Gervais Partners aux Grands Rendez-vous Européens",
+      subtitle: "Présents sur les foires et salons majeurs pour échanger directement avec vos équipes de formulation et achats.",
+      event1_badge: "Salon Phare Annuel",
+      event1_title: "Vitafoods Europe (Barcelone, Espagne)",
+      event1_desc: "Retrouvez Christian, Aïda Azouz et l'équipe de direction pour découvrir en avant-première nos innovations : Astaxanthine Axabio, Phycocyanine X-ION >51%, Silicium Végétal Eytelia et Gamme Clinique BioXtract®.",
+      event1_cta: "Réserver un Échange sur le Salon"
+    },
     // Hero Section
     hero: {
       badge: "Ingrédients Botaniques d'Excellence · 100% Éco-Extraction · B2B Europe",
@@ -540,7 +582,7 @@ const translations = {
     leadership: {
       tag: "Direction & Gouvernance",
       title: "Une Relation Directe avec les Décisionnaires de Gervais Partners",
-      subtitle: "À la différence des courtiers impersonnels ou des intermédiaires génériques, notre équipe de direction s'engage personnellement auprès de chaque laboratoire partenaire.",
+      subtitle: "À la différence des courtiers impersonnels, notre équipe de direction s'engage personnellement auprès de chaque laboratoire partenaire. Christian (Direction Générale : Christian@gervaispartners.com), Aïda Azouz (Sales Manager : aida@gervaispartners.com), Mathieu (Contact Commercial : Mathieu@gervaispartner.com) et notre boîte générale (info@gervaispartners.com).",
       badgeRole: "Aïda Azouz • Sales Manager & Direction",
       badgeResponse: "Réponse B2B sous 24h ouvrées",
       quote: "« Notre engagement absolu : garantir aux laboratoires européens des matières premières d'une pureté irréprochable, avec la rigueur analytique, la réactivité commerciale et la conformité réglementaire indispensables à la réussite de leurs lancements. »",
@@ -558,7 +600,8 @@ const translations = {
     galenicSection: {
       tag: "Synergie Groupe Clé en Main",
       title: "De la Matière Première Botanique au Produit Fini Galénique",
-      subtitle: "Grâce à notre société partenaire industrielle basée en France, nous vous proposons une chaîne intégrée complète : de la fourniture d'extraits purs au façonnage de formes galéniques prêtes à la commercialisation en marque blanche.",
+      subtitle: "Grâce à la nouvelle société sœur française de notre dirigeant spécialisée dans les galéniques (softgels, gélules, enrobage) prévue dans 3 mois, nous vous proposons une chaîne intégrée complète : de la fourniture d'extraits purs au façonnage de formes prêtes à l'emploi et private label.",
+      sisterNotice: "Portail direct de la société sœur française en cours de déploiement (ouverture sous 3 mois). Projets galéniques pris en charge dès aujourd'hui par Gervais Partners.",
       step1_title: "1. Matière Première Titrée",
       step1_desc: "Sélection de nos ingrédients purs en vrac (astaxanthine, phycocyanine, curcumine, berbérine) avec dossiers techniques complets et stockage en Belgique.",
       step2_title: "2. Façonnage Galénique Haute Précision",
@@ -577,9 +620,9 @@ const translations = {
       title: "Siège et Hub Logistique en Belgique au Cœur de l'Europe",
       subtitle: "Implantée à Lasne (Brabant Wallon), Gervais Partners assure des livraisons rapides sous température contrôlée sur l'ensemble du territoire européen.",
       hq_title: "Siège Européen",
-      hq_address: "1380 Lasne, Brabant Wallon, Belgique",
-      hq_phone: "+32 472 75 22 96 / +32 487 93 42 36",
-      hq_email: "aida@gervaispartners.com",
+      hq_address: "Rue de la Gendarmerie 4, 1380 Lasne (Belgique)",
+      hq_phone: "+32 472 75 22 96",
+      hq_email: "aida@gervaispartners.com | Christian@gervaispartners.com | info@gervaispartners.com",
       hq_hours: "Lundi - Vendredi : 08:00 - 17:00 (CET)",
       routes_title: "Délais Logistiques Moyens",
       route_benelux: "Benelux : 24h - 48h",
@@ -656,10 +699,10 @@ const translations = {
       col2_title: "Garanties & Qualité",
       col3_title: "Direction Commerciale",
       rights: "Tous droits réservés. Ingrédients réservés à un usage professionnel (B2B).",
-      address: "1380 Lasne, Belgique",
+      address: "Rue de la Gendarmerie 4, 1380 Lasne (Belgique)",
       phone: "+32 472 75 22 96",
-      email: "aida@gervaispartners.com",
-      formerName: "Anciennement exploité sous l'entité Nutryalis"
+      email: "info@gervaispartners.com | aida@gervaispartners.com",
+      formerName: "Gervais Partners (anciennement Nutrialist)"
     }
   },
 
@@ -667,6 +710,9 @@ const translations = {
     // Navigation
     nav: {
       home: "Home",
+      about: "About Us",
+      services: "Quality & Services",
+      events: "Events & Vitafoods",
       astaxanthin: "Astaxanthin",
       phycocyanin: "Phycocyanin X-ION",
       silicium: "Plant-Based Silicon",
@@ -679,7 +725,7 @@ const translations = {
       location: "Belgium Hub",
       contact: "Contact & Quote",
       requestSample: "Request a Sample",
-      heritageTag: "Nutryalis Heritage",
+      heritageTag: "Gervais Partners (formerly Nutrialist)",
       soundOn: "🍃 Nature Ambience: Active",
       soundOff: "🍃 Nature Ambience: Muted"
     },
@@ -700,6 +746,45 @@ const translations = {
       step11: "Sample Request & Commercial Inquiry"
     },
 
+
+    // Official Company Presentation
+    aboutSection: {
+      tag: "Official Presentation · Active Since 2009",
+      title: "Gervais Partners: <em class=\"text-limegold-500 not-italic\">Advising &amp; Distributing</em> Premium Natural Actives",
+      body: "Gervais Partners is a Belgium-based company specialized in the nutraceutical and pharmacological industry. We advise and manage the commercialization of premium natural ingredients. Active on the European market since 2009, we represent renowned European brands recognized for their scientific excellence and rigorous clinical trials. Our portfolio combines cutting-edge high-science solutions with essential commodity ingredients. We also expand our offering with ready-to-market galenics and Private Label services, guiding our partners from initial concept to finished shelf-ready product.",
+      badgeSince: "On the European Market Since 2009",
+      badgeClinical: "Rigorous R&D Clinical Trials"
+    },
+
+    // Quality & B2B Services (The 6 Pillars)
+    servicesSection: {
+      tag: "Quality & B2B Services",
+      title: "Comprehensive Support from Concept to Finished Product",
+      subtitle: "An integrated suite of technical, analytical, and regulatory services to secure your dietary supplement launches.",
+      s1_title: "Developed",
+      s1_desc: "Scientific advisory, galenic feasibility, and premium botanical sourcing to engineer compliant, high-efficacy formulations.",
+      s2_title: "Controlled",
+      s2_desc: "Strict quality control under GMP standards and full alignment with European Pharmacopoeia monographs.",
+      s3_title: "Documentary Support",
+      s3_desc: "Exhaustive regulatory dossiers, validated EFSA health claims, non-GMO certifications, and allergen declarations.",
+      s4_title: "Analytical Testing & CoA",
+      s4_desc: "Batch-specific release Certificates of Analysis (CoA): certified HPLC/UV active assay, zero heavy metals, and zero pesticide residues.",
+      s5_title: "Secure Supply Chain",
+      s5_desc: "Climate-controlled buffer stock at our Lasne logistics hub (Belgium) guaranteeing fast 24-48h dispatch across Europe.",
+      s6_title: "R&D Sample Support",
+      s6_desc: "Rapid delivery of physical R&D trial samples (100g-500g) dispatched within 24-48h for laboratory pilot testing."
+    },
+
+    // News & Trade Shows
+    eventsSection: {
+      tag: "News & Industry Events",
+      title: "Meet Gervais Partners at Key European Trade Shows",
+      subtitle: "Participating in premier industry exhibitions to connect directly with your R&D, purchasing, and executive teams.",
+      event1_badge: "Flagship Annual Event",
+      event1_title: "Vitafoods Europe (Barcelona, Spain)",
+      event1_desc: "Connect with Christian, Aïda Azouz, and our leadership team to explore our latest botanical breakthroughs: Axabio Astaxanthin, X-ION Phycocyanin >51%, Eytelia Plant Silicon, and the Clinical BioXtract® Range.",
+      event1_cta: "Schedule a Meeting at the Event"
+    },
     // Hero Section
     hero: {
       badge: "Pure Botanical Actives · 100% Eco-Extraction · B2B Europe",
@@ -1194,7 +1279,7 @@ const translations = {
     leadership: {
       tag: "Leadership & Governance",
       title: "Direct Collaboration with Company Decision-Makers",
-      subtitle: "Unlike impersonal commodity brokers or generic overseas traders, our executive leadership is personally committed to every laboratory client partnership.",
+      subtitle: "Unlike impersonal commodity brokers, our leadership team is directly committed to every client laboratory: Christian (Executive Leadership: Christian@gervaispartners.com), Aïda Azouz (Sales Manager: aida@gervaispartners.com), Mathieu (Commercial Support: Mathieu@gervaispartner.com), and general inquiries (info@gervaispartners.com).",
       badgeRole: "Aïda Azouz • Sales Manager & Executive",
       badgeResponse: "B2B Inquiries Processed within 24h",
       quote: "“Our unwavering commitment: delivering European laboratories botanical raw materials of immaculate purity, backed by the analytical rigor, commercial agility, and regulatory compliance your product launches demand.”",
@@ -1231,9 +1316,9 @@ const translations = {
       title: "Headquarters & Logistics in Belgium — Heart of Europe",
       subtitle: "Headquartered in Lasne (Walloon Brabant), Gervais Partners guarantees rapid temperature-controlled delivery across all EU member states.",
       hq_title: "European Headquarters",
-      hq_address: "1380 Lasne, Walloon Brabant, Belgium",
-      hq_phone: "+32 472 75 22 96 / +32 487 93 42 36",
-      hq_email: "aida@gervaispartners.com",
+      hq_address: "Rue de la Gendarmerie 4, 1380 Lasne (Belgium)",
+      hq_phone: "+32 472 75 22 96",
+      hq_email: "aida@gervaispartners.com | Christian@gervaispartners.com | info@gervaispartners.com",
       hq_hours: "Monday - Friday: 08:00 - 17:00 (CET)",
       routes_title: "Average Transit Times",
       route_benelux: "Benelux: 24h - 48h",
@@ -1310,10 +1395,10 @@ const translations = {
       col2_title: "Quality Guarantees",
       col3_title: "Commercial Contact",
       rights: "All Rights Reserved. Ingredients strictly reserved for B2B industrial & laboratory use.",
-      address: "1380 Lasne, Belgium",
+      address: "Rue de la Gendarmerie 4, 1380 Lasne (Belgium)",
       phone: "+32 472 75 22 96",
-      email: "aida@gervaispartners.com",
-      formerName: "Formerly operating under the Nutryalis brand name"
+      email: "info@gervaispartners.com | aida@gervaispartners.com",
+      formerName: "Gervais Partners (formerly Nutrialist)"
     }
   }
 };
