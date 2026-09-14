@@ -355,12 +355,16 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-8 h-20 flex items-center justify-between gap-6">
 
       <!-- Logo -->
-      <a href="#home" class="flex-shrink-0" title="Gervais Partners - Accueil">
+      <a href="index.html" class="flex-shrink-0" title="Gervais Partners - Accueil">
         <img src="assets/images/logo-gervais.svg" alt="Gervais Partners - Ingrédients Botaniques B2B" class="h-11 sm:h-12 w-auto object-contain hover:opacity-90 transition">
       </a>
 
-      <!-- Navigation Principale : Les 4 Piliers Ingrédients au même format Pill "Axatruc" -->
-      <nav class="hidden lg:flex items-center gap-2.5 xl:gap-3" aria-label="Navigation Principale">
+            <!-- Navigation Principale : Accueil + Les 4 Piliers Ingrédients au même format Pill -->
+      <nav class="hidden lg:flex items-center gap-2 xl:gap-2.5" aria-label="Navigation Principale">
+        <a href="index.html" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-forest-950 text-white hover:bg-forest-800 font-bold text-xs shadow-sm transition">
+          <svg class="w-3.5 h-3.5 text-limegold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+          <span>Accueil</span>
+        </a>
         <a href="astaxanthine.html" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-limegold-400/20 text-forest-950 border border-limegold-500/40 font-bold text-xs shadow-sm hover:bg-limegold-400 hover:border-limegold-500 transition" data-i18n="nav.astaxanthin">
           <span class="w-1.5 h-1.5 rounded-full bg-rose-600 animate-pulse"></span>
           <span>Astaxanthine Axabio 6000×</span>
@@ -509,13 +513,23 @@
 
   <main>
 
-    <!-- Bouton Retour en arrière -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-8 pt-6 pb-2">
-      <a href="index.html" onclick="if(window.history.length > 1){ window.history.back(); return false; }" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white hover:bg-slate-50 text-forest-950 font-bold text-xs border border-slate-200 shadow-sm transition group">
-        <svg class="w-4 h-4 text-forest-700 group-hover:-translate-x-1 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
-        <span data-i18n="backBtn">Retour en arrière</span>
-      </a>
-    </div>
+    <!-- Fil d'Ariane & Bouton Retour Intégré Coordonné -->
+    <nav class="sticky top-20 z-30 bg-[#faf7f2]/95 backdrop-blur-md border-b border-slate-200/90 shadow-sm" aria-label="Navigation Retour">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8 py-3 flex items-center justify-between gap-4">
+        <div class="flex items-center gap-2 text-xs font-semibold text-slate-600">
+          <a href="index.html" class="inline-flex items-center gap-1.5 text-forest-900 hover:text-forest-700 font-bold transition">
+            <svg class="w-4 h-4 text-forest-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+            <span>Page d'accueil</span>
+          </a>
+          <span class="text-slate-400">/</span>
+          <span class="text-slate-900 font-bold truncate">Gamme Clinique BioXtract®</span>
+        </div>
+        <a href="index.html" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-forest-950 hover:bg-forest-800 text-white font-bold text-xs shadow transition group flex-shrink-0">
+          <svg class="w-3.5 h-3.5 text-limegold-400 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+          <span>Retour à l'accueil</span>
+        </a>
+      </div>
+    </nav>
 
 <section id="bioxtract-showcase" class="py-28 border-t border-amber-200/60" style="background-color: #FFF6EE;">
       <div class="max-w-7xl mx-auto px-6 lg:px-8">
@@ -540,9 +554,7 @@
           <!-- ARANTAL Clear -->
           <div class="bx-card bg-slate-50 border border-slate-200 rounded-3xl p-9 flex flex-col justify-between hover:border-slate-300 transition-colors reveal delay-100 group">
             <div>
-              <div class="relative h-52 bg-white rounded-2xl overflow-hidden mb-5 border border-slate-200/80 flex items-center justify-center p-4 group-hover:shadow-sm transition">
-                <img src="assets/images/products/arantal-clear-joints.webp" alt="ARANTAL Clear® BioXtract - Curcumine Bio-Optimisée pour Arthrose" class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105" loading="lazy">
-              </div>
+              
               <span class="inline-block bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full mb-4" data-i18n="bioxtractSection.p1_claim">Articulations &amp; Cartilage</span>
               <h3 class="display text-3xl font-bold text-slate-900 mb-3" data-i18n="bioxtractSection.p1_name">ARANTAL Clear®</h3>
               <p class="text-sm text-slate-600 leading-relaxed" data-i18n="bioxtractSection.p1_desc">Curcuma longa bio-optimisé pour l'arthrose aiguë et chronique. Alternative naturelle cliniquement validée aux AINS sans effets indésirables gastriques. Protège activement le cartilage et restaure la mobilité.</p>
@@ -556,9 +568,7 @@
           <!-- NASALER -->
           <div class="bx-card bg-slate-50 border border-slate-200 rounded-3xl p-9 flex flex-col justify-between hover:border-slate-300 transition-colors reveal delay-200 group">
             <div>
-              <div class="relative h-52 bg-white rounded-2xl overflow-hidden mb-5 border border-slate-200/80 flex items-center justify-center p-4 group-hover:shadow-sm transition">
-                <img src="assets/images/products/nasaler-allergy-relief.webp" alt="NASALER® BioXtract - Rhinite Allergique &amp; Immunité" class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105" loading="lazy">
-              </div>
+              
               <span class="inline-block bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full mb-4" data-i18n="bioxtractSection.p2_claim">Rhinite Allergique &amp; Immunité</span>
               <h3 class="display text-3xl font-bold text-slate-900 mb-3" data-i18n="bioxtractSection.p2_name">NASALER®</h3>
               <p class="text-sm text-slate-600 leading-relaxed" data-i18n="bioxtractSection.p2_desc">Remède naturel contre les allergies saisonnières et perannuelles (pollens, acariens, pollution). Synergie curcumine biodisponible + quercétine purifiée avec activité immunomodulatrice progressive.</p>
@@ -572,9 +582,7 @@
           <!-- RIFENCIN -->
           <div class="bx-card bg-slate-50 border border-slate-200 rounded-3xl p-9 flex flex-col justify-between hover:border-slate-300 transition-colors reveal delay-300 group">
             <div>
-              <div class="relative h-52 bg-white rounded-2xl overflow-hidden mb-5 border border-slate-200/80 flex items-center justify-center p-4 group-hover:shadow-sm transition">
-                <img src="assets/images/products/rifencin-gut-comfort.webp" alt="RIFENCIN® BioXtract - Gastroentérologie &amp; Confort SII" class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105" loading="lazy">
-              </div>
+              
               <span class="inline-block bg-sky-100 text-sky-800 text-xs font-bold px-3 py-1 rounded-full mb-4" data-i18n="bioxtractSection.p3_claim">Gastroentérologie &amp; SII</span>
               <h3 class="display text-3xl font-bold text-slate-900 mb-3" data-i18n="bioxtractSection.p3_name">RIFENCIN®</h3>
               <p class="text-sm text-slate-600 leading-relaxed" data-i18n="bioxtractSection.p3_desc">Soulagement clinique du Syndrome de l'Intestin Irritable (SII). Curcumine hautement assimilable associée à l'huile essentielle de fenouil pure, réduisant significativement crampes abdominales et ballonnements.</p>
@@ -588,9 +596,7 @@
           <!-- COGNITYL -->
           <div class="bx-card bg-slate-50 border border-slate-200 rounded-3xl p-9 flex flex-col justify-between hover:border-slate-300 transition-colors reveal delay-400 group">
             <div>
-              <div class="relative h-52 bg-white rounded-2xl overflow-hidden mb-5 border border-slate-200/80 flex items-center justify-center p-4 group-hover:shadow-sm transition">
-                <img src="assets/images/products/cognityl-mental-focus.webp" alt="COGNITYL® BioXtract - Focus Mental &amp; Concentration" class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105" loading="lazy">
-              </div>
+              
               <span class="inline-block bg-purple-100 text-purple-800 text-xs font-bold px-3 py-1 rounded-full mb-4" data-i18n="bioxtractSection.p4_claim">Focus Mental &amp; Concentration</span>
               <h3 class="display text-3xl font-bold text-slate-900 mb-3" data-i18n="bioxtractSection.p4_name">COGNITYL®</h3>
               <p class="text-sm text-slate-600 leading-relaxed" data-i18n="bioxtractSection.p4_desc">Complexe de xanthines végétales : théobromine de cacao et caféine naturelle de thé vert selon un ratio clinique spécifique. Améliore la vivacité cognitive, l'attention et la mémoire sans nervosité.</p>
