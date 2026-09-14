@@ -626,7 +626,7 @@ function openTdsModal(productId) {
       <div class="flex items-center justify-between">
         <div>
           <h1 class="text-xl font-bold text-emerald-900">GERVAIS PARTNERS</h1>
-          <p class="text-xs text-slate-600">Nutraceutical Raw Materials • 1380 Lasne, Belgium • aida@gervaispartners.com</p>
+          <p class="text-xs text-slate-600">Nutraceutical Raw Materials • 1380 Lasne, Belgium • Tél : +32 472 75 22 96</p>
         </div>
         <div class="text-right">
           <span class="text-xs font-mono font-bold bg-slate-100 px-2 py-1 rounded">${tds.productCode}</span>
@@ -719,7 +719,7 @@ function openTdsModal(productId) {
     <!-- Print Footer -->
     <div class="hidden print-footer">
       <div class="flex justify-between items-center">
-        <span>Gervais Partners • 1380 Lasne, Belgique • aida@gervaispartners.com</span>
+        <span>Gervais Partners • 1380 Lasne, Belgique • Tél : +32 472 75 22 96</span>
         <span>Émis le ${new Date().toLocaleDateString()}</span>
       </div>
     </div>
@@ -851,7 +851,7 @@ function showConfirmationModal(data) {
   document.getElementById('confirmRef').textContent = data.refNumber;
   document.getElementById('confirmCompany').textContent = data.company;
   document.getElementById('confirmEmail').textContent = data.email;
-  document.getElementById('confirmTargetMail').textContent = 'aida@gervaispartners.com, Christian@gervaispartners.com, Mathieu@gervaispartners.com';
+  document.getElementById('confirmTargetMail').textContent = 'Direction Commerciale & Support B2B';
 
   modal.classList.remove('hidden');
 }

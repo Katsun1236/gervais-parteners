@@ -85,7 +85,7 @@ const translations = {
       subtitle: "Présents sur les foires et salons majeurs pour échanger directement avec vos équipes de formulation et achats.",
       event1_badge: "Salon Phare Annuel",
       event1_title: "Vitafoods Europe (Barcelone, Espagne)",
-      event1_desc: "Retrouvez Christian, Aïda Azouz et l'équipe de direction pour découvrir en avant-première nos innovations : Astaxanthine Axabio, Phycocyanine X-ION >51%, Silicium Végétal Eytelia et Gamme Clinique BioXtract®.",
+      event1_desc: "Retrouvez Christian et l'équipe de direction pour découvrir en avant-première nos innovations : Astaxanthine Axabio, Phycocyanine X-ION >51%, Silicium Végétal Eytelia et Gamme Clinique BioXtract®.",
       event1_cta: "Réserver un Échange sur le Salon"
     },
     // Hero Section
@@ -222,7 +222,7 @@ const translations = {
       title: "Questions Fréquentes des Laboratoires & Fabricants",
       subtitle: "Tout ce que vous devez savoir pour démarrer une collaboration en approvisionnement ou façonnage.",
       q1: "Comment obtenir des échantillons R&D pour nos tests de formulation ?",
-      a1: "Vous pouvez demander des échantillons physiques (100g à 500g selon la référence) via notre formulaire ci-dessous ou par email à aida@gervaispartners.com. Chaque échantillon est expédié sous 24 à 48h ouvrées avec son certificat d'analyse (CoA) d'origine.",
+      a1: "Vous pouvez demander des échantillons physiques (100g à 500g selon la référence) via notre formulaire ci-dessous ou par téléphone au +32 472 75 22 96. Chaque échantillon est expédié sous 24 à 48h ouvrées avec son certificat d'analyse (CoA) d'origine.",
       q2: "Quels sont les délais d'expédition et conditions de stockage ?",
       a2: "Nos stocks sont centralisés à Lasne (Belgique) sous température dirigée (< 15°C ou 20°C selon matière). Nous livrons sous 24-48h dans le Benelux, 48h en France et Allemagne, et 72h dans toute l'Union Européenne.",
       q3: "Quelles sont les garanties réglementaires et contrôles fournis par lot ?",
@@ -518,22 +518,22 @@ const translations = {
       }
     ],
 
-    // Leadership Section (Client's uploaded photo of Boss & Aïda!)
+    // Leadership Section (Executive Direction)
     leadership: {
       tag: "Direction & Gouvernance",
       title: "Une Relation Directe avec les Décisionnaires de Gervais Partners",
-      subtitle: "À la différence des courtiers impersonnels, notre équipe de direction s'engage personnellement auprès de chaque laboratoire partenaire. Christian (Direction Générale : Christian@gervaispartners.com), Aïda Azouz (Sales Manager : aida@gervaispartners.com), Mathieu (Contact Commercial : Mathieu@gervaispartners.com) et notre boîte générale (info@gervaispartners.com).",
-      badgeRole: "Aïda Azouz • Sales Manager & Direction",
+      subtitle: "À la différence des courtiers impersonnels, notre équipe de direction s'engage personnellement auprès de chaque laboratoire partenaire pour garantir une réactivité commerciale, une rigueur analytique et une conformité réglementaire irréprochables.",
+      badgeRole: "Direction Générale & Équipe Commerciale",
       badgeResponse: "Réponse B2B sous 24h ouvrées",
       quote: "« Notre engagement absolu : garantir aux laboratoires européens des matières premières d'une pureté irréprochable, avec la rigueur analytique, la réactivité commerciale et la conformité réglementaire indispensables à la réussite de leurs lancements. »",
-      signoff: "Aïda Azouz & La Direction Gervais Partners",
+      signoff: "Christian & La Direction Gervais Partners",
       pillar1_title: "Interlocuteurs Dédiés & Réactifs",
       pillar1_desc: "Vous échangez directement avec les fondateurs et notre équipe technique pour calibrer vos besoins de titrage, de galénique et de volumes.",
       pillar2_title: "Assistance Réglementaire Sur-Mesure",
       pillar2_desc: "Dossiers de déclaration UE, certificats d'analyse (CoA) détaillés, allégations EFSA et attestations toxicologiques fournis sans délai.",
       pillar3_title: "Stock Réservé & Chaîne d'Approvisionnement Sécurisée",
       pillar3_desc: "Possibilité de réserver des volumes annuels sous contrat d'approvisionnement garanti avec stockage tampon sécurisé à Lasne (Belgique).",
-      btnContactLeadership: "Échanger Directement avec Notre Équipe"
+      btnContactLeadership: "Échanger avec Notre Direction B2B"
     },
 
     // Galenic Synergy Section (Turn-key softgels, gummies, capsules in France)
@@ -562,7 +562,7 @@ const translations = {
       hq_title: "Siège Européen",
       hq_address: "Rue de la Gendarmerie 4, 1380 Lasne (Belgique)",
       hq_phone: "+32 472 75 22 96",
-      hq_email: "aida@gervaispartners.com | Christian@gervaispartners.com | info@gervaispartners.com",
+      hq_contact: "Demandes B2B & fiches techniques TDS",
       hq_hours: "Lundi - Vendredi : 08:00 - 17:00 (CET)",
       routes_title: "Délais Logistiques Moyens",
       route_benelux: "Benelux : 24h - 48h",
@@ -598,7 +598,7 @@ const translations = {
       submitBtn: "Envoyer la Demande Professionnelle",
       privacyNotice: "Vos données professionnelles sont strictement confidentielles et traitées directement par notre direction.",
       successModalTitle: "Demande B2B Enregistrée avec Succès !",
-      successModalMsg: "Merci pour votre prise de contact. Votre demande a été transmise directement à Aïda Azouz et notre équipe réglementaire.",
+      successModalMsg: "Merci pour votre prise de contact. Votre demande a été transmise directement à notre direction commerciale et à notre équipe technique.",
       successRef: "Référence du dossier :",
       successNotice: "Un accusé de réception automatique a été notifié à",
       successClose: "Fermer cette fenêtre"
@@ -637,11 +637,10 @@ const translations = {
       desc: "Fournisseur européen de référence en matières premières botaniques pures, micro-algues de haute technologie et compléments alimentaires cliniquement prouvés.",
       col1_title: "Ingrédients Clés",
       col2_title: "Garanties & Qualité",
-      col3_title: "Direction Commerciale",
+      col3_title: "Contact & Siège Social",
       rights: "Tous droits réservés. Ingrédients réservés à un usage professionnel (B2B).",
       address: "Rue de la Gendarmerie 4, 1380 Lasne (Belgique)",
       phone: "+32 472 75 22 96",
-      email: "info@gervaispartners.com | aida@gervaispartners.com",
       formerName: "Gervais Partners (anciennement Nutrialist)"
     }
   },
@@ -722,7 +721,7 @@ const translations = {
       subtitle: "Participating in premier industry exhibitions to connect directly with your R&D, purchasing, and executive teams.",
       event1_badge: "Flagship Annual Event",
       event1_title: "Vitafoods Europe (Barcelona, Spain)",
-      event1_desc: "Connect with Christian, Aïda Azouz, and our leadership team to explore our latest botanical breakthroughs: Axabio Astaxanthin, X-ION Phycocyanin >51%, Eytelia Plant Silicon, and the Clinical BioXtract® Range.",
+      event1_desc: "Connect with Christian and our executive leadership to explore our latest botanical breakthroughs: Axabio Astaxanthin, X-ION Phycocyanin >51%, Eytelia Plant Silicon, and the Clinical BioXtract® Range.",
       event1_cta: "Schedule a Meeting at the Event"
     },
     // Hero Section
@@ -859,7 +858,7 @@ const translations = {
       title: "Common Questions from Laboratories & Brands",
       subtitle: "Everything you need to know about partnering with Gervais Partners for raw materials or turn-key manufacturing.",
       q1: "How can our laboratory request R&D trial samples?",
-      a1: "You can request physical test samples (100g to 500g depending on the reference) directly through our online B2B form or by email at aida@gervaispartners.com. Samples are dispatched within 24 to 48 hours accompanied by their batch Certificate of Analysis (CoA).",
+      a1: "You can request physical test samples (100g to 500g depending on the reference) directly through our online B2B form or by phone at +32 472 75 22 96. Samples are dispatched within 24 to 48 hours accompanied by their batch Certificate of Analysis (CoA).",
       q2: "What are your delivery lead times and warehousing conditions?",
       a2: "Our inventory is centralized in Lasne (Belgium) under climate-controlled storage (< 15°C or 20°C depending on active). We deliver within 24-48 hours across Benelux, 48 hours to France and Germany, and 72 hours throughout the European Union.",
       q3: "What regulatory dossiers and analytical quality records accompany each batch?",
@@ -1160,18 +1159,18 @@ const translations = {
     leadership: {
       tag: "Leadership & Governance",
       title: "Direct Collaboration with Company Decision-Makers",
-      subtitle: "Unlike impersonal commodity brokers, our leadership team is directly committed to every client laboratory: Christian (Executive Leadership: Christian@gervaispartners.com), Aïda Azouz (Sales Manager: aida@gervaispartners.com), Mathieu (Commercial Support: Mathieu@gervaispartners.com), and general inquiries (info@gervaispartners.com).",
-      badgeRole: "Aïda Azouz • Sales Manager & Executive",
+      subtitle: "Unlike impersonal commodity brokers, our executive leadership is directly committed to every client laboratory, ensuring top-tier analytical rigor, commercial responsiveness, and full European regulatory compliance.",
+      badgeRole: "Executive Management & Commercial Team",
       badgeResponse: "B2B Inquiries Processed within 24h",
       quote: "“Our unwavering commitment: delivering European laboratories botanical raw materials of immaculate purity, backed by the analytical rigor, commercial agility, and regulatory compliance your product launches demand.”",
-      signoff: "Aïda Azouz & The Gervais Partners Executive Team",
+      signoff: "Christian & The Gervais Partners Executive Team",
       pillar1_title: "Direct & Senior Technical Contact",
       pillar1_desc: "You collaborate directly with our executive team and technical specialists to calibrate target active assays, galenic formats, and production scale.",
       pillar2_title: "Tailored EU Regulatory Dossiers",
       pillar2_desc: "Direct submission support, batch Certificates of Analysis (CoA), EFSA claims, and comprehensive toxicological safety records provided swiftly.",
       pillar3_title: "Long-Term Supply & Reserved Buffer Stock",
       pillar3_desc: "Annual supply agreements with dedicated buffer reserves maintained in our climate-controlled Belgian logistics hub in Lasne.",
-      btnContactLeadership: "Connect Directly with Our Leadership"
+      btnContactLeadership: "Connect with Our Executive Leadership"
     },
 
     // Galenic Synergy Section
@@ -1199,7 +1198,7 @@ const translations = {
       hq_title: "European Headquarters",
       hq_address: "Rue de la Gendarmerie 4, 1380 Lasne (Belgium)",
       hq_phone: "+32 472 75 22 96",
-      hq_email: "aida@gervaispartners.com | Christian@gervaispartners.com | info@gervaispartners.com",
+      hq_contact: "Demandes B2B & fiches techniques TDS",
       hq_hours: "Monday - Friday: 08:00 - 17:00 (CET)",
       routes_title: "Average Transit Times",
       route_benelux: "Benelux: 24h - 48h",
@@ -1235,7 +1234,7 @@ const translations = {
       submitBtn: "Submit Professional Request",
       privacyNotice: "Your corporate data is treated with strict confidentiality and handled directly by executive leadership.",
       successModalTitle: "B2B Request Successfully Received!",
-      successModalMsg: "Thank you for reaching out. Your inquiry has been forwarded directly to Aïda Azouz and our scientific affairs team.",
+      successModalMsg: "Thank you for reaching out. Your inquiry has been forwarded directly to our commercial management and technical team.",
       successRef: "Inquiry Reference:",
       successNotice: "An automated confirmation receipt was sent to",
       successClose: "Close this window"
@@ -1274,11 +1273,10 @@ const translations = {
       desc: "Premier European B2B supplier of pure botanical raw materials, cutting-edge microalgae, and clinically validated dietary supplements.",
       col1_title: "Key Actives",
       col2_title: "Quality Guarantees",
-      col3_title: "Commercial Contact",
+      col3_title: "Contact & Headquarters",
       rights: "All Rights Reserved. Ingredients strictly reserved for B2B industrial & laboratory use.",
       address: "Rue de la Gendarmerie 4, 1380 Lasne (Belgium)",
       phone: "+32 472 75 22 96",
-      email: "info@gervaispartners.com | aida@gervaispartners.com",
       formerName: "Gervais Partners (formerly Nutrialist)"
     }
   }

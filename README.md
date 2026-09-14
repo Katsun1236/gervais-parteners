@@ -49,5 +49,5 @@ Gervais Partners SRL est un fournisseur B2B d'ingrédients botaniques basé à L
 
 ## 📞 Contact Direction & Laboratoire
 - **Siège & Hub Logistique** : 1380 Lasne, Brabant Wallon, Belgique
-- **Contact Commercial** : Aïda Azouz (aida@gervaispartners.com)
+- **Contact Commercial & Direction** : Téléphone direct (+32 472 75 22 96) | Hub : 1380 Lasne, Belgique
 - **Téléphone** : +32 472 75 22 96 / +32 487 93 42 36
