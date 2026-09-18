@@ -542,7 +542,7 @@ const translations = {
       title: "Une Relation Directe avec les Décisionnaires de Gervais Partners",
       subtitle: "À la différence des courtiers impersonnels, notre équipe de direction s'engage personnellement auprès de chaque laboratoire partenaire pour garantir une réactivité commerciale, une rigueur analytique et une conformité réglementaire irréprochables.",
       badgeRole: "Direction Générale & Équipe Commerciale",
-      badgeResponse: "Réponse B2B sous 24h ouvrées",
+      badgeResponse: "Réponse B2B rapide et dédiée",
       quote: "« Notre engagement absolu : garantir aux laboratoires européens des matières premières d'une pureté irréprochable, avec la rigueur analytique, la réactivité commerciale et la conformité réglementaire indispensables à la réussite de leurs lancements. »",
       signoff: "Christian & La Direction Gervais Partners",
       pillar1_title: "Interlocuteurs Dédiés & Réactifs",
@@ -556,7 +556,7 @@ const translations = {
 
     // Galenic Synergy Section (Turn-key softgels, gummies, capsules in France)
     galenicSection: {
-      tag: "Synergie Groupe Clé en Main",
+      tag: "Façonnage",
       title: "De la Matière Première Botanique au Produit Fini Galénique",
       subtitle: "Grâce à la nouvelle société sœur française de notre dirigeant spécialisée dans les galéniques (softgels, gélules, enrobage) prévue prochainement, nous vous proposons une chaîne intégrée complète : de la fourniture d'extraits purs au façonnage de formes prêtes à l'emploi et private label.",
       sisterNotice: "Portail direct de la société sœur française en cours de déploiement (ouverture prévue prochainement). Projets galéniques pris en charge dès aujourd'hui par Gervais Partners.",
@@ -585,17 +585,17 @@ const translations = {
       map_title: "Localisation Google Maps — Gervais Partners",
       map_link: "Ouvrir dans Google Maps ↗",
       routes_title: "Délais Logistiques Moyens",
-      route_benelux: "Benelux : 24h - 48h",
-      route_france: "France & Allemagne : 48h",
-      route_europe: "Reste de l'Europe (Espagne, Suisse, Italie) : 72h",
+      route_benelux: "Benelux : Expédition directe",
+      route_france: "France & Allemagne : Expédition prioritaire",
+      route_europe: "Reste de l'Europe : Température dirigée",
       map_note: "Emplacement certifié : 1380 Lasne, Belgique (Hub certifié BPF)"
     },
 
     // B2B Contact Form
     contact: {
       tag: "Espace Professionnel",
-      title: "Demande de Fiches Techniques, Échantillons & Devis",
-      subtitle: "Vous êtes un laboratoire, formulateur ou fabricant de compléments alimentaires ? Remplissez ce formulaire qualifié pour recevoir nos échantillons d'essais R&D et notre offre tarifaire B2B sous 24h.",
+      title: "Échantillons d'Essais R&D & Devis B2B",
+      subtitle: "Vous êtes un laboratoire, formulateur ou fabricant de compléments alimentaires ? Remplissez ce formulaire qualifié pour recevoir nos échantillons d'essais R&D et notre offre tarifaire B2B dans les meilleurs délais.",
       fieldName: "Nom & Prénom du Contact",
       placeholderName: "Dr. Marc Dupont, Responsable R&D",
       fieldCompany: "Nom de l'Entreprise / Laboratoire *",
@@ -1201,7 +1201,7 @@ const translations = {
       title: "Direct Collaboration with Company Decision-Makers",
       subtitle: "Unlike impersonal commodity brokers, our executive leadership is directly committed to every client laboratory, ensuring top-tier analytical rigor, commercial responsiveness, and full European regulatory compliance.",
       badgeRole: "Executive Management & Commercial Team",
-      badgeResponse: "B2B Inquiries Processed within 24h",
+      badgeResponse: "Dedicated & Responsive B2B Team",
       quote: "“Our unwavering commitment: delivering European laboratories botanical raw materials of immaculate purity, backed by the analytical rigor, commercial agility, and regulatory compliance your product launches demand.”",
       signoff: "Christian & The Gervais Partners Executive Team",
       pillar1_title: "Direct & Senior Technical Contact",
@@ -1243,9 +1243,9 @@ const translations = {
       map_title: "Google Maps Location — Gervais Partners",
       map_link: "Open in Google Maps ↗",
       routes_title: "Average Transit Times",
-      route_benelux: "Benelux: 24h - 48h",
-      route_france: "France & Germany: 48h",
-      route_europe: "Rest of Europe (Spain, Switzerland, Italy): 72h",
+      route_benelux: "Benelux: Direct shipment",
+      route_france: "France & Germany: Priority shipment",
+      route_europe: "Rest of Europe: Temperature-controlled",
       map_note: "Certified Location: 1380 Lasne, Belgium (GMP Certified Hub)"
     },
 

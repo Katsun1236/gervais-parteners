@@ -312,7 +312,7 @@
             "name": "Comment commander un échantillon R&D pour notre laboratoire ?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Vous pouvez demander un échantillon physique d'essai (de 100g à 500g selon l'ingrédient) directement via notre formulaire B2B en ligne ou par téléphone au +32 472 75 22 96. Les échantillons sont expédiés sous 24 à 48h avec leur certificat d'analyse (CoA) complet par lot."
+              "text": "Vous pouvez demander un échantillon physique d'essai (de 100g à 500g selon l'ingrédient) directement via notre formulaire B2B en ligne ou par téléphone au +32 472 75 22 96. Les échantillons sont expédiés sous délais maîtrisés avec leur certificat d'analyse (CoA) complet par lot."
             }
           },
           {
@@ -320,7 +320,7 @@
             "name": "Quels sont les délais de livraison pour les laboratoires en Europe ?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Grâce à notre hub logistique centralisé situé à Lasne (Belgique), nous assurons des livraisons en 24 à 48h pour le Benelux, 48h pour la France et l'Allemagne, et 72h pour le reste de l'Union Européenne sous température dirigée."
+              "text": "Grâce à notre hub logistique centralisé situé à Lasne (Belgique), nous assurons des livraisons en délais maîtrisés pour le Benelux, 48h pour la France et l'Allemagne, et 72h pour le reste de l'Union Européenne sous température dirigée."
             }
           },
           {
@@ -365,45 +365,23 @@
         <img src="assets/images/logo-gervais.svg" alt="Gervais Partners - Ingrédients Botaniques B2B" class="h-11 sm:h-12 w-auto object-contain hover:opacity-90 transition">
       </a>
 
-            <!-- Navigation Principale : Accueil + Les 4 Piliers Ingrédients au même format Pill -->
-      <nav class="hidden lg:flex items-center gap-2 xl:gap-2.5" aria-label="Navigation Principale">
-        <a href="index.html" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-forest-950 text-white hover:bg-forest-800 font-bold text-xs shadow-sm transition">
-          <svg class="w-3.5 h-3.5 text-limegold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
-          <span>Accueil</span>
+      <!-- Navigation Principale : Accueil, Ingrédients, Façonnage, Consulting, À Propos, Contact -->
+      <nav class="hidden lg:flex items-center gap-7 xl:gap-8 font-semibold text-sm text-slate-700" aria-label="Navigation Principale">
+        <a href="index.html" class="hover:text-forest-950 transition">Accueil</a>
+        <a href="index.html#astaxanthin-showcase" class="hover:text-forest-950 transition">Ingrédients</a>
+        <a href="index.html#galenic" class="hover:text-forest-950 transition">Façonnage</a>
+        <a href="index.html#consulting" class="hover:text-forest-950 transition flex items-center gap-1.5">
+          <span>Consulting</span>
+          <span class="w-1.5 h-1.5 rounded-full bg-limegold-500"></span>
         </a>
-        <a href="astaxanthine.html" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-limegold-400/20 text-forest-950 border border-limegold-500/40 font-bold text-xs shadow-sm hover:bg-limegold-400 hover:border-limegold-500 transition" data-i18n="nav.astaxanthin">
-          <span class="w-1.5 h-1.5 rounded-full bg-rose-600 animate-pulse"></span>
-          <span>Astaxanthine Axabio 6000×</span>
-        </a>
-        <a href="silicium-vegetal.html" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-limegold-400/20 text-forest-950 border border-limegold-500/40 font-bold text-xs shadow-sm hover:bg-limegold-400 hover:border-limegold-500 transition" data-i18n="nav.silicium">
-          <span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
-          <span>Silicium Eytelia</span>
-        </a>
-        <a href="bioxtract.html" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-limegold-400/20 text-forest-950 border border-limegold-500/40 font-bold text-xs shadow-sm hover:bg-limegold-400 hover:border-limegold-500 transition" data-i18n="nav.bioxtract">
-          <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
-          <span>Gamme BioXtract®</span>
-        </a>
-        <a href="faconnage-galenique.html" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-limegold-400/20 text-forest-950 border border-limegold-500/40 font-bold text-xs shadow-sm hover:bg-limegold-400 hover:border-limegold-500 transition" data-i18n="nav.galenic">
-          <span class="w-1.5 h-1.5 rounded-full bg-sky-600"></span>
-          <span>Façonnage Galénique</span>
-        </a>
+        <a href="index.html#leadership" class="hover:text-forest-950 transition">À Propos</a>
+        <a href="index.html#contact" class="hover:text-forest-950 transition">Contact</a>
       </nav>
 
-      <!-- Right Controls: Lang + CTA + Lateral Menu Toggle Button -->
+      <!-- Right Controls: Lateral Menu Toggle Button + Language Switcher (EN TOUT DERNIER) -->
       <div class="flex items-center gap-3 sm:gap-4">
-        <!-- Lang switcher -->
-        <div class="flex items-center bg-slate-100 p-1 rounded-full text-xs font-bold gap-1" role="group" aria-label="Changement de langue">
-          <button type="button" class="lang-btn px-2.5 py-1 rounded-full transition bg-forest-950 text-white" data-lang="fr" aria-label="Passer en Français">FR</button>
-          <button type="button" class="lang-btn px-2.5 py-1 rounded-full transition text-slate-500 hover:bg-slate-200" data-lang="en" aria-label="Switch to English">EN</button>
-        </div>
-
-        <!-- Direct Sample CTA Button -->
-        <a href="#contact" class="hidden sm:inline-flex items-center gap-2 bg-forest-950 hover:bg-forest-800 text-white text-xs font-bold px-5 py-2.5 rounded-full transition shadow-md hover:shadow-lg" data-i18n="nav.requestSample">
-          <svg class="w-3.5 h-3.5 text-limegold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
-          <span>Échantillon</span>
-        </a>
-
-        <!-- Luxury Lateral Menu Trigger Button (Always visible desktop & mobile) -->
+        
+        <!-- Luxury Lateral Menu Trigger Button (Always visible) -->
         <button id="sidebarToggleBtn" onclick="toggleSidebarMenu(true)" class="inline-flex items-center gap-2.5 bg-forest-950 text-white hover:bg-forest-800 px-4 py-2.5 rounded-full font-bold text-xs transition-all shadow-md hover:shadow-lg border border-forest-800 group" aria-label="Ouvrir le menu latéral">
           <span class="tracking-wide">Menu</span>
           <div class="flex flex-col gap-1 w-4">
@@ -411,6 +389,13 @@
             <span class="w-2.5 h-0.5 bg-limegold-400 rounded-full transition-all group-hover:w-4 group-hover:bg-white"></span>
           </div>
         </button>
+
+        <!-- Lang switcher (EN TOUT DERNIER) -->
+        <div class="flex items-center bg-slate-100 p-1 rounded-full text-xs font-bold gap-1" role="group" aria-label="Changement de langue">
+          <button type="button" class="lang-btn px-2.5 py-1 rounded-full transition bg-forest-950 text-white" data-lang="fr" aria-label="Passer en Français">FR</button>
+          <button type="button" class="lang-btn px-2.5 py-1 rounded-full transition text-slate-500 hover:bg-slate-200" data-lang="en" aria-label="Switch to English">EN</button>
+        </div>
+
       </div>
     </div>
   </header>
@@ -437,7 +422,7 @@
       
       <!-- Section 1: Pages Dédiées Ingrédients -->
       <div>
-        <span class="text-[11px] font-bold uppercase tracking-widest text-limegold-400 block mb-3" data-i18n="drawer.catActives">Pages Ingrédients Clés</span>
+        <span class="text-[11px] font-bold uppercase tracking-widest text-limegold-400 block mb-3">Les 3 Ingrédients de la Gamme</span>
         <ul class="space-y-2 text-sm">
           <li>
             <a href="astaxanthine.html" class="flex items-center justify-between p-3 rounded-xl bg-limegold-400/20 border border-limegold-400/50 text-white font-bold hover:bg-limegold-400 hover:text-forest-950 transition group">
@@ -637,7 +622,7 @@
               Échantillons R&amp;D &amp; Devis B2B
             </h2>
             <p class="text-white/65 text-base leading-relaxed max-w-lg" data-i18n="contact.subtitle">
-              Vous êtes formulateur, laboratoire ou fabricant ? Remplissez ce formulaire pour recevoir nos échantillons R&amp;D et notre offre tarifaire B2B sous 24h ouvrées.
+              Vous êtes formulateur, laboratoire ou fabricant ? Remplissez ce formulaire pour recevoir nos échantillons R&amp;D et notre offre tarifaire B2B avec réactivité et rigueur.
             </p>
           </div>
 
@@ -771,8 +756,8 @@
 
 
   <!-- Scripts -->
-  <script src="assets/js/translations.js?v=20260914-18"></script>
-  <script src="assets/js/app.js?v=20260914-18"></script>
+  <script src="assets/js/translations.js?v=20260918-01"></script>
+  <script src="assets/js/app.js?v=20260918-01"></script>
   <script>
     // Year
     document.getElementById('currentYear').textContent = new Date().getFullYear();
