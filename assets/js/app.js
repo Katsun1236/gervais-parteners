@@ -9,6 +9,12 @@
  * 6. Dynamic TDS Modal, B2B Form, and Instant Language Engine
  */
 
+try {
+  sessionStorage.removeItem('gp_leaf_transition');
+  const legacyCanvas = document.getElementById('botanicalLeafWindCanvas');
+  if (legacyCanvas) legacyCanvas.remove();
+} catch(e) {}
+
 let currentLang = localStorage.getItem('gervais_lang') || 'fr';
 let currentCategory = 'all';
 let activeTdsProduct = null;
