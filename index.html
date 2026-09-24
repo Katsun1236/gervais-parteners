@@ -520,24 +520,36 @@
       <!-- Background photo: 100% natural, no filter, centered right -->
       <div class="absolute inset-0 hero-bg-img bg-cover bg-left" style="background-image:url('assets/images/nature-botanical-dew.webp?v=20260914-14'); background-position:left center;" role="img" aria-label="Cultures botaniques et champ de plantes médicinales sous le soleil levant européen"></div>
 
-      <!-- Content (High contrast luxury frosted container without floating logo, clean single CTA) -->
-      <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-24 sm:py-32 w-full flex justify-start md:justify-end">
-        <div class="max-w-2xl text-left md:text-right flex flex-col md:items-end bg-forest-950/85 backdrop-blur-xl p-8 sm:p-12 rounded-3xl border border-white/20 shadow-2xl">
+      <!-- Content: Luxury Frosted Glass Executive Panel with Integrated Logo & High Contrast -->
+      <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-20 sm:py-28 w-full flex justify-start md:justify-end">
+        <div class="max-w-2xl text-left md:text-right flex flex-col md:items-end rounded-3xl p-8 sm:p-12 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.6)] border border-limegold-400/25 relative overflow-hidden backdrop-blur-2xl" style="background: linear-gradient(135deg, rgba(5, 35, 19, 0.82) 0%, rgba(3, 20, 11, 0.90) 100%);">
+          
+          <!-- Subtle Inner Golden Sheen -->
+          <div class="absolute -top-24 -right-24 w-56 h-56 bg-limegold-400/15 rounded-full blur-2xl pointer-events-none"></div>
 
-          <!-- Unique H1 for SEO: Focus on Astaxanthin with maximum contrast -->
-          <h1 class="display text-4xl sm:text-5xl lg:text-6xl font-normal text-white tracking-tight leading-[1.12] mb-6" data-i18n="hero.title">
+          <!-- Official Gervais Partners Logo Header (Integrated directly into the card) -->
+          <div class="flex items-center gap-3.5 mb-6 border-b border-white/15 pb-5 w-full justify-start md:justify-end">
+            <div class="text-left md:text-right">
+              <span class="block text-[10px] font-bold uppercase tracking-widest text-limegold-400">Ingrédients Botaniques B2B · Europe</span>
+              <span class="block text-xs text-white/70 font-medium">Lasne, Belgique · Excellence Depuis 2009</span>
+            </div>
+            <img src="assets/images/logo-gervais-dark.svg" alt="Gervais Partners" class="h-10 sm:h-12 w-auto object-contain drop-shadow-md">
+          </div>
+
+          <!-- Title -->
+          <h1 class="display text-3xl sm:text-4xl lg:text-5xl font-normal text-white tracking-tight leading-[1.15] mb-5 drop-shadow-md" data-i18n="hero.title">
             Astaxanthine Naturelle <em class="text-limegold-300 not-italic font-medium">Haute Pureté</em> &amp; Ingrédients Botaniques B2B
           </h1>
 
-          <!-- Subtitle: Centered only on Astaxanthin -->
-          <p class="text-base sm:text-lg text-white/90 mb-8 max-w-xl leading-relaxed font-light" data-i18n="hero.subtitle">
+          <!-- Subtitle -->
+          <p class="text-sm sm:text-base text-white/95 mb-8 max-w-xl leading-relaxed font-light drop-shadow-sm" data-i18n="hero.subtitle">
             Gervais Partners fournit aux laboratoires pharmaceutiques et nutraceutiques européens une Astaxanthine naturelle d'exception issue de culture fermée stérile d'Haematococcus pluvialis.
           </p>
 
-          <!-- Single Action Button (Removed "decouvrir l'astaxanthine") -->
-          <div class="flex flex-wrap md:justify-end gap-4">
-            <a href="#contact" class="inline-flex items-center gap-2 bg-limegold-500 hover:bg-limegold-400 text-forest-950 font-bold text-sm px-8 py-4 rounded-full transition shadow-lg hover:shadow-xl group">
-              <svg class="w-4 h-4 text-forest-950" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+          <!-- Single Action Button -->
+          <div class="flex flex-wrap md:justify-end gap-4 w-full">
+            <a href="#contact" class="inline-flex items-center justify-center gap-2.5 bg-gradient-to-r from-limegold-400 to-limegold-500 hover:from-limegold-300 hover:to-limegold-400 text-forest-950 font-extrabold text-sm px-8 py-4 rounded-full transition-all shadow-[0_10px_25px_rgba(202,138,4,0.35)] hover:shadow-[0_15px_30px_rgba(202,138,4,0.5)] hover:-translate-y-0.5 group">
+              <svg class="w-4 h-4 text-forest-950 transition-transform group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
               <span>Demander un Échantillon R&amp;D</span>
             </a>
           </div>
@@ -1025,9 +1037,9 @@
     <!-- ═══════════════════════════════════════════════════
          SILICIUM VÉGÉTAL BREVETÉ EYTELIA — Or Minéral Végétal
     ═══════════════════════════════════════════════════ -->
-    <section id="silicium-showcase" class="pt-16 pb-28 relative overflow-hidden bg-cover bg-center" style="background-image: url('assets/images/bamboo-forest.webp');">
-      <!-- Translucent luxury emerald overlay -->
-      <div class="absolute inset-0 bg-forest-950/45 backdrop-blur-[1px]"></div>
+    <section id="silicium-showcase" class="pt-16 pb-0 relative overflow-hidden bg-cover bg-center" style="background-image: url('assets/images/bamboo-forest-sharp.webp?v=20260924-02');">
+      <!-- Crystal-clear translucent emerald overlay (Zero blur for maximum bamboo sharpness) -->
+      <div class="absolute inset-0 bg-forest-950/35 pointer-events-none"></div>
       <!-- Subtle Decorative Background Glow -->
       <div class="absolute -top-32 -left-32 w-96 h-96 bg-limegold-300/15 rounded-full blur-3xl pointer-events-none"></div>
       <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-forest-200/20 rounded-full blur-3xl pointer-events-none"></div>
@@ -1242,22 +1254,22 @@
         </div>
 
       </div>
-    </section>
 
-        <!-- ══ TRANSITION ONDULANTE LIGNE : SiliciumToBioxtract ══ -->
-    <div class="relative w-full overflow-hidden leading-none z-20 pointer-events-none -mb-1" style="background-color: #052313;">
-      <svg class="block w-full h-14 sm:h-20 lg:h-24" viewBox="0 0 1440 90" preserveAspectRatio="none">
-        <defs>
-          <linearGradient id="waveLineGrad_SiliciumToBioxtract" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.3"/>
-            <stop offset="50%" stop-color="#fbbf24" stop-opacity="0.85"/>
-            <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.3"/>
-          </linearGradient>
-        </defs>
-        <path d="M0,38 C180,72 300,10 480,38 C660,68 840,12 1020,40 C1200,68 1320,18 1440,38 L1440,90 L0,90 Z" fill="#FFF0E0"/>
-        <path d="M0,38 C180,72 300,10 480,38 C660,68 840,12 1020,40 C1200,68 1320,18 1440,38" fill="none" stroke="url(#waveLineGrad_SiliciumToBioxtract)" stroke-width="2"/>
-      </svg>
-    </div>
+      <!-- ══ TRANSITION ONDULANTE LIGNE : SiliciumToBioxtract (La photo de bambou descend directement jusqu'à l'onde sans bande verte) ══ -->
+      <div class="relative w-full overflow-hidden leading-none z-20 pointer-events-none -mb-1 mt-14" style="background: transparent;">
+        <svg class="block w-full h-14 sm:h-20 lg:h-24" viewBox="0 0 1440 90" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="waveLineGrad_SiliciumToBioxtract" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.3"/>
+              <stop offset="50%" stop-color="#fbbf24" stop-opacity="0.85"/>
+              <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.3"/>
+            </linearGradient>
+          </defs>
+          <path d="M0,38 C180,72 300,10 480,38 C660,68 840,12 1020,40 C1200,68 1320,18 1440,38 L1440,90 L0,90 Z" fill="#FFF0E0"/>
+          <path d="M0,38 C180,72 300,10 480,38 C660,68 840,12 1020,40 C1200,68 1320,18 1440,38" fill="none" stroke="url(#waveLineGrad_SiliciumToBioxtract)" stroke-width="2"/>
+        </svg>
+      </div>
+    </section>
 
     <!-- ═══════════════════════════════════════════════════
          BIOXTRACT® — Formules Cliniques Brevetées
@@ -1441,105 +1453,141 @@
       </div>
     </section>
 
+    <!-- ══ TRANSITION ONDULANTE LIGNE : GalenicToConsulting (Transition fluide vers le pôle Consulting) ══ -->
+    <div class="relative w-full overflow-hidden leading-none z-20 pointer-events-none -mb-1" style="background-color: #052313;">
+      <svg class="block w-full h-14 sm:h-20 lg:h-24" viewBox="0 0 1440 90" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="waveLineGrad_GalenicToConsulting" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#a3e635" stop-opacity="0.3"/>
+            <stop offset="50%" stop-color="#facc15" stop-opacity="0.85"/>
+            <stop offset="100%" stop-color="#a3e635" stop-opacity="0.3"/>
+          </linearGradient>
+        </defs>
+        <path d="M0,38 C180,72 300,10 480,38 C660,68 840,12 1020,40 C1200,68 1320,18 1440,38 L1440,90 L0,90 Z" fill="#021209"/>
+        <path d="M0,38 C180,72 300,10 480,38 C660,68 840,12 1020,40 C1200,68 1320,18 1440,38" fill="none" stroke="url(#waveLineGrad_GalenicToConsulting)" stroke-width="2"/>
+      </svg>
+    </div>
+
     <!-- ═══════════════════════════════════════════════════
-         CONSULTING & STRATÉGIE NUTRACEUTIQUE (NOUVELLE SECTION)
+         CONSULTING & STRATÉGIE NUTRACEUTIQUE (PRESTIGE EXECUTIVE)
     ═══════════════════════════════════════════════════ -->
-    <section id="consulting" class="py-28 bg-[#041a0e] text-white relative overflow-hidden border-t border-white/10">
+    <section id="consulting" class="py-28 text-white relative overflow-hidden" style="background: radial-gradient(circle at 50% 0%, #0d3822 0%, #051c10 50%, #021209 100%);">
+      <!-- Subtle Luxury Micro-Grid Texture -->
+      <div class="absolute inset-0 opacity-25 pointer-events-none" style="background-image: radial-gradient(rgba(190, 242, 100, 0.18) 1px, transparent 1px); background-size: 32px 32px;"></div>
+      
       <!-- Ambient Lighting -->
-      <div class="absolute -top-40 -left-40 w-96 h-96 bg-limegold-400/10 rounded-full blur-3xl pointer-events-none"></div>
-      <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -top-40 -left-40 w-96 h-96 bg-limegold-400/15 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-emerald-500/15 rounded-full blur-3xl pointer-events-none"></div>
 
       <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
         
         <!-- Header -->
         <div class="text-center mb-16 reveal">
-          <div class="inline-flex items-center gap-2 text-limegold-400 text-xs font-bold uppercase tracking-widest mb-4 bg-white/5 border border-white/10 px-4 py-1.5 rounded-full">
-            <span class="w-2 h-2 rounded-full bg-limegold-500 animate-pulse"></span>
+          <div class="inline-flex items-center gap-2 text-limegold-400 text-xs font-bold uppercase tracking-widest mb-4 bg-white/5 border border-limegold-400/30 px-4 py-1.5 rounded-full shadow-lg backdrop-blur-md">
+            <span class="w-2 h-2 rounded-full bg-limegold-400 animate-pulse"></span>
             <span>Conseil Stratégique &amp; Développement</span>
           </div>
           <h2 class="display text-4xl sm:text-5xl lg:text-6xl font-semibold text-white max-w-4xl mx-auto mb-6 leading-tight">
             Accompagnement Stratégique de la <em class="text-limegold-300 not-italic font-normal">Filière Nutraceutique</em>
           </h2>
-          <p class="text-white/80 text-base sm:text-lg max-w-3xl mx-auto leading-relaxed font-light">
+          <p class="text-white/85 text-base sm:text-lg max-w-3xl mx-auto leading-relaxed font-light">
             Gervais Partners accompagne les entreprises de la filière nutraceutique dans leurs transformations et leur développement. Nous conseillons dirigeants, actionnaires et investisseurs pour définir et déployer des stratégies créatrices de valeur.
           </p>
         </div>
 
-        <!-- 3 Piliers Opérationnels détaillant le texte client -->
+        <!-- 3 Piliers Opérationnels Détaillant le Texte Client -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           
           <!-- Pilier 1: Positionnement Stratégique & Cession -->
-          <div class="bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all flex flex-col justify-between group">
+          <div class="relative bg-gradient-to-b from-white/[0.08] to-white/[0.02] border border-limegold-400/25 hover:border-limegold-400/70 rounded-3xl p-8 backdrop-blur-xl shadow-2xl hover:shadow-[0_20px_45px_rgba(0,0,0,0.5)] transition-all duration-300 flex flex-col justify-between group transform hover:-translate-y-1">
+            <div class="absolute -top-10 -right-10 w-32 h-32 bg-limegold-400/10 rounded-full blur-2xl group-hover:bg-limegold-400/20 transition-all pointer-events-none"></div>
             <div>
-              <div class="w-12 h-12 rounded-2xl bg-limegold-500/20 text-limegold-400 flex items-center justify-center font-bold text-xl mb-6 border border-limegold-500/30 group-hover:scale-110 transition-transform">
-                01
+              <div class="flex items-center justify-between mb-6">
+                <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-limegold-400/20 to-limegold-500/10 text-limegold-300 flex items-center justify-center font-bold text-xl border border-limegold-400/40 shadow-inner group-hover:scale-110 transition-transform">
+                  01
+                </div>
+                <div class="p-2.5 rounded-xl bg-white/5 border border-white/10 text-limegold-400 group-hover:border-limegold-400/40 transition">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                </div>
               </div>
-              <h3 class="display text-2xl font-bold text-white mb-3">Positionnement Stratégique &amp; Cession</h3>
-              <p class="text-white/70 text-sm leading-relaxed mb-4">
+              <h3 class="display text-2xl font-bold text-white mb-3 tracking-tight">Positionnement Stratégique &amp; Cession</h3>
+              <p class="text-white/75 text-sm leading-relaxed mb-6 font-light">
                 Notre expertise couvre le positionnement stratégique, la croissance externe et les projets de cession.
               </p>
             </div>
             <div class="pt-4 border-t border-white/10 text-xs text-limegold-300 font-semibold flex items-center gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-limegold-400"></span>
-              <span>Conseil aux dirigeants, actionnaires &amp; investisseurs</span>
+              <span class="w-1.5 h-1.5 rounded-full bg-limegold-400 animate-pulse"></span>
+              <span>Conseil dirigeants, actionnaires &amp; investisseurs</span>
             </div>
           </div>
 
           <!-- Pilier 2: Efficacité Commerciale & Go-to-Market -->
-          <div class="bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all flex flex-col justify-between group">
+          <div class="relative bg-gradient-to-b from-white/[0.08] to-white/[0.02] border border-limegold-400/25 hover:border-limegold-400/70 rounded-3xl p-8 backdrop-blur-xl shadow-2xl hover:shadow-[0_20px_45px_rgba(0,0,0,0.5)] transition-all duration-300 flex flex-col justify-between group transform hover:-translate-y-1">
+            <div class="absolute -top-10 -right-10 w-32 h-32 bg-emerald-400/10 rounded-full blur-2xl group-hover:bg-emerald-400/20 transition-all pointer-events-none"></div>
             <div>
-              <div class="w-12 h-12 rounded-2xl bg-limegold-500/20 text-limegold-400 flex items-center justify-center font-bold text-xl mb-6 border border-limegold-500/30 group-hover:scale-110 transition-transform">
-                02
+              <div class="flex items-center justify-between mb-6">
+                <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-limegold-400/20 to-limegold-500/10 text-limegold-300 flex items-center justify-center font-bold text-xl border border-limegold-400/40 shadow-inner group-hover:scale-110 transition-transform">
+                  02
+                </div>
+                <div class="p-2.5 rounded-xl bg-white/5 border border-white/10 text-limegold-400 group-hover:border-limegold-400/40 transition">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+                </div>
               </div>
-              <h3 class="display text-2xl font-bold text-white mb-3">Efficacité Commerciale &amp; Réseaux</h3>
-              <p class="text-white/70 text-sm leading-relaxed mb-4">
+              <h3 class="display text-2xl font-bold text-white mb-3 tracking-tight">Efficacité Commerciale &amp; Réseaux</h3>
+              <p class="text-white/75 text-sm leading-relaxed mb-6 font-light">
                 Nous renforçons également l’efficacité commerciale et marketing, de la stratégie go‑to‑market au développement des réseaux.
               </p>
             </div>
             <div class="pt-4 border-t border-white/10 text-xs text-limegold-300 font-semibold flex items-center gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-limegold-400"></span>
-              <span>Stratégie de mise en marché &amp; partenariats</span>
+              <span class="w-1.5 h-1.5 rounded-full bg-limegold-400 animate-pulse"></span>
+              <span>Déploiement go-to-market &amp; développement réseaux</span>
             </div>
           </div>
 
           <!-- Pilier 3: Optimisation Organisationnelle & Industrielle -->
-          <div class="bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all flex flex-col justify-between group">
+          <div class="relative bg-gradient-to-b from-white/[0.08] to-white/[0.02] border border-limegold-400/25 hover:border-limegold-400/70 rounded-3xl p-8 backdrop-blur-xl shadow-2xl hover:shadow-[0_20px_45px_rgba(0,0,0,0.5)] transition-all duration-300 flex flex-col justify-between group transform hover:-translate-y-1">
+            <div class="absolute -top-10 -right-10 w-32 h-32 bg-amber-400/10 rounded-full blur-2xl group-hover:bg-amber-400/20 transition-all pointer-events-none"></div>
             <div>
-              <div class="w-12 h-12 rounded-2xl bg-limegold-500/20 text-limegold-400 flex items-center justify-center font-bold text-xl mb-6 border border-limegold-500/30 group-hover:scale-110 transition-transform">
-                03
+              <div class="flex items-center justify-between mb-6">
+                <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-limegold-400/20 to-limegold-500/10 text-limegold-300 flex items-center justify-center font-bold text-xl border border-limegold-400/40 shadow-inner group-hover:scale-110 transition-transform">
+                  03
+                </div>
+                <div class="p-2.5 rounded-xl bg-white/5 border border-white/10 text-limegold-400 group-hover:border-limegold-400/40 transition">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+                </div>
               </div>
-              <h3 class="display text-2xl font-bold text-white mb-3">Optimisation Organisationnelle &amp; Industrielle</h3>
-              <p class="text-white/70 text-sm leading-relaxed mb-4">
+              <h3 class="display text-2xl font-bold text-white mb-3 tracking-tight">Optimisation Organisationnelle &amp; Industrielle</h3>
+              <p class="text-white/75 text-sm leading-relaxed mb-6 font-light">
                 Nous intégrons une optimisation organisationnelle et industrielle pour améliorer compétitivité, productivité et capacités de production. Grâce à une connaissance approfondie du secteur, nous intervenons sur toute la chaîne de valeur, de l’ingrédient au produit fini.
               </p>
             </div>
             <div class="pt-4 border-t border-white/10 text-xs text-limegold-300 font-semibold flex items-center gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-limegold-400"></span>
-              <span>Maîtrise de bout en bout de la chaîne de valeur</span>
+              <span class="w-1.5 h-1.5 rounded-full bg-limegold-400 animate-pulse"></span>
+              <span>De l'ingrédient pur au produit fini galénique</span>
             </div>
           </div>
 
         </div>
 
         <!-- Encadré Synthèse Stratégique & Contact -->
-        <div class="bg-gradient-to-r from-forest-900/90 via-forest-900/60 to-forest-900/90 border border-limegold-500/40 rounded-3xl p-8 sm:p-10 flex flex-col md:flex-row items-center justify-between gap-6 shadow-2xl">
+        <div class="bg-gradient-to-r from-forest-900/90 via-forest-950/80 to-forest-900/90 border border-limegold-500/40 rounded-3xl p-8 sm:p-10 flex flex-col md:flex-row items-center justify-between gap-6 shadow-[0_20px_50px_rgba(0,0,0,0.5)] backdrop-blur-xl">
           <div class="max-w-2xl">
             <h4 class="text-xl sm:text-2xl font-bold text-white mb-2 font-display">Transformer les Enjeux en Opportunités Concrètes</h4>
-            <p class="text-white/80 text-sm sm:text-base leading-relaxed">
+            <p class="text-white/85 text-sm sm:text-base leading-relaxed font-light">
               En combinant vision stratégique, expertise opérationnelle et maîtrise du marché, Gervais Partners transforme les enjeux en opportunités concrètes.
             </p>
           </div>
-          <a href="#contact" class="inline-flex items-center gap-2 bg-limegold-500 hover:bg-limegold-400 text-forest-950 font-bold text-sm px-8 py-4 rounded-full transition shadow-lg flex-shrink-0">
+          <a href="#contact" class="inline-flex items-center gap-2 bg-gradient-to-r from-limegold-400 to-limegold-500 hover:from-limegold-300 hover:to-limegold-400 text-forest-950 font-bold text-sm px-8 py-4 rounded-full transition-all shadow-lg hover:shadow-xl flex-shrink-0 group">
             <span>Échanger sur vos Projets Stratégiques</span>
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            <svg class="w-4 h-4 text-forest-950 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
           </a>
         </div>
 
       </div>
     </section>
 
-        <!-- ══ TRANSITION ONDULANTE LIGNE : GalenicToLeadership ══ -->
-    <div class="relative w-full overflow-hidden leading-none z-20 pointer-events-none -mb-1" style="background-color: #052313;">
+    <!-- ══ TRANSITION ONDULANTE LIGNE : ConsultingToLeadership ══ -->
+    <div class="relative w-full overflow-hidden leading-none z-20 pointer-events-none -mb-1" style="background-color: #021209;">
       <svg class="block w-full h-14 sm:h-20 lg:h-24" viewBox="0 0 1440 90" preserveAspectRatio="none">
         <defs>
           <linearGradient id="waveLineGrad_GalenicToLeadership" x1="0%" y1="0%" x2="100%" y2="0%">
