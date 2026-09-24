@@ -794,7 +794,7 @@ function populateProductSelect() {
 
   const customOpt = document.createElement('option');
   customOpt.value = "custom-galenic";
-  customOpt.textContent = currentLang === 'fr' ? "Projet Façonnage Clé en Main (Gummies / Softgels)" : "Turn-key Galenic Project (Gummies / Softgels)";
+  customOpt.textContent = currentLang === 'fr' ? "Projet Façonnage (Gummies / Softgels)" : "Galenic Project (Gummies / Softgels)";
   select.appendChild(customOpt);
 
   if (currentValue) select.value = currentValue;
@@ -890,13 +890,13 @@ function initMapVisualization() {
 
   const hub = { x: 0.44, y: 0.46, label: "1380 Lasne, Belgium (HQ & Hub)" };
   const destinations = [
-    { x: 0.38, y: 0.58, label: "Paris / France", time: "24-48h" },
-    { x: 0.56, y: 0.42, label: "Frankfurt / Germany", time: "24-48h" },
-    { x: 0.46, y: 0.36, label: "Amsterdam / Benelux", time: "24h" },
-    { x: 0.52, y: 0.65, label: "Zurich / Switzerland", time: "48h" },
-    { x: 0.28, y: 0.82, label: "Barcelona / Spain", time: "48-72h" },
-    { x: 0.60, y: 0.78, label: "Milan / Italy", time: "48-72h" },
-    { x: 0.32, y: 0.38, label: "London / UK", time: "48h" }
+    { x: 0.38, y: 0.58, label: "Paris / France", time: "Direct Hub" },
+    { x: 0.56, y: 0.42, label: "Frankfurt / Germany", time: "Direct Hub" },
+    { x: 0.46, y: 0.36, label: "Amsterdam / Benelux", time: "Direct Hub" },
+    { x: 0.52, y: 0.65, label: "Zurich / Switzerland", time: "Direct Hub" },
+    { x: 0.28, y: 0.82, label: "Barcelona / Spain", time: "Direct Hub" },
+    { x: 0.60, y: 0.78, label: "Milan / Italy", time: "Direct Hub" },
+    { x: 0.32, y: 0.38, label: "London / UK", time: "Direct Hub" }
   ];
 
   let pulse = 0;

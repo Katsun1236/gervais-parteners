@@ -24,7 +24,7 @@ const translations = {
       products: "Tous les Ingrédients",
       interactiveLab: "Studio Formulation",
       microscope: "Microscope Végétal",
-      galenic: "Synergie Galénique",
+      galenic: "Façonnage",
       leadership: "Direction",
       location: "Hub Belgique",
       contact: "Contact & Devis",
@@ -44,7 +44,7 @@ const translations = {
       step5: "Microscope & Pureté Cellulaire",
       step6: "Studio Interactif de Formulation",
       step7: "Catalogue Complet",
-      step8: "Synergie Galénique (Softgels & Gummies)",
+      step8: "Façonnage (Softgels & Gummies)",
       step9: "Direction & Gouvernance Directe",
       step10: "Hub Logistique Lasne (BE)",
       step11: "Demande d'Échantillons & Devis"
@@ -124,7 +124,7 @@ const translations = {
       stat2_lbl: "Pureté Phycocyanine Brute X-ION",
       stat3_val: "100%",
       stat3_lbl: "Éco-Extraction sans Solvant Toxique",
-      stat4_val: "48h",
+      stat4_val: "Direct",
       stat4_lbl: "Expédition Échantillons R&D Lasne"
     },
 
@@ -682,7 +682,7 @@ const translations = {
       products: "All Ingredients",
       interactiveLab: "Formulation Studio",
       microscope: "Botanical Lens",
-      galenic: "Galenic Synergy",
+      galenic: "Contract Manufacturing",
       leadership: "Leadership",
       location: "Belgium Hub",
       contact: "Contact & Quote",
@@ -702,7 +702,7 @@ const translations = {
       step5: "Microscope & Cellular Purity",
       step6: "Interactive Formulation Studio",
       step7: "Full Catalog & TDS Sheets",
-      step8: "Galenic Synergy (Softgels & Gummies)",
+      step8: "Contract Manufacturing (Softgels & Gummies)",
       step9: "Leadership & Direct Governance",
       step10: "Lasne Logistics Hub (BE)",
       step11: "Sample Request & Commercial Inquiry"
@@ -758,7 +758,7 @@ const translations = {
       catServices: "Industrial Capabilities",
       about: "About Gervais Partners (Since 2009)",
       quality: "EU Pharmacopoeia & Quality Assays",
-      galenic: "Galenic Turn-key Manufacturing (France GMP)",
+      galenic: "Contract Manufacturing (France GMP)",
       leadership: "Executive Leadership & Direction",
       faq: "B2B Frequently Asked Questions",
       catContact: "Headquarters & Direct Access",
@@ -782,7 +782,7 @@ const translations = {
       stat2_lbl: "Crude Phycocyanin Purity X-ION",
       stat3_val: "100%",
       stat3_lbl: "Clean Eco-Extraction (Zero Hexane)",
-      stat4_val: "48h",
+      stat4_val: "Direct",
       stat4_lbl: "R&D Sample Lab Dispatch from Lasne"
     },
 
@@ -1215,9 +1215,9 @@ const translations = {
 
     // Galenic Synergy Section
     galenicSection: {
-      tag: "Integrated Group Synergy",
+      tag: "Galenic Manufacturing",
       title: "From Raw Botanical Active to Finished Galenic Product",
-      subtitle: "Through our industrial partner facility in France, we offer European clients an end-to-end integrated solution: from bulk active ingredient supply to turn-key white-label manufacturing.",
+      subtitle: "Through our industrial partner facility in France, we offer European clients an end-to-end integrated solution: from bulk active ingredient supply to white-label contract manufacturing.",
       step1_title: "1. Titrated Raw Material",
       step1_desc: "Direct supply of our standardized bulk actives (astaxanthin, phycocyanin, curcumin, berberine) with full regulatory dossiers and buffer warehousing in Belgium.",
       step2_title: "2. Precision Galenic Manufacturing",
@@ -1253,7 +1253,7 @@ const translations = {
     contact: {
       tag: "B2B Client Portal",
       title: "Request Technical Data Sheets, Samples & Bulk Quotes",
-      subtitle: "Are you a laboratory, product developer, or dietary supplement brand? Complete this form to receive trial R&D samples and our B2B commercial pricing within 24 hours.",
+      subtitle: "Are you a laboratory, product developer, or dietary supplement brand? Complete this form to receive trial R&D samples and our B2B commercial pricing promptly.",
       fieldName: "Full Name & Position",
       placeholderName: "Dr. Mark Stevens, Head of R&D",
       fieldCompany: "Company / Laboratory Name *",
@@ -1269,7 +1269,7 @@ const translations = {
       volPilot: "Pilot Batch (25 kg - 1 drum or 650 bottles)",
       volMedium: "Medium Production (100 kg - 500 kg)",
       volBulk: "Commercial Bulk Batch (> 1,000 kg or IBC Tank)",
-      volGalenic: "Turn-key Finished Product (Gummies / Softgels)",
+      volGalenic: "Finished Galenic Product (Gummies / Softgels)",
       fieldMessage: "Formulation Details or Specific Requirements",
       placeholderMessage: "Specify target active assay, desired galenic format, regulatory constraints...",
       checkSample: "I request a physical sample package dispatched to our laboratory address",
