@@ -922,26 +922,27 @@
       </div>
     </section>
 
-        <!-- ══ TRANSITION ONDULANTE LIGNE : AstaxanthineToPhyco ══ -->
-    <div class="relative w-full overflow-hidden leading-none z-20 pointer-events-none -mb-1" style="background-color: #FFF6F7;">
-      <svg class="block w-full h-14 sm:h-20 lg:h-24" viewBox="0 0 1440 90" preserveAspectRatio="none">
-        <defs>
-          <linearGradient id="waveLineGrad_AstaxanthineToPhyco" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stop-color="#0284c7" stop-opacity="0.3"/>
-            <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.85"/>
-            <stop offset="100%" stop-color="#0284c7" stop-opacity="0.3"/>
-          </linearGradient>
-        </defs>
-        <path d="M0,38 C180,72 300,10 480,38 C660,68 840,12 1020,40 C1200,68 1320,18 1440,38 L1440,90 L0,90 Z" fill="#0a1628"/>
-        <path d="M0,38 C180,72 300,10 480,38 C660,68 840,12 1020,40 C1200,68 1320,18 1440,38" fill="none" stroke="url(#waveLineGrad_AstaxanthineToPhyco)" stroke-width="2"/>
-      </svg>
-    </div>
-
     <!-- ═══════════════════════════════════════════════════
          PHYCOCYANINE X-ION — Or Bleu d'Espagne
     ═══════════════════════════════════════════════════ -->
-    <section id="phycocyanin-showcase" class="py-28 text-white" style="background:linear-gradient(160deg,#0a1628 0%,#0c2040 50%,#071220 100%)">
-      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <section id="phycocyanin-showcase" class="pt-0 pb-28 text-white relative overflow-hidden" style="background: linear-gradient(180deg, #071220 0%, #0d223d 50%, #071220 100%);">
+
+      <!-- ══ TRANSITION ONDULANTE LIGNE : AstaxanthineToPhyco (L'onde rose/blanc descend et le bleu Phycocyanine prolonge directement sous l'onde) ══ -->
+      <div class="relative w-full overflow-hidden leading-none z-20 pointer-events-none -mt-1" style="background: transparent;">
+        <svg class="block w-full h-14 sm:h-20 lg:h-24" viewBox="0 0 1440 90" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="waveLineGrad_AstaxanthineToPhyco" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#0284c7" stop-opacity="0.3"/>
+              <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.85"/>
+              <stop offset="100%" stop-color="#0284c7" stop-opacity="0.3"/>
+            </linearGradient>
+          </defs>
+          <path d="M0,0 L1440,0 L1440,38 C1320,18 1200,68 1020,40 C840,12 660,68 480,38 C300,10 180,72 0,38 Z" fill="#FFF6F7"/>
+          <path d="M0,38 C180,72 300,10 480,38 C660,68 840,12 1020,40 C1200,68 1320,18 1440,38" fill="none" stroke="url(#waveLineGrad_AstaxanthineToPhyco)" stroke-width="2"/>
+        </svg>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-6 lg:px-8 pt-10">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
           <!-- Content first -->
@@ -2003,8 +2004,8 @@
 
 
   <!-- Scripts -->
-  <script src="assets/js/translations.js?v=20260918-01"></script>
-  <script src="assets/js/app.js?v=20260918-v3-noleaves"></script>
+  <script src="assets/js/translations.js?v=20260924-v5-consulting"></script>
+  <script src="assets/js/app.js?v=20260924-v5-consulting"></script>
   <script>
     // Year
     document.getElementById('currentYear').textContent = new Date().getFullYear();
