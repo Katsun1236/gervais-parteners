@@ -476,6 +476,13 @@ function setLanguage(lang) {
 
 function initLanguageSwitcher() {
   document.querySelectorAll('.lang-btn').forEach(btn => {
+    if (btn.dataset.lang === currentLang) {
+      btn.classList.add('bg-forest-950', 'text-white');
+      btn.classList.remove('text-slate-500', 'hover:bg-slate-200');
+    } else {
+      btn.classList.remove('bg-forest-950', 'text-white');
+      btn.classList.add('text-slate-500', 'hover:bg-slate-200');
+    }
     btn.addEventListener('click', () => {
       setLanguage(btn.dataset.lang);
     });

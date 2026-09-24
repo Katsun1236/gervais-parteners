@@ -14,6 +14,7 @@ const translations = {
     // Navigation
     nav: {
       home: "Accueil",
+      ingredients: "Ingrédients",
       about: "Présentation",
       services: "Qualité & Services",
       events: "Salons & Vitafoods",
@@ -25,6 +26,7 @@ const translations = {
       interactiveLab: "Studio Formulation",
       microscope: "Microscope Végétal",
       galenic: "Façonnage",
+      consulting: "Consulting",
       leadership: "Direction",
       location: "Hub Belgique",
       contact: "Contact & Devis",
@@ -101,8 +103,10 @@ const translations = {
       about: "Présentation Gervais Partners (Depuis 2009)",
       quality: "Standards Qualité & Pharmacopée Européenne",
       galenic: "Façonnage Galénique France (BPF/GMP)",
+      consulting: "Consulting Stratégique & M&A",
       leadership: "Direction & Gouvernance",
       faq: "Foire Aux Questions B2B",
+      contact: "Demandes d'Échantillons R&D & Devis",
       catContact: "Siège & Accès Direct",
       address: "Rue de la Gendarmerie 4, 1380 Lasne (Belgique)",
       phone: "+32 472 75 22 96",
@@ -260,6 +264,7 @@ const translations = {
       filterMicroalgae: "Micro-Algues (Astaxanthine / Phycocyanine)",
       filterSilicium: "Silicium Végétal (Eytelia)",
       filterBioxtract: "Gamme BioXtract® Clinique",
+      filterLiposomal: "Actifs Standardisés & Liposomaux",
       viewTdsBtn: "Fiche Technique (TDS)",
       requestSampleBtn: "Demander un Échantillon",
       certNonGmo: "100% Sans OGM",
@@ -572,6 +577,25 @@ const translations = {
       badge4: "Façonnage en France (Normes BPF / GMP)"
     },
 
+    // Consulting & Stratégie Nutraceutique
+    consultingSection: {
+      tag: "Conseil Stratégique & Développement",
+      title: "Accompagnement Stratégique de la <em class=\"text-limegold-300 not-italic font-normal\">Filière Nutraceutique</em>",
+      subtitle: "Gervais Partners accompagne les entreprises de la filière nutraceutique dans leurs transformations et leur développement. Nous conseillons dirigeants, actionnaires et investisseurs pour définir et déployer des stratégies créatrices de valeur.",
+      p1_title: "Positionnement Stratégique & Cession",
+      p1_desc: "Notre expertise couvre le positionnement stratégique, la croissance externe et les projets de cession.",
+      p1_badge: "Conseil dirigeants, actionnaires & investisseurs",
+      p2_title: "Efficacité Commerciale & Réseaux",
+      p2_desc: "Nous renforçons également l’efficacité commerciale et marketing, de la stratégie go‑to‑market au développement des réseaux.",
+      p2_badge: "Déploiement go-to-market & développement réseaux",
+      p3_title: "Optimisation Organisationnelle & Industrielle",
+      p3_desc: "Nous intégrons une optimisation organisationnelle et industrielle pour améliorer compétitivité, productivité et capacités de production. Grâce à une connaissance approfondie du secteur, nous intervenons sur toute la chaîne de valeur, de l’ingrédient au produit fini.",
+      p3_badge: "De l'ingrédient pur au produit fini galénique",
+      box_title: "Transformer les Enjeux en Opportunités Concrètes",
+      box_desc: "En combinant vision stratégique, expertise opérationnelle et maîtrise du marché, Gervais Partners transforme les enjeux en opportunités concrètes.",
+      box_cta: "Échanger sur vos Projets Stratégiques"
+    },
+
     // European Location & Map
     location: {
       tag: "Ancrage Stratégique",
@@ -672,6 +696,7 @@ const translations = {
     // Navigation
     nav: {
       home: "Home",
+      ingredients: "Ingredients",
       about: "About Us",
       services: "Quality & Services",
       events: "Events & Vitafoods",
@@ -683,6 +708,7 @@ const translations = {
       interactiveLab: "Formulation Studio",
       microscope: "Botanical Lens",
       galenic: "Contract Manufacturing",
+      consulting: "Consulting",
       leadership: "Leadership",
       location: "Belgium Hub",
       contact: "Contact & Quote",
@@ -759,8 +785,10 @@ const translations = {
       about: "About Gervais Partners (Since 2009)",
       quality: "EU Pharmacopoeia & Quality Assays",
       galenic: "Contract Manufacturing (France GMP)",
+      consulting: "Strategic Consulting & M&A",
       leadership: "Executive Leadership & Direction",
       faq: "B2B Frequently Asked Questions",
+      contact: "R&D Sample Requests & Quotes",
       catContact: "Headquarters & Direct Access",
       address: "Rue de la Gendarmerie 4, 1380 Lasne (Belgium)",
       phone: "+32 472 75 22 96",
@@ -1218,6 +1246,7 @@ const translations = {
       tag: "Galenic Manufacturing",
       title: "From Raw Botanical Active to Finished Galenic Product",
       subtitle: "Through our industrial partner facility in France, we offer European clients an end-to-end integrated solution: from bulk active ingredient supply to white-label contract manufacturing.",
+      sisterNotice: "Direct portal of the French sister company currently deploying. Galenic projects handled today directly by Gervais Partners.",
       step1_title: "1. Titrated Raw Material",
       step1_desc: "Direct supply of our standardized bulk actives (astaxanthin, phycocyanin, curcumin, berberine) with full regulatory dossiers and buffer warehousing in Belgium.",
       step2_title: "2. Precision Galenic Manufacturing",
@@ -1228,6 +1257,25 @@ const translations = {
       badge2: "Sugar-Free Gummies (Pectin)",
       badge3: "Vegan Liquid Capsules (MCT)",
       badge4: "French Manufacturing (GMP / BPF)"
+    },
+
+    // Consulting & Nutraceutical Strategy
+    consultingSection: {
+      tag: "Strategic Advisory & Business Development",
+      title: "Strategic Advisory for the <em class=\"text-limegold-300 not-italic font-normal\">Nutraceutical Industry</em>",
+      subtitle: "Gervais Partners supports companies in the nutraceutical industry through their transformations and business development. We advise executives, shareholders, and investors in defining and deploying value-creating strategies.",
+      p1_title: "Strategic Positioning & M&A Advisory",
+      p1_desc: "Our expertise covers strategic positioning, external growth, acquisitions, and divestiture projects.",
+      p1_badge: "Advising executives, shareholders & investors",
+      p2_title: "Commercial Efficiency & Distribution",
+      p2_desc: "We also enhance commercial and marketing performance, from go-to-market strategies to distribution network expansion.",
+      p2_badge: "Go-to-market rollout & network development",
+      p3_title: "Organizational & Industrial Optimization",
+      p3_desc: "We integrate organizational and industrial optimization to enhance competitiveness, productivity, and manufacturing capacities. Drawing on in-depth industry insight, we operate across the entire value chain, from raw ingredients to finished galenic products.",
+      p3_badge: "From pure ingredients to finished galenics",
+      box_title: "Transforming Challenges into Tangible Opportunities",
+      box_desc: "By combining strategic vision, operational expertise, and market mastery, Gervais Partners turns challenges into tangible growth opportunities.",
+      box_cta: "Discuss Your Strategic Projects"
     },
 
     // European Location & Map
@@ -1272,7 +1320,9 @@ const translations = {
       volGalenic: "Finished Galenic Product (Gummies / Softgels)",
       fieldMessage: "Formulation Details or Specific Requirements",
       placeholderMessage: "Specify target active assay, desired galenic format, regulatory constraints...",
+      checkTds: "I would like to receive product Technical Data Sheets (TDS)",
       checkSample: "I request a physical sample package dispatched to our laboratory address",
+      placeholderVolume: "e.g. 50 kg / year, 5 kg pilot batch, 25,000 bottles...",
       submitBtn: "Submit Professional Request",
       privacyNotice: "Your corporate data is treated with strict confidentiality and handled directly by executive leadership.",
       successModalTitle: "B2B Request Successfully Received!",
