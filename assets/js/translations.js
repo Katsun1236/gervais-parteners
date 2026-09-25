@@ -29,9 +29,8 @@ const translations = {
       consulting: "Consulting",
       leadership: "Direction",
       location: "Hub Belgique",
-      contact: "Contact & Devis",
+      contact: "Présentation & Contact",
       requestSample: "Demander un Échantillon",
-      heritageTag: "Gervais Partners (anciennement Nutrialist)",
       soundOn: "🍃 Ambiance Nature : Active",
       soundOff: "🍃 Ambiance Nature : Silence"
     },
@@ -109,7 +108,7 @@ const translations = {
       contact: "Demandes d'Échantillons R&D & Devis",
       catContact: "Siège & Accès Direct",
       address: "Rue de la Gendarmerie 4, 1380 Lasne (Belgique)",
-      phone: "+32 472 75 22 96",
+      phone: "+32 473 28 61 29 & +32 485 13 03 02",
       mapsLink: "Voir sur Google Maps ↗",
       requestSampleBtn: "Demander un Échantillon R&D"
     },
@@ -135,7 +134,7 @@ const translations = {
     // Astaxanthin Feature Section (Client Email 3)
     astaxanthinSection: {
       tag: "Biotechnologie des Micro-Algues",
-      title: "L'Astaxanthine : Le Plus Puissant Anti-Oxydant",
+      title: "L'Astaxanthine : L'Anti-Oxydant le Plus Puissant au Monde",
       introQuote: "L'astaxanthine est un pigment caroténoïde naturel produit principalement par la microalgue Haematococcus pluvialis lorsqu'elle est soumise à un stress environnemental. L'astaxanthine est particulièrement précieuse pour la santé de la peau, grâce à son extraordinaire structure moléculaire - une structure qui lui confère des capacités antioxydantes jusqu'à 6 000 fois plus puissantes que celles de la vitamine C et 550 fois plus puissantes que celles de la vitamine E.",
       photobioCaption: "Culture biotechnologique fermée sous photobioréacteurs haute technologie à spectre LED contrôlé",
       rawTitle: "4 Matières Premières en Vrac (Bulk Ingredients)",
@@ -176,7 +175,7 @@ const translations = {
     siliciumSection: {
       tag: "Innovation Brevetée Eytelia · 100% Végétal & Biologique",
       title: "Silicium Végétal Breveté : <em class=\"text-limegold-500 not-italic\">Le Premier Silicium Solide</em> Hautement Soluble",
-      subtitle: "Breveté par EYTELIA SILICIUM · Silice de bambou hautement soluble qui stimule la production naturelle de collagène. Ingrédient breveté et exclusif pour beautyceuticals, nutraceutiques et régénération cellulaire.",
+      subtitle: "Breveté par EYTELIA SILICIUM · Garantie 100% Sans Nano-Matériaux · Garantie 100% Sans Nano-Matériaux · Silice de bambou hautement soluble qui stimule la production naturelle de collagène. Ingrédient breveté et exclusif pour beautyceuticals, nutraceutiques et régénération cellulaire.",
       stat1_val: "100%",
       stat1_lbl: "Biologique & Végétal (Bambou)",
       stat2_val: "6%",
@@ -248,11 +247,11 @@ const translations = {
       title: "Questions Fréquentes des Laboratoires & Fabricants",
       subtitle: "Informations techniques, réglementaires et opérationnelles pour démarrer vos approvisionnements.",
       q1: "Comment obtenir des échantillons R&D pour nos tests de formulation ?",
-      a1: "Vous pouvez demander des échantillons physiques (100g à 500g selon la référence) directement via notre formulaire en ligne ou par téléphone au +32 472 75 22 96. Chaque échantillon est expédié rapidement avec son certificat d'analyse (CoA) d'origine par lot.",
+      a1: "Vous pouvez demander des échantillons physiques (100g à 500g selon la référence) directement via notre formulaire en ligne ou par téléphone au +32 473 28 61 29 & +32 485 13 03 02. Chaque échantillon est expédié rapidement avec son certificat d'analyse (CoA) d'origine par lot.",
       q3: "Quelles sont les garanties réglementaires et contrôles fournis par lot ?",
       a3: "Chaque livraison s'accompagne d'un Certificat d'Analyse (CoA) libératoire complet : titrage HPLC/spectrométrique, absence de métaux lourds (Pb, Cd, Hg, As), dépistage multi-résidus de pesticides conforme au règlement n° 396/2005, contrôle microbiologique conforme à la Pharmacopée Européenne et attestation 100% sans OGM.",
       q4: "Proposez-vous le façonnage en marque blanche (produit fini) ?",
-      a4: "Absolument. Grâce à notre unité galénique partenaire en France certifiée BPF/GMP, nous prenons en charge la fabrication complète de vos produits finis : softgels véganes ou classiques, gummies sans sucre à la pectine, gélules liquides ou formules synergiques sur-mesure, avec conditionnement en pilulier ou flacon sous votre marque."
+      a4: "Absolument. Grâce à notre unité galénique partenaire en France certifiée BPF/GMP, nous prenons en charge la fabrication complète de vos produits finis : soft gel, vegans ou classique, comprimé, gélule, stick, shot et bouteille liquide, conditionnement secondaire."
     },
 
     // Products Section (Curated Products Database)
@@ -599,11 +598,11 @@ const translations = {
     // European Location & Map
     location: {
       tag: "Ancrage Stratégique",
-      title: "Siège et Hub Logistique en Belgique au Cœur de l'Europe",
-      subtitle: "Implantée à Lasne (Brabant Wallon), Gervais Partners assure des livraisons rapides sous température contrôlée sur l'ensemble du territoire européen.",
+      title: "Siège en Belgique au Cœur de l'Europe",
+      subtitle: "Implantée à Lasne (Brabant Wallon), Gervais Partners assure des livraisons rapides sur l'ensemble du territoire européen.",
       hq_title: "Siège Européen",
       hq_address: "Rue de la Gendarmerie 4, 1380 Lasne (Belgique)",
-      hq_phone: "+32 472 75 22 96",
+      hq_phone: "+32 473 28 61 29 & +32 485 13 03 02",
       hq_contact: "Demandes B2B & fiches techniques TDS",
       hq_hours: "Lundi - Vendredi : 08:00 - 17:00 (CET)",
       map_title: "Localisation Google Maps — Gervais Partners",
@@ -686,9 +685,8 @@ const translations = {
       col3_title: "Contact & Siège Social",
       rights: "Tous droits réservés. Ingrédients réservés à un usage professionnel (B2B).",
       address: "Rue de la Gendarmerie 4, 1380 Lasne (Belgique)",
-      phone: "+32 472 75 22 96",
-      formerName: "Gervais Partners (anciennement Nutrialist)"
-    }
+      phone: "+32 473 28 61 29 & +32 485 13 03 02",
+      }
   },
 
   en: {
@@ -711,9 +709,8 @@ const translations = {
       consulting: "Consulting",
       leadership: "Leadership",
       location: "Belgium Hub",
-      contact: "Contact & Quote",
+      contact: "About & Contact",
       requestSample: "Request a Sample",
-      heritageTag: "Gervais Partners (formerly Nutrialist)",
       soundOn: "🍃 Nature Ambience: Active",
       soundOff: "🍃 Nature Ambience: Muted"
     },
@@ -791,7 +788,7 @@ const translations = {
       contact: "R&D Sample Requests & Quotes",
       catContact: "Headquarters & Direct Access",
       address: "Rue de la Gendarmerie 4, 1380 Lasne (Belgium)",
-      phone: "+32 472 75 22 96",
+      phone: "+32 473 28 61 29 & +32 485 13 03 02",
       mapsLink: "View on Google Maps ↗",
       requestSampleBtn: "Request an R&D Sample"
     },
@@ -930,7 +927,7 @@ const translations = {
       title: "Frequently Asked Questions from Laboratories & Manufacturers",
       subtitle: "Technical, regulatory, and operational information to start your sourcing.",
       q1: "How to obtain R&D samples for our formulation trials?",
-      a1: "You can request physical samples (100g to 500g depending on reference) directly through our online form or by phone at +32 472 75 22 96. Each sample is dispatched promptly with its original lot Certificate of Analysis (CoA).",
+      a1: "You can request physical samples (100g to 500g depending on reference) directly through our online form or by phone at +32 473 28 61 29 & +32 485 13 03 02. Each sample is dispatched promptly with its original lot Certificate of Analysis (CoA).",
       q3: "What regulatory guarantees and quality controls accompany each batch?",
       a3: "Every delivery includes a full release Certificate of Analysis (CoA): HPLC/spectrometric assay, heavy metals screening (Pb, Cd, Hg, As), pesticide multi-residue compliance under Regulation No 396/2005, European Pharmacopoeia microbiological testing, and 100% non-GMO certification.",
       q4: "Do you offer private label finished product contract manufacturing?",
@@ -1285,7 +1282,7 @@ const translations = {
       subtitle: "Headquartered in Lasne (Walloon Brabant), Gervais Partners guarantees rapid temperature-controlled delivery across all EU member states.",
       hq_title: "European Headquarters",
       hq_address: "Rue de la Gendarmerie 4, 1380 Lasne (Belgium)",
-      hq_phone: "+32 472 75 22 96",
+      hq_phone: "+32 473 28 61 29 & +32 485 13 03 02",
       hq_contact: "Demandes B2B & fiches techniques TDS",
       hq_hours: "Monday - Friday: 08:00 - 17:00 (CET)",
       map_title: "Google Maps Location — Gervais Partners",
@@ -1368,8 +1365,7 @@ const translations = {
       col3_title: "Contact & Headquarters",
       rights: "All Rights Reserved. Ingredients strictly reserved for B2B industrial & laboratory use.",
       address: "Rue de la Gendarmerie 4, 1380 Lasne (Belgium)",
-      phone: "+32 472 75 22 96",
-      formerName: "Gervais Partners (formerly Nutrialist)"
-    }
+      phone: "+32 473 28 61 29 & +32 485 13 03 02",
+      }
   }
 };
