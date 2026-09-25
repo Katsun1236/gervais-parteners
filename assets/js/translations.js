@@ -135,7 +135,7 @@ const translations = {
     commodities: {
       tag: "Portefeuille Matières Premières &amp; Commodité",
       title: "Autres Ingrédients de Commodité",
-      subtitle: "Disponibles en vrac (bulk) pour laboratoires et façonniers, avec certificats d'analyse systématiques.",
+      subtitle: "",
       cta: "Demander un Échantillon R&amp;D"
     },
 
@@ -823,7 +823,7 @@ const translations = {
     commodities: {
       tag: "Raw Materials &amp; Commodity Portfolio",
       title: "Other Commodity Ingredients",
-      subtitle: "Available in bulk for laboratories and manufacturers, with systematic certificates of analysis.",
+      subtitle: "",
       cta: "Request an R&amp;D Sample"
     },
 
