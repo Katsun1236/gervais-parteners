@@ -116,8 +116,9 @@ const translations = {
     // Hero Section
     hero: {
       badge: "Ingrédients Botaniques d'Excellence · 100% Éco-Extraction · B2B Europe",
-      title: "L'Alliance de la<br><em class=\"text-limegold-300 not-italic\">Nature Vivante</em><br>&amp; de la Rigueur Scientifique",
-      subtitle: "Gervais Partners fournit aux laboratoires pharmaceutiques et marques de compléments alimentaires des principes actifs végétaux d'une pureté absolue. De la culture biotechnologique de micro-algues aux extraits titrés de haute technicité, nous incarnons l'excellence écologique au cœur de l'Europe.",
+      title: "Astaxanthine Naturelle <em class=\"text-limegold-300 not-italic font-medium\">Haute Pureté</em> &amp; Ingrédients Botaniques B2B",
+      subtitle: "Gervais Partners fournit aux laboratoires pharmaceutiques et nutraceutiques européens une Astaxanthine naturelle d'exception issue de culture fermée stérile d'Haematococcus pluvialis.",
+      cta: "Demander un Échantillon R&amp;D",
       btnCatalog: "Explorer Nos Ingrédients &amp; TDS",
       btnAstaxanthin: "Focus Astaxanthine 6000x",
       btnLab: "Demander un Échantillon R&amp;D",
@@ -129,6 +130,13 @@ const translations = {
       stat3_lbl: "Éco-Extraction sans Solvant Toxique",
       stat4_val: "Direct",
       stat4_lbl: "Expédition Échantillons R&D Lasne"
+    },
+
+    commodities: {
+      tag: "Portefeuille Matières Premières &amp; Commodité",
+      title: "Autres Ingrédients de Commodité &amp; <em class=\"text-forest-800 not-italic\">Extraits Fonctionnels</em>",
+      subtitle: "Disponibles en vrac (bulk) pour laboratoires et façonniers, avec certificats d'analyse systématiques.",
+      cta: "Demander un Devis &amp; Disponibilités Bulk"
     },
 
     // Astaxanthin Feature Section (Client Email 3)
@@ -796,8 +804,9 @@ const translations = {
     // Hero Section
     hero: {
       badge: "Pure Botanical Actives · 100% Eco-Extraction · B2B Europe",
-      title: "Where Living Nature<br><em class=\"text-limegold-300 not-italic\">Meets Science</em><br>&amp; European Purity",
-      subtitle: "Gervais Partners supplies pharmaceutical laboratories and health supplement brands with botanical raw materials of immaculate purity. From cutting-edge microalgae photobioreactors to clinically validated standardized extracts, we stand for environmental excellence at the heart of Europe.",
+      title: "Natural Astaxanthin <em class=\"text-limegold-300 not-italic font-medium\">High Purity</em> &amp; Botanical B2B Ingredients",
+      subtitle: "Gervais Partners supplies European pharmaceutical and nutraceutical laboratories with premium natural Astaxanthin from closed sterile Haematococcus pluvialis cultivation.",
+      cta: "Request an R&amp;D Sample",
       btnCatalog: "Explore Our Ingredients &amp; TDS",
       btnAstaxanthin: "Discover Astaxanthin 6000x",
       btnLab: "Request an R&amp;D Sample",
@@ -809,6 +818,13 @@ const translations = {
       stat3_lbl: "Clean Eco-Extraction (Zero Hexane)",
       stat4_val: "Direct",
       stat4_lbl: "R&D Sample Lab Dispatch from Lasne"
+    },
+
+    commodities: {
+      tag: "Raw Materials &amp; Commodity Portfolio",
+      title: "Other Commodity Ingredients &amp; <em class=\"text-forest-800 not-italic\">Functional Extracts</em>",
+      subtitle: "Available in bulk for laboratories and manufacturers, with systematic certificates of analysis.",
+      cta: "Request a Quote &amp; Bulk Availability"
     },
 
     // Astaxanthin Feature Section (Client Email 3)

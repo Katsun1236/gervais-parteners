@@ -349,7 +349,6 @@
                         <!-- Navigation Principale : Accueil & Ingrédients, Façonnage, Consulting, Présentation & Contact -->
       <nav class="flex items-center gap-3.5 sm:gap-6 lg:gap-8 font-semibold text-xs sm:text-sm text-slate-700 overflow-x-auto py-1 whitespace-nowrap" aria-label="Navigation Principale">
         <a href="index.html" class="hover:text-forest-950 transition" data-i18n="nav.home">Accueil</a>
-        <a href="index.html#astaxanthin-showcase" class="hover:text-forest-950 transition" data-i18n="nav.ingredients">Ingrédients</a>
         <a href="faconnage-galenique.html" class="hover:text-forest-950 transition" data-i18n="nav.galenic">Façonnage</a>
         <a href="consulting.html" class="hover:text-forest-950 transition" data-i18n="nav.consulting">Consulting</a>
         <a href="contact.html" class="hover:text-forest-950 transition" data-i18n="nav.contact">Présentation &amp; Contact</a>
@@ -396,6 +395,25 @@
             <span class="block text-[10px] font-bold uppercase tracking-widest text-limegold-400">Ingrédients Botaniques B2B · Europe</span>
             <span class="block text-xs text-white/70 font-medium">Lasne, Belgique · Excellence Depuis 2009</span>
           </div>
+
+          <!-- Title -->
+          <h1 class="display text-3xl sm:text-4xl lg:text-5xl font-normal text-white tracking-tight leading-[1.15] mb-4 drop-shadow-md" data-i18n="hero.title">
+            Astaxanthine Naturelle <em class="text-limegold-300 not-italic font-medium">Haute Pureté</em> &amp; Ingrédients Botaniques B2B
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="text-sm sm:text-base text-white/95 mb-6 max-w-lg leading-relaxed font-light drop-shadow-sm" data-i18n="hero.subtitle">
+            Gervais Partners fournit aux laboratoires pharmaceutiques et nutraceutiques européens une Astaxanthine naturelle d'exception issue de culture fermée stérile d'Haematococcus pluvialis.
+          </p>
+
+          <!-- Single Action Button -->
+          <div class="flex flex-wrap md:justify-end gap-4 w-full">
+            <a href="contact.html" class="inline-flex items-center justify-center gap-2.5 bg-gradient-to-r from-limegold-400 to-limegold-500 hover:from-limegold-300 hover:to-limegold-400 text-forest-950 font-extrabold text-sm px-7 py-3.5 rounded-full transition-all shadow-[0_10px_25px_rgba(202,138,4,0.35)] hover:shadow-[0_15px_30px_rgba(202,138,4,0.5)] hover:-translate-y-0.5 group">
+              <svg class="w-4 h-4 text-forest-950 transition-transform group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+              <span data-i18n="hero.cta">Demander un Échantillon R&amp;D</span>
+            </a>
+          </div>
+        </div>
       </div>
 
       <!-- Capsule Sigles Réglementaires Européens (Directement sur l'image du Hero) -->
@@ -1077,197 +1095,102 @@
     <!-- ═══════════════════════════════════════════════════
          AUTRES INGRÉDIENTS DE COMMODITÉ (10 INGRÉDIENTS PHARES)
     ═══════════════════════════════════════════════════ -->
-    <section id="commodities" class="py-24 bg-[#faf7f2] border-t border-slate-200/80">
-      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <section id="commodities" class="py-16 bg-[#faf7f2] border-t border-slate-200/80">
+      <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
         
         <!-- Header -->
-        <div class="max-w-3xl mx-auto text-center mb-16 reveal">
-          <div class="inline-flex items-center gap-2 text-forest-800 text-xs font-bold uppercase tracking-widest mb-4 bg-white/80 border border-slate-200 px-4 py-1.5 rounded-full shadow-xs">
+        <div class="mb-10 reveal">
+          <div class="inline-flex items-center gap-2 text-forest-800 text-xs font-bold uppercase tracking-widest mb-3 bg-white/80 border border-slate-200 px-4 py-1.5 rounded-full shadow-xs">
             <span class="w-2 h-2 rounded-full bg-forest-800"></span>
             <span data-i18n="commodities.tag">Portefeuille Matières Premières &amp; Commodité</span>
           </div>
-          <h2 class="display text-4xl sm:text-5xl font-semibold text-slate-900 mb-6 leading-tight" data-i18n="commodities.title">
+          <h2 class="display text-3xl sm:text-4xl font-semibold text-slate-900 mb-3 leading-tight" data-i18n="commodities.title">
             Autres Ingrédients de Commodité &amp; <em class="text-forest-800 not-italic">Extraits Fonctionnels</em>
           </h2>
-          <p class="text-slate-600 text-base leading-relaxed" data-i18n="commodities.subtitle">
-            En complément de notre gamme vedette et formules cliniques brevetées, Gervais Partners sélectionne, contrôle et livre en vrac (bulk) une gamme rigoureuse d'ingrédients de commodité titrés pour laboratoires pharmaceutiques et fabricants de compléments alimentaires.
+          <p class="text-slate-600 text-sm max-w-xl mx-auto leading-relaxed" data-i18n="commodities.subtitle">
+            Disponibles en vrac (bulk) pour laboratoires et façonniers, avec certificats d'analyse systématiques.
           </p>
         </div>
 
-        <!-- 10 Commodity Ingredients Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 mb-14 reveal">
-          
-          <!-- 1. Protéine de petit pois 80% -->
-          <div class="bg-white rounded-2xl p-5 border border-slate-200/90 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col justify-between group">
-            <div>
-              <div class="flex items-center justify-between mb-3">
-                <span class="text-[10px] font-bold uppercase tracking-wider text-forest-800 bg-forest-50 px-2 py-0.5 rounded-md border border-forest-200">80% Isolat</span>
-                <span class="text-slate-400 text-xs font-mono">Bulk</span>
-              </div>
-              <h3 class="display text-lg font-bold text-slate-900 mb-1 group-hover:text-forest-900 transition">Protéine de Petit Pois 80%</h3>
-              <p class="text-xs text-slate-500 leading-relaxed">Isolat végétal haute digestibilité, profil d'acides aminés équilibré, grade nutritionnel vegan sans allergènes majeurs.</p>
-            </div>
-            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-              <span class="text-[11px] font-semibold text-slate-400">Pureté 80%</span>
-              <a href="contact.html?ing=pea-protein" class="text-xs font-bold text-forest-800 hover:text-forest-950 flex items-center gap-1 transition">Échantillon →</a>
-            </div>
+        <!-- Petit listing épuré (10 matières premières) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-left max-w-2xl mx-auto mb-10 reveal">
+          <div class="bg-white rounded-xl px-4 py-3 border border-slate-200/90 flex items-center justify-between shadow-xs hover:border-forest-300 transition">
+            <span class="text-sm font-semibold text-slate-800 flex items-center gap-2.5">
+              <span class="w-2 h-2 rounded-full bg-forest-700"></span>
+              Protéine de petit pois 80%
+            </span>
+            <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider font-mono">Bulk</span>
           </div>
-
-          <!-- 2. Protéine de riz 85% -->
-          <div class="bg-white rounded-2xl p-5 border border-slate-200/90 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col justify-between group">
-            <div>
-              <div class="flex items-center justify-between mb-3">
-                <span class="text-[10px] font-bold uppercase tracking-wider text-forest-800 bg-forest-50 px-2 py-0.5 rounded-md border border-forest-200">85% Isolat</span>
-                <span class="text-slate-400 text-xs font-mono">Bulk</span>
-              </div>
-              <h3 class="display text-lg font-bold text-slate-900 mb-1 group-hover:text-forest-900 transition">Protéine de Riz 85%</h3>
-              <p class="text-xs text-slate-500 leading-relaxed">Isolat de riz hypoallergénique par extraction enzymatique douce. Excellente dispersibilité pour poudres et boissons fonctionnelles.</p>
-            </div>
-            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-              <span class="text-[11px] font-semibold text-slate-400">Pureté 85%</span>
-              <a href="contact.html?ing=rice-protein" class="text-xs font-bold text-forest-800 hover:text-forest-950 flex items-center gap-1 transition">Échantillon →</a>
-            </div>
+          <div class="bg-white rounded-xl px-4 py-3 border border-slate-200/90 flex items-center justify-between shadow-xs hover:border-forest-300 transition">
+            <span class="text-sm font-semibold text-slate-800 flex items-center gap-2.5">
+              <span class="w-2 h-2 rounded-full bg-forest-700"></span>
+              Protéine de riz 85%
+            </span>
+            <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider font-mono">Bulk</span>
           </div>
-
-          <!-- 3. Greantea extract L-Theanine 98% -->
-          <div class="bg-white rounded-2xl p-5 border border-slate-200/90 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col justify-between group">
-            <div>
-              <div class="flex items-center justify-between mb-3">
-                <span class="text-[10px] font-bold uppercase tracking-wider text-forest-800 bg-forest-50 px-2 py-0.5 rounded-md border border-forest-200">98% HPLC</span>
-                <span class="text-slate-400 text-xs font-mono">Bulk</span>
-              </div>
-              <h3 class="display text-lg font-bold text-slate-900 mb-1 group-hover:text-forest-900 transition">Green Tea Extract L-Théanine 98%</h3>
-              <p class="text-xs text-slate-500 leading-relaxed">Extrait titré à 98% de L-théanine naturelle. Actif nootropique de référence pour relaxation sans somnolence et clarté mentale.</p>
-            </div>
-            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-              <span class="text-[11px] font-semibold text-slate-400">Titrée 98%</span>
-              <a href="contact.html?ing=l-theanine" class="text-xs font-bold text-forest-800 hover:text-forest-950 flex items-center gap-1 transition">Échantillon →</a>
-            </div>
+          <div class="bg-white rounded-xl px-4 py-3 border border-slate-200/90 flex items-center justify-between shadow-xs hover:border-forest-300 transition">
+            <span class="text-sm font-semibold text-slate-800 flex items-center gap-2.5">
+              <span class="w-2 h-2 rounded-full bg-forest-700"></span>
+              Green Tea extract L-Théanine 98%
+            </span>
+            <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider font-mono">Bulk</span>
           </div>
-
-          <!-- 4. Ubiquinol -->
-          <div class="bg-white rounded-2xl p-5 border border-slate-200/90 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col justify-between group">
-            <div>
-              <div class="flex items-center justify-between mb-3">
-                <span class="text-[10px] font-bold uppercase tracking-wider text-amber-800 bg-amber-50 px-2 py-0.5 rounded-md border border-amber-200">CoQ10 Réduit</span>
-                <span class="text-slate-400 text-xs font-mono">Bulk</span>
-              </div>
-              <h3 class="display text-lg font-bold text-slate-900 mb-1 group-hover:text-forest-900 transition">Ubiquinol</h3>
-              <p class="text-xs text-slate-500 leading-relaxed">Forme active et réduite du CoQ10 à biodisponibilité immédiate. Puissant antioxydant lipidique cellulaire et mitochondrial.</p>
-            </div>
-            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-              <span class="text-[11px] font-semibold text-slate-400">Haute Biodispo</span>
-              <a href="contact.html?ing=ubiquinol" class="text-xs font-bold text-forest-800 hover:text-forest-950 flex items-center gap-1 transition">Échantillon →</a>
-            </div>
+          <div class="bg-white rounded-xl px-4 py-3 border border-slate-200/90 flex items-center justify-between shadow-xs hover:border-forest-300 transition">
+            <span class="text-sm font-semibold text-slate-800 flex items-center gap-2.5">
+              <span class="w-2 h-2 rounded-full bg-forest-700"></span>
+              Ubiquinol
+            </span>
+            <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider font-mono">Bulk</span>
           </div>
-
-          <!-- 5. Chondroitine sulfate -->
-          <div class="bg-white rounded-2xl p-5 border border-slate-200/90 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col justify-between group">
-            <div>
-              <div class="flex items-center justify-between mb-3">
-                <span class="text-[10px] font-bold uppercase tracking-wider text-forest-800 bg-forest-50 px-2 py-0.5 rounded-md border border-forest-200">Ph. Eur. 90-95%</span>
-                <span class="text-slate-400 text-xs font-mono">Bulk</span>
-              </div>
-              <h3 class="display text-lg font-bold text-slate-900 mb-1 group-hover:text-forest-900 transition">Chondroïtine Sulfate</h3>
-              <p class="text-xs text-slate-500 leading-relaxed">Grade pharmaceutique &amp; nutraceutique Ph. Eur. Ingrédient fondamental pour la régénération du cartilage et le confort articulaire.</p>
-            </div>
-            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-              <span class="text-[11px] font-semibold text-slate-400">Ph. Eur.</span>
-              <a href="contact.html?ing=chondroitine" class="text-xs font-bold text-forest-800 hover:text-forest-950 flex items-center gap-1 transition">Échantillon →</a>
-            </div>
+          <div class="bg-white rounded-xl px-4 py-3 border border-slate-200/90 flex items-center justify-between shadow-xs hover:border-forest-300 transition">
+            <span class="text-sm font-semibold text-slate-800 flex items-center gap-2.5">
+              <span class="w-2 h-2 rounded-full bg-forest-700"></span>
+              Chondroïtine sulfate
+            </span>
+            <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider font-mono">Bulk</span>
           </div>
-
-          <!-- 6. Rhodiola rosea extract -->
-          <div class="bg-white rounded-2xl p-5 border border-slate-200/90 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col justify-between group">
-            <div>
-              <div class="flex items-center justify-between mb-3">
-                <span class="text-[10px] font-bold uppercase tracking-wider text-rose-800 bg-rose-50 px-2 py-0.5 rounded-md border border-rose-200">3% Rosavines</span>
-                <span class="text-slate-400 text-xs font-mono">Bulk</span>
-              </div>
-              <h3 class="display text-lg font-bold text-slate-900 mb-1 group-hover:text-forest-900 transition">Rhodiola Rosea Extract</h3>
-              <p class="text-xs text-slate-500 leading-relaxed">Extrait sec standardisé en rosavines (3%) et salidroside (1%). Plante adaptogène majeure pour la résistance au stress et la vitalité.</p>
-            </div>
-            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-              <span class="text-[11px] font-semibold text-slate-400">3% / 1% HPLC</span>
-              <a href="contact.html?ing=rhodiola" class="text-xs font-bold text-forest-800 hover:text-forest-950 flex items-center gap-1 transition">Échantillon →</a>
-            </div>
+          <div class="bg-white rounded-xl px-4 py-3 border border-slate-200/90 flex items-center justify-between shadow-xs hover:border-forest-300 transition">
+            <span class="text-sm font-semibold text-slate-800 flex items-center gap-2.5">
+              <span class="w-2 h-2 rounded-full bg-forest-700"></span>
+              Rhodiola rosea extract
+            </span>
+            <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider font-mono">Bulk</span>
           </div>
-
-          <!-- 7. Matcha -->
-          <div class="bg-white rounded-2xl p-5 border border-slate-200/90 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col justify-between group">
-            <div>
-              <div class="flex items-center justify-between mb-3">
-                <span class="text-[10px] font-bold uppercase tracking-wider text-forest-800 bg-forest-50 px-2 py-0.5 rounded-md border border-forest-200">Grade Bio</span>
-                <span class="text-slate-400 text-xs font-mono">Bulk</span>
-              </div>
-              <h3 class="display text-lg font-bold text-slate-900 mb-1 group-hover:text-forest-900 transition">Matcha</h3>
-              <p class="text-xs text-slate-500 leading-relaxed">Poudre micronisée de thé vert de haute altitude, riche en catéchines EGCG, chlorophylle et polyphénols antioxydants.</p>
-            </div>
-            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-              <span class="text-[11px] font-semibold text-slate-400">Micronisé</span>
-              <a href="contact.html?ing=matcha" class="text-xs font-bold text-forest-800 hover:text-forest-950 flex items-center gap-1 transition">Échantillon →</a>
-            </div>
+          <div class="bg-white rounded-xl px-4 py-3 border border-slate-200/90 flex items-center justify-between shadow-xs hover:border-forest-300 transition">
+            <span class="text-sm font-semibold text-slate-800 flex items-center gap-2.5">
+              <span class="w-2 h-2 rounded-full bg-forest-700"></span>
+              Matcha
+            </span>
+            <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider font-mono">Bulk</span>
           </div>
-
-          <!-- 8. Ginger extract -->
-          <div class="bg-white rounded-2xl p-5 border border-slate-200/90 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col justify-between group">
-            <div>
-              <div class="flex items-center justify-between mb-3">
-                <span class="text-[10px] font-bold uppercase tracking-wider text-amber-800 bg-amber-50 px-2 py-0.5 rounded-md border border-amber-200">5% Gingérols</span>
-                <span class="text-slate-400 text-xs font-mono">Bulk</span>
-              </div>
-              <h3 class="display text-lg font-bold text-slate-900 mb-1 group-hover:text-forest-900 transition">Ginger Extract (Gingembre)</h3>
-              <p class="text-xs text-slate-500 leading-relaxed">Extrait titré à 5% de gingérols totaux. Propriétés anti-inflammatoires, digestives et stimulantes pour formules immunitaires.</p>
-            </div>
-            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-              <span class="text-[11px] font-semibold text-slate-400">Titré 5%</span>
-              <a href="contact.html?ing=ginger" class="text-xs font-bold text-forest-800 hover:text-forest-950 flex items-center gap-1 transition">Échantillon →</a>
-            </div>
+          <div class="bg-white rounded-xl px-4 py-3 border border-slate-200/90 flex items-center justify-between shadow-xs hover:border-forest-300 transition">
+            <span class="text-sm font-semibold text-slate-800 flex items-center gap-2.5">
+              <span class="w-2 h-2 rounded-full bg-forest-700"></span>
+              Ginger extract
+            </span>
+            <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider font-mono">Bulk</span>
           </div>
-
-          <!-- 9. Reishi mushroom extract -->
-          <div class="bg-white rounded-2xl p-5 border border-slate-200/90 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col justify-between group">
-            <div>
-              <div class="flex items-center justify-between mb-3">
-                <span class="text-[10px] font-bold uppercase tracking-wider text-forest-800 bg-forest-50 px-2 py-0.5 rounded-md border border-forest-200">30% Polysacch.</span>
-                <span class="text-slate-400 text-xs font-mono">Bulk</span>
-              </div>
-              <h3 class="display text-lg font-bold text-slate-900 mb-1 group-hover:text-forest-900 transition">Reishi Mushroom Extract</h3>
-              <p class="text-xs text-slate-500 leading-relaxed">Ganoderma lucidum titré en polysaccharides (≥ 30%) et triterpènes. Champignon médicinal réputé pour l'équilibre immunitaire et la longévité.</p>
-            </div>
-            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-              <span class="text-[11px] font-semibold text-slate-400">Titré ≥ 30%</span>
-              <a href="contact.html?ing=reishi" class="text-xs font-bold text-forest-800 hover:text-forest-950 flex items-center gap-1 transition">Échantillon →</a>
-            </div>
+          <div class="bg-white rounded-xl px-4 py-3 border border-slate-200/90 flex items-center justify-between shadow-xs hover:border-forest-300 transition">
+            <span class="text-sm font-semibold text-slate-800 flex items-center gap-2.5">
+              <span class="w-2 h-2 rounded-full bg-forest-700"></span>
+              Reishi mushroom extract
+            </span>
+            <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider font-mono">Bulk</span>
           </div>
-
-          <!-- 10. Vitamine K2 -->
-          <div class="bg-white rounded-2xl p-5 border border-slate-200/90 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col justify-between group">
-            <div>
-              <div class="flex items-center justify-between mb-3">
-                <span class="text-[10px] font-bold uppercase tracking-wider text-amber-800 bg-amber-50 px-2 py-0.5 rounded-md border border-amber-200">MK-7 Microencap.</span>
-                <span class="text-slate-400 text-xs font-mono">Bulk</span>
-              </div>
-              <h3 class="display text-lg font-bold text-slate-900 mb-1 group-hover:text-forest-900 transition">Vitamine K2 (MK-7)</h3>
-              <p class="text-xs text-slate-500 leading-relaxed">Ménaquinone-7 naturelle par fermentation, haute stabilité microencapsulée. Synergie idéale avec vitamine D3 pour santé osseuse et cardiovasculaire.</p>
-            </div>
-            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-              <span class="text-[11px] font-semibold text-slate-400">MK-7 Pure</span>
-              <a href="contact.html?ing=vitk2" class="text-xs font-bold text-forest-800 hover:text-forest-950 flex items-center gap-1 transition">Échantillon →</a>
-            </div>
+          <div class="bg-white rounded-xl px-4 py-3 border border-slate-200/90 flex items-center justify-between shadow-xs hover:border-forest-300 transition">
+            <span class="text-sm font-semibold text-slate-800 flex items-center gap-2.5">
+              <span class="w-2 h-2 rounded-full bg-forest-700"></span>
+              Vitamine K2
+            </span>
+            <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider font-mono">Bulk</span>
           </div>
-
         </div>
 
-        <!-- Call to Action Banner -->
-        <div class="bg-forest-950 rounded-3xl p-8 sm:p-10 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl border border-forest-800">
-          <div>
-            <h4 class="display text-2xl font-bold mb-2">Un besoin sur un actif spécifique ou un ingrédient de commodité ?</h4>
-            <p class="text-white/80 text-sm">Notre réseau européen de sourcing qualifié répond sous 24h à vos spécifications de titrage et volumes.</p>
-          </div>
-          <a href="contact.html" class="inline-flex items-center gap-2 bg-gradient-to-r from-limegold-400 to-limegold-500 hover:from-limegold-300 hover:to-limegold-400 text-forest-950 font-extrabold text-sm px-7 py-3.5 rounded-full transition shadow-lg flex-shrink-0">
-            <span>Demander un Devis &amp; Échantillon</span>
-            <svg class="w-4 h-4 text-forest-950" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        <!-- CTA épuré -->
+        <div class="reveal">
+          <a href="contact.html" class="inline-flex items-center gap-2 bg-forest-950 hover:bg-forest-900 text-limegold-400 hover:text-white font-bold text-xs sm:text-sm px-7 py-3.5 rounded-full transition shadow-md">
+            <span data-i18n="commodities.cta">Demander un Devis &amp; Disponibilités Bulk</span>
+            <svg class="w-4 h-4 text-limegold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
           </a>
         </div>
 
@@ -1352,8 +1275,8 @@
 
 
   <!-- Scripts -->
-  <script src="assets/js/translations.js?v=20260925-v6"></script>
-  <script src="assets/js/app.js?v=20260924-v5-consulting"></script>
+  <script src="assets/js/translations.js?v=20260925-v7"></script>
+  <script src="assets/js/app.js?v=20260925-v7"></script>
   <script>
     // Year
     document.getElementById('currentYear').textContent = new Date().getFullYear();
