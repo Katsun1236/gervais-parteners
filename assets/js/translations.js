@@ -136,7 +136,7 @@ const translations = {
       tag: "Portefeuille Matières Premières &amp; Commodité",
       title: "Autres Ingrédients de Commodité &amp; <em class=\"text-forest-800 not-italic\">Extraits Fonctionnels</em>",
       subtitle: "Disponibles en vrac (bulk) pour laboratoires et façonniers, avec certificats d'analyse systématiques.",
-      cta: "Demander un Devis &amp; Disponibilités Bulk"
+      cta: "Demander un Échantillon R&amp;D"
     },
 
     // Astaxanthin Feature Section (Client Email 3)
@@ -824,7 +824,7 @@ const translations = {
       tag: "Raw Materials &amp; Commodity Portfolio",
       title: "Other Commodity Ingredients &amp; <em class=\"text-forest-800 not-italic\">Functional Extracts</em>",
       subtitle: "Available in bulk for laboratories and manufacturers, with systematic certificates of analysis.",
-      cta: "Request a Quote &amp; Bulk Availability"
+      cta: "Request an R&amp;D Sample"
     },
 
     // Astaxanthin Feature Section (Client Email 3)
@@ -1313,7 +1313,7 @@ const translations = {
     // B2B Contact Form
     contact: {
       tag: "B2B Client Portal",
-      title: "Request Technical Data Sheets, Samples & Bulk Quotes",
+      title: "R&amp;D Trial Samples &amp; B2B Quotes",
       subtitle: "Are you a laboratory, product developer, or dietary supplement brand? Complete this form to receive trial R&D samples and our B2B commercial pricing promptly.",
       fieldName: "Full Name & Position",
       placeholderName: "Dr. Mark Stevens, Head of R&D",

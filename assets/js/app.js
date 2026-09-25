@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
   renderProducts();
   initCategoryFilters();
   initContactForm();
+  handleContactUrlRouting();
   initMobileMenu();
   initFaqAccordion();
   applyTranslations();
@@ -1197,3 +1198,26 @@ document.addEventListener('DOMContentLoaded', () => {
   initAnimatedCounters();
   initUniversalAnchorRouter();
 });
+
+
+/**
+ * Auto-scroll to #contact and prefill product / sample checkbox if coming from a sample button
+ */
+function handleContactUrlRouting() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const prod = urlParams.get('product') || urlParams.get('ing');
+  if (prod) {
+    const select = document.getElementById('contactProduct');
+    const chk = document.getElementById('checkSample');
+    if (select) select.value = prod;
+    if (chk) chk.checked = true;
+  }
+  if (window.location.hash === '#contact') {
+    setTimeout(() => {
+      const contactSection = document.getElementById('contact');
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 150);
+  }
+}
