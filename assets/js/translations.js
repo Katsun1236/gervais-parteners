@@ -116,8 +116,8 @@ const translations = {
     // Hero Section
     hero: {
       badge: "Ingrédients Botaniques d'Excellence · 100% Éco-Extraction · B2B Europe",
-      title: "Astaxanthine Naturelle <em class=\"text-limegold-300 not-italic font-medium\">Haute Pureté</em> &amp; Ingrédients Botaniques B2B",
-      subtitle: "Gervais Partners fournit aux laboratoires pharmaceutiques et nutraceutiques européens une Astaxanthine naturelle d'exception issue de culture fermée stérile d'Haematococcus pluvialis.",
+      title: "L'Alliance de la<br><em class=\"text-limegold-300 not-italic font-medium\">Nature Vivante</em><br>&amp; de la Rigueur Scientifique",
+      subtitle: "Gervais Partners fournit aux laboratoires pharmaceutiques et marques de compléments alimentaires des principes actifs végétaux d'une pureté absolue. De la culture biotechnologique de micro-algues aux extraits titrés de haute technicité, nous incarnons l'excellence écologique au cœur de l'Europe.",
       cta: "Demander un Échantillon R&amp;D",
       btnCatalog: "Explorer Nos Ingrédients &amp; TDS",
       btnAstaxanthin: "Focus Astaxanthine 6000x",
@@ -804,8 +804,8 @@ const translations = {
     // Hero Section
     hero: {
       badge: "Pure Botanical Actives · 100% Eco-Extraction · B2B Europe",
-      title: "Natural Astaxanthin <em class=\"text-limegold-300 not-italic font-medium\">High Purity</em> &amp; Botanical B2B Ingredients",
-      subtitle: "Gervais Partners supplies European pharmaceutical and nutraceutical laboratories with premium natural Astaxanthin from closed sterile Haematococcus pluvialis cultivation.",
+      title: "Where Living Nature<br><em class=\"text-limegold-300 not-italic font-medium\">Meets Science</em><br>&amp; European Purity",
+      subtitle: "Gervais Partners supplies pharmaceutical laboratories and health supplement brands with botanical raw materials of immaculate purity. From cutting-edge microalgae photobioreactors to clinically validated standardized extracts, we stand for environmental excellence at the heart of Europe.",
       cta: "Request an R&amp;D Sample",
       btnCatalog: "Explore Our Ingredients &amp; TDS",
       btnAstaxanthin: "Discover Astaxanthin 6000x",
