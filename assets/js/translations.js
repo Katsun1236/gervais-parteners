@@ -13,7 +13,7 @@ const translations = {
     backBtn: "Retour en arrière",
     // Navigation
     nav: {
-      home: "Accueil",
+      home: "Accueil &amp; Ingrédients",
       ingredients: "Ingrédients",
       about: "Présentation",
       services: "Qualité & Services",
@@ -134,7 +134,7 @@ const translations = {
 
     commodities: {
       tag: "Portefeuille Matières Premières &amp; Commodité",
-      title: "Autres Ingrédients de Commodité &amp; <em class=\"text-forest-800 not-italic\">Extraits Fonctionnels</em>",
+      title: "Autres Ingrédients de Commodité",
       subtitle: "Disponibles en vrac (bulk) pour laboratoires et façonniers, avec certificats d'analyse systématiques.",
       cta: "Demander un Échantillon R&amp;D"
     },
@@ -573,7 +573,7 @@ const translations = {
       subtitle: "Grâce à la nouvelle société sœur française de notre dirigeant spécialisée dans les galéniques (softgels, gélules, enrobage) prévue prochainement, nous vous proposons une chaîne intégrée complète : de la fourniture d'extraits purs au façonnage de formes prêtes à l'emploi et private label.",
       sisterNotice: "Portail direct de la société sœur française en cours de déploiement (ouverture prévue prochainement). Projets galéniques pris en charge dès aujourd'hui par Gervais Partners.",
       step1_title: "1. Matière Première Titrée",
-      step1_desc: "Sélection de nos ingrédients purs en vrac (astaxanthine, phycocyanine, curcumine, berbérine) avec dossiers techniques complets et stockage en Belgique.",
+      step1_desc: "Sélection de nos ingrédients purs en vrac (astaxanthine, phycocyanine, curcumine, berbérine) avec dossiers techniques complets.",
       step2_title: "2. Façonnage Galénique Haute Précision",
       step2_desc: "Mise au point de votre formule dans notre unité française conforme BPF : softgels véganes ou gélatine, gummies sans sucre, liquid capsules et poudres CWD.",
       step3_title: "3. Conditionnement & Libération Normes UE",
@@ -701,7 +701,7 @@ const translations = {
     backBtn: "Go Back",
     // Navigation
     nav: {
-      home: "Home",
+      home: "Home &amp; Ingredients",
       ingredients: "Ingredients",
       about: "About Us",
       services: "Quality & Services",
@@ -822,7 +822,7 @@ const translations = {
 
     commodities: {
       tag: "Raw Materials &amp; Commodity Portfolio",
-      title: "Other Commodity Ingredients &amp; <em class=\"text-forest-800 not-italic\">Functional Extracts</em>",
+      title: "Other Commodity Ingredients",
       subtitle: "Available in bulk for laboratories and manufacturers, with systematic certificates of analysis.",
       cta: "Request an R&amp;D Sample"
     },
@@ -1261,7 +1261,7 @@ const translations = {
       subtitle: "Through our industrial partner facility in France, we offer European clients an end-to-end integrated solution: from bulk active ingredient supply to white-label contract manufacturing.",
       sisterNotice: "Direct portal of the French sister company currently deploying. Galenic projects handled today directly by Gervais Partners.",
       step1_title: "1. Titrated Raw Material",
-      step1_desc: "Direct supply of our standardized bulk actives (astaxanthin, phycocyanin, curcumin, berberine) with full regulatory dossiers and buffer warehousing in Belgium.",
+      step1_desc: "Direct supply of our standardized bulk actives (astaxanthin, phycocyanin, curcumin, berberine) with full regulatory dossiers.",
       step2_title: "2. Precision Galenic Manufacturing",
       step2_desc: "Formulation in our French GMP facility: vegan softgels, sugar-free pectin gummies, liquid capsules, and water-dispersible powders.",
       step3_title: "3. Packaging & EU Release",
