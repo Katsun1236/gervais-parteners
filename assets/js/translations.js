@@ -39,7 +39,7 @@ const translations = {
     },
     "aboutSection": {
       "tag": "Présentation Officielle · Active Depuis 2009",
-      "title": "Gervais Partners : <em class=\"text-limegold-500 not-italic\">Conseil &amp; Distribution</em> d'Ingrédients Naturels Premium",
+      "title": "<em class=\"text-lime-600 not-italic font-medium\">Conseil &amp; Distribution</em> d'Ingrédients Naturels Premium",
       "body": "Gervais Partners est une entreprise basée en Belgique spécialisée sur la filière nutraceutique et pharmacologique. Elle conseille et organise la commercialisation d'ingrédients naturels premium. Active sur le marché depuis 2009, nous représentons également des marques européennes de renommée, reconnues pour leur excellence et leurs essais cliniques rigoureux. Notre portefeuille combine des solutions innovantes à forte valeur scientifique ainsi qu'une gamme d'ingrédients de commodité. Nous élargissons également notre offre avec des galéniques prêtes à l'emploi et des services de Private label, pour accompagner nos partenaires de l'idée au produit fini.",
       "badgeSince": "Depuis 2009 sur le Marché Européen",
       "badgeClinical": "Essais Cliniques R&D Rigoureux"
@@ -570,8 +570,7 @@ const translations = {
       "sisterNotice": "Portail direct de la société sœur française en cours de déploiement (ouverture prévue prochainement). Projets galéniques pris en charge dès aujourd'hui par Gervais Partners.",
       "step1_title": "1. Matière Première Titrée",
       "step1_desc": "Sélection de nos ingrédients purs en vrac (astaxanthine, phycocyanine, curcumine, berbérine) avec dossiers techniques complets.",
-      "step2_title": "2. Haute Précision",
-      "step2_desc": "Mise au point de votre formule dans notre unité française conforme BPF : softgels véganes ou gélatine, gummies sans sucre, liquid capsules et poudres CWD.",
+      
       "step3_title": "3. Conditionnement & Libération Normes UE",
       "step3_desc": "Mise sous pilulier, flaconnage ou blister avec étiquettes vierges ou à votre marque, contrôle qualité libératoire sous accréditation GMP et expédition directe.",
       "badge1": "Softgels Véganes & Classiques",
@@ -1253,8 +1252,7 @@ const translations = {
       "sisterNotice": "Direct portal of the French sister company currently deploying. Galenic projects handled today directly by Gervais Partners.",
       "step1_title": "1. Titrated Raw Material",
       "step1_desc": "Direct supply of our standardized bulk actives (astaxanthin, phycocyanin, curcumin, berberine) with full regulatory dossiers.",
-      "step2_title": "2. High Precision",
-      "step2_desc": "Formulation in our French GMP facility: vegan softgels, sugar-free pectin gummies, liquid capsules, and water-dispersible powders.",
+      
       "step3_title": "3. Packaging & EU Release",
       "step3_desc": "Bottling or blistering with private label branding, QP release testing under strict European standards, and direct dispatch to your distribution centers.",
       "badge1": "Vegan & Bovine Softgels",
@@ -1879,8 +1877,7 @@ const translations = {
       "sisterNotice": "Direktportal der französischen Partnergesellschaft in Vorbereitung. Galenik-Projekte werden bereits heute direkt von Gervais Partners betreut.",
       "step1_title": "1. Titrierter Rohstoff",
       "step1_desc": "Direkte Bereitstellung unserer standardisierten reinen Wirkstoffe im Großgebinde mit vollständigen technischen und regulatorischen Dossiers.",
-      "step2_title": "2. Hohe Präzision",
-      "step2_desc": "Rezepturentwicklung in unserer französischen GMP-Anlage: vegane Softgels, zuckerfreie Pektin-Gummies, Liquid-Kapseln und wasserdispergierbare Pulver.",
+      
       "step3_title": "3. Abfüllung &amp; EU-Freigabe",
       "step3_desc": "Verpackung und Konfektionierung unter Ihrer Marke, strenge QP-Freigabeprüfung nach EU-Standards und Direktversand.",
       "badge1": "Vegane &amp; Klassische Softgels",
