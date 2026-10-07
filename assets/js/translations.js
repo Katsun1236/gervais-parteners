@@ -571,7 +571,7 @@ const translations = {
       "step1_title": "1. Matière Première Titrée",
       "step1_desc": "Sélection de nos ingrédients purs en vrac (astaxanthine, phycocyanine, curcumine, berbérine) avec dossiers techniques complets.",
       
-      "step3_title": "3. Conditionnement & Libération Normes UE",
+      "step3_title": "2. Conditionnement & Libération Normes UE",
       "step3_desc": "Mise sous pilulier, flaconnage ou blister avec étiquettes vierges ou à votre marque, contrôle qualité libératoire sous accréditation GMP et expédition directe.",
       "badge1": "Softgels Véganes & Classiques",
       "badge2": "Gummies Sans Sucre (Pectine)",
@@ -1253,7 +1253,7 @@ const translations = {
       "step1_title": "1. Titrated Raw Material",
       "step1_desc": "Direct supply of our standardized bulk actives (astaxanthin, phycocyanin, curcumin, berberine) with full regulatory dossiers.",
       
-      "step3_title": "3. Packaging & EU Release",
+      "step3_title": "2. Packaging & EU Release",
       "step3_desc": "Bottling or blistering with private label branding, QP release testing under strict European standards, and direct dispatch to your distribution centers.",
       "badge1": "Vegan & Bovine Softgels",
       "badge2": "Sugar-Free Gummies (Pectin)",
@@ -1878,7 +1878,7 @@ const translations = {
       "step1_title": "1. Titrierter Rohstoff",
       "step1_desc": "Direkte Bereitstellung unserer standardisierten reinen Wirkstoffe im Großgebinde mit vollständigen technischen und regulatorischen Dossiers.",
       
-      "step3_title": "3. Abfüllung &amp; EU-Freigabe",
+      "step3_title": "2. Abfüllung &amp; EU-Freigabe",
       "step3_desc": "Verpackung und Konfektionierung unter Ihrer Marke, strenge QP-Freigabeprüfung nach EU-Standards und Direktversand.",
       "badge1": "Vegane &amp; Klassische Softgels",
       "badge2": "Zuckerfreie Pektin-Gummies",
