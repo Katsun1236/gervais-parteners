@@ -834,7 +834,7 @@ function initContactForm() {
 
     const refNumber = 'GP-' + Math.floor(100000 + Math.random() * 900000);
 
-    // Asynchronous submission to Netlify Forms if available
+    // Asynchronous submission to Server / Contact API if available
     try {
       const formData = new FormData(form);
       formData.append('refNumber', refNumber);
@@ -843,7 +843,7 @@ function initContactForm() {
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: new URLSearchParams(formData).toString()
       }).catch(err => {
-        // Netlify form fallback handled silently
+        // Contact submission fallback
       });
     } catch (e) {
       // Offline / local preview fallback
@@ -1184,7 +1184,7 @@ function initUniversalAnchorRouter() {
         if (targetId === 'contact') {
           window.location.href = 'contact.html#contact';
         } else if (targetId === 'home') {
-          window.location.href = 'index.html#home';
+          window.location.href = 'index.html';
         } else {
           window.location.href = 'index.html#' + targetId;
         }

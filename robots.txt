@@ -1,0 +1,16 @@
+# ═══════════════════════════════════════════════════════════════
+# GERVAIS PARTNERS - DIRECTIVES ROBOTS.TXT (SEO B2B OPTIMISÉ)
+# ═══════════════════════════════════════════════════════════════
+
+User-agent: *
+Allow: /
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/images/
+
+# Interdire les dossiers système ou non destinés au public
+Disallow: /.git/
+Disallow: /temp/
+
+# Déclaration canonique du Sitemap XML officiel en HTTPS
+Sitemap: https://gervaispartners.com/sitemap.xml
