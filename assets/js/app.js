@@ -1,4 +1,13 @@
-
+/**
+ * Gervais Partners - Interactive Experience Engine
+ * Features:
+ * 1. Living Multi-Spectrum Spores Canvas (Emerald, Saphir Blue, Golden-Amber)
+ * 2. Fil Conducteur (Living Botanical Vine Scroll Tracker)
+ * 3. Interactive Astaxanthin & Phycocyanin Microscope Lens
+ * 4. Playable B2B Formulation Studio (Astaxanthine, Phycocyanine, ARANTAL Clear, NASALER, RIFENCIN, COGNITYL)
+ * 5. Synthesized Botanical Forest Soundscape (Web Audio API)
+ * 6. Dynamic TDS Modal, B2B Form, and Instant Language Engine
+ */
 
 try {
   sessionStorage.removeItem('gp_leaf_transition');
@@ -7,25 +16,27 @@ try {
 } catch(e) {}
 
 let currentLang = localStorage.getItem('gervais_lang') || 'fr';
-if (currentLang !== 'fr' && currentLang !== 'en') currentLang = 'fr';
 let currentCategory = 'all';
 let activeTdsProduct = null;
 let audioCtx = null;
 let ambientSoundRunning = false;
 let ambientGainNode = null;
 
+// Initialize app when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
   initLanguageSwitcher();
   initAnimatedCounters();
   renderProducts();
   initCategoryFilters();
   initContactForm();
-  handleContactUrlRouting();
   initMobileMenu();
   initFaqAccordion();
   applyTranslations();
 });
 
+/**
+ * 1. Living Multi-Spectrum Spores Canvas (Emerald, Sapphire Blue & Gold)
+ */
 function initLivingSporesCanvas() {
   const canvas = document.getElementById('sporesCanvas');
   if (!canvas) return;
@@ -110,6 +121,9 @@ function initLivingSporesCanvas() {
   animate();
 }
 
+/**
+ * 2. Fil Conducteur (The Living Botanical Vine Scroll Tracker)
+ */
 function initBotanicalVineTracker() {
   const vinePath = document.getElementById('vineSvgProgress');
   const nodes = document.querySelectorAll('.vine-node');
@@ -169,6 +183,9 @@ function initBotanicalVineTracker() {
   });
 }
 
+/**
+ * 3. Interactive Astaxanthin & Phycocyanin Microscope Lens
+ */
 function initInteractiveMicroscope() {
   const container = document.getElementById('microscopeViewer');
   const slider = document.getElementById('microscopeSlider');
@@ -219,6 +236,9 @@ function initInteractiveMicroscope() {
   setMicroscopeSplit(50);
 }
 
+/**
+ * 4. Playable B2B Formulation Studio (Interactive Sandbox with Client Products)
+ */
 function initFormulationStudio() {
   const targetSelect = document.getElementById('sandboxTarget');
   const dosageSlider = document.getElementById('sandboxDosage');
@@ -304,7 +324,7 @@ function initFormulationStudio() {
 
     const info = formulations[target] || formulations.astaxanthin;
     
-
+    // Real-time calculation
     const computedOrac = Math.round(info.baseOrac * (dosage / 200));
     const computedBio = Math.min(99.6, info.baseBio + (dosage > 300 ? 1.8 : 0)).toFixed(1);
 
@@ -325,6 +345,7 @@ function initFormulationStudio() {
   if (formatSelect) formatSelect.addEventListener('change', updateFormulation);
   updateFormulation();
 
+  // "Transfer to Quote" Button Action
   const transferBtn = document.getElementById('sandboxTransferBtn');
   if (transferBtn) {
     transferBtn.addEventListener('click', () => {
@@ -360,6 +381,9 @@ function initFormulationStudio() {
   }
 }
 
+/**
+ * 5. Synthesized Botanical Forest Soundscape (Web Audio API)
+ */
 function initAmbientSound() {
   const btn = document.getElementById('ambientSoundToggle');
   if (!btn) return;
@@ -423,6 +447,9 @@ function initAmbientSound() {
   });
 }
 
+/**
+ * Switch language and re-render dynamic content
+ */
 function setLanguage(lang) {
   if (!translations[lang]) return;
   currentLang = lang;
@@ -462,6 +489,9 @@ function initLanguageSwitcher() {
   });
 }
 
+/**
+ * Apply translations to all elements with data-i18n attributes
+ */
 function applyTranslations() {
   const t = translations[currentLang];
   if (!t) return;
@@ -489,6 +519,9 @@ function applyTranslations() {
   document.documentElement.lang = currentLang;
 }
 
+/**
+ * Render curated product cards
+ */
 function renderProducts() {
   const container = document.getElementById('productsGrid');
   if (!container) return;
@@ -583,6 +616,10 @@ function initCategoryFilters() {
   });
 }
 
+
+/**
+ * Open Technical Data Sheet (TDS) Modal
+ */
 function openTdsModal(productId) {
   const t = translations[currentLang];
   const prod = t.products.find(p => p.id === productId);
@@ -729,6 +766,9 @@ function closeTdsModal() {
   activeTdsProduct = null;
 }
 
+/**
+ * Click "Request Sample" on a specific product
+ */
 function requestProductSample(productId) {
   const select = document.getElementById('contactProduct');
   const sampleCheckbox = document.getElementById('checkSample');
@@ -739,7 +779,7 @@ function requestProductSample(productId) {
     if (sampleCheckbox) sampleCheckbox.checked = true;
     contactSection.scrollIntoView({ behavior: 'smooth' });
   } else {
-
+    // Navigate smoothly to contact page with product prefilled
     window.location.href = 'contact.html?product=' + encodeURIComponent(productId) + '#contact';
   }
 }
@@ -767,6 +807,9 @@ function populateProductSelect() {
   if (currentValue) select.value = currentValue;
 }
 
+/**
+ * B2B Contact Form submission & confirmation
+ */
 function initContactForm() {
   populateProductSelect();
   const form = document.getElementById('b2bContactForm');
@@ -791,6 +834,7 @@ function initContactForm() {
 
     const refNumber = 'GP-' + Math.floor(100000 + Math.random() * 900000);
 
+    // Asynchronous submission to Netlify Forms if available
     try {
       const formData = new FormData(form);
       formData.append('refNumber', refNumber);
@@ -799,10 +843,10 @@ function initContactForm() {
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: new URLSearchParams(formData).toString()
       }).catch(err => {
-
+        // Netlify form fallback handled silently
       });
     } catch (e) {
-
+      // Offline / local preview fallback
     }
 
     showConfirmationModal({
@@ -835,6 +879,9 @@ function closeConfirmationModal() {
   if (modal) modal.classList.add('hidden');
 }
 
+/**
+ * European Logistics & Belgium Map Canvas Visualization
+ */
 function initMapVisualization() {
   const canvas = document.getElementById('europeMapCanvas');
   if (!canvas) return;
@@ -963,6 +1010,7 @@ function initMobileMenu() {
   });
 }
 
+// Lateral Drawer Menu Controller
 function toggleSidebarMenu(open) {
   const drawer = document.getElementById('sidebarDrawer');
   const backdrop = document.getElementById('sidebarBackdrop');
@@ -984,12 +1032,17 @@ function toggleSidebarMenu(open) {
 }
 window.toggleSidebarMenu = toggleSidebarMenu;
 
+// Close drawer on Escape key
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') {
     toggleSidebarMenu(false);
   }
 });
 
+
+/**
+ * Parallax Scroll Transition Engine
+ */
 function initParallaxEngine() {
   const heroBg = document.querySelector('.hero-bg-img');
   const siliciumBg = document.querySelector('#silicium-showcase');
@@ -1008,6 +1061,7 @@ function initParallaxEngine() {
     }
   }, { passive: true });
 
+  // Section entrance transitions
   const sectionObs = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -1019,6 +1073,7 @@ function initParallaxEngine() {
   document.querySelectorAll('main > section').forEach(sec => sectionObs.observe(sec));
 }
 
+// Auto-fill contact form from URL params across all pages
 document.addEventListener('DOMContentLoaded', () => {
   try {
     const urlParams = new URLSearchParams(window.location.search);
@@ -1040,6 +1095,10 @@ document.addEventListener('DOMContentLoaded', () => {
   initParallaxEngine();
 });
 
+
+/**
+ * Animated Numbers Counter (Rolls up to the exact target)
+ */
 function initAnimatedCounters() {
   const counters = document.querySelectorAll('.counter-val');
   if (!counters.length) return;
@@ -1059,14 +1118,17 @@ function initAnimatedCounters() {
     });
   }
 
+  // Immediate check on load + timeouts when reveal animations complete
   checkAndAnimate();
   setTimeout(checkAndAnimate, 150);
   setTimeout(checkAndAnimate, 450);
   setTimeout(checkAndAnimate, 900);
 
+  // Check on user scroll and resize
   window.addEventListener('scroll', checkAndAnimate, { passive: true });
   window.addEventListener('resize', checkAndAnimate, { passive: true });
 
+  // IntersectionObserver as well
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -1091,11 +1153,11 @@ function initAnimatedCounters() {
       const elapsed = currentTime - startTime;
       const progress = Math.min(elapsed / duration, 1);
       
-
+      // Easing: easeOutExpo - rolls fast and settles gracefully on the target
       const ease = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
       const currentVal = Math.floor(ease * target);
       
-
+      // Format with French thousands separator
       el.textContent = prefix + currentVal.toLocaleString('fr-FR') + suffix;
 
       if (progress < 1) {
@@ -1110,22 +1172,6 @@ function initAnimatedCounters() {
 }
 
 function initUniversalAnchorRouter() {
-
-  document.addEventListener('click', function(e) {
-    const link = e.target.closest('a');
-    if (!link) return;
-    const href = link.getAttribute('href');
-    if (!href) return;
-    
-    if (href === 'consulting.html' || href === 'consulting.html#consulting') {
-      if (window.location.pathname.endsWith('consulting.html')) {
-        e.preventDefault();
-        const sec = document.getElementById('consulting') || document.querySelector('main');
-        if (sec) sec.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-  });
-
   document.addEventListener('click', function(e) {
     const link = e.target.closest('a');
     if (!link) return;
@@ -1151,22 +1197,3 @@ document.addEventListener('DOMContentLoaded', () => {
   initAnimatedCounters();
   initUniversalAnchorRouter();
 });
-
-function handleContactUrlRouting() {
-  const urlParams = new URLSearchParams(window.location.search);
-  const prod = urlParams.get('product') || urlParams.get('ing');
-  if (prod) {
-    const select = document.getElementById('contactProduct');
-    const chk = document.getElementById('checkSample');
-    if (select) select.value = prod;
-    if (chk) chk.checked = true;
-  }
-  if (window.location.hash === '#contact') {
-    setTimeout(() => {
-      const contactSection = document.getElementById('contact');
-      if (contactSection) {
-        contactSection.scrollIntoView({ behavior: 'smooth' });
-      }
-    }, 150);
-  }
-}
