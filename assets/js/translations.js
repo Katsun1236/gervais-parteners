@@ -98,6 +98,7 @@ const translations = {
       p2: "Phycocyanine X-ION (>51% Pureté)",
       p3: "Silicium Végétal Eytelia (Bloosil, Steosil)",
       p4: "Gamme Clinique BioXtract® (Curcumine)",
+      p5: "Biopolymères Fongiques KitOzyme® (KiOnutrime, KiOtransine, KiOslim)",
       viewCatalog: "Consulter le Catalogue Complet & Fiches TDS →",
       catServices: "Expertise Industrielle",
       about: "Présentation Gervais Partners (Depuis 2009)",
@@ -228,6 +229,58 @@ const translations = {
       p4_desc: "Complexe naturel stimulant associant des xanthines végétales hautement actives : théobromine (issue du cacao) et caféine pure (issue du thé vert) selon un ratio clinique précis. Booste la concentration, la clarté cognitive et la motivation tout en limitant la fatigue physique.",
       p4_formats: "Disponible comme ingrédient en poudre en vrac."
     },
+    kitozymeSection: {
+      tag: "Biopolymères Fongiques · Innovation Brevetée KitOzyme®",
+      partnerBadge: "Partenaire Technologique & Brevets : KitOzyme®",
+      partnerLinkText: "Découvrir KitOzyme.com ↗",
+      partnerUrl: "https://kitozyme.com",
+      title: "Gamme KitOzyme® : Biopolymères Fongiques Brevetés",
+      subtitle: "Ingrédients d'origine fongique non-animale (sans crustacé, 100% végan) pour la santé cardiométabolique, le microbiote intestinal et la gestion pondérale.",
+      p1_name: "KiOnutrime®",
+      p1_claim: "Santé Cardiométabolique & Capteur de Graisses",
+      p1_desc: "Chitosane d'origine fongique breveté (Aspergillus niger) d'une lipophilicité exceptionnelle. Mécanisme naturel de liaison aux lipides alimentaires, réduisant l'absorption des graisses et le cholestérol LDL. Alternative végétale et hypoallergénique unique aux chitosanes de crustacés.",
+      p1_formats: "Ingrédient fonctionnel en poudre pour formulation de gélules, comprimés et sticks.",
+      p2_name: "KiOtransine®",
+      p2_claim: "Microbiote Intestinal & Barrière Épithéliale",
+      p2_desc: "Biopolymère exclusif associant chitine et β(1,3)-glucane d'origine fongique. Fibre prébiotique nouvelle génération à fermentation colique progressive et faible émission de gaz. Stimule la production de butyrate (SCFA) et renforce la muqueuse intestinale. Idéal en soutien des régimes hyperprotéinés et des thérapies GLP-1.",
+      p2_formats: "Poudre prébiotique soluble pour compléments digestifs, mélanges et gélules.",
+      p3_name: "KiOslim®",
+      p3_claim: "Solution Minceur Clé en Main & Satiété",
+      p3_desc: "Solution prête à l'emploi combinant la technologie KiOnutrime® (chitosane végétal) et le glucomannane. Triple action cliniquement démontrée : captage des lipides, réduction de l'apport calorique et induction d'une satiété mécanique durable. Prêt à intégrer directement dans votre marque de compléments alimentaires.",
+      p3_formats: "Formule finie prête au conditionnement (sticks poudres, gélules, sachets)."
+    },
+
+    partners: {
+      axabio: {
+        name: "Axabio",
+        url: "https://axabio.com",
+        badge: "Partenaire R&D Culture : Axabio Europe",
+        linkText: "Visiter Axabio.com ↗",
+        desc: "Pionnier européen des photobioréacteurs fermés haute technologie pour la culture d'Haematococcus pluvialis et l'astaxanthine naturelle la plus pure."
+      },
+      eytelia: {
+        name: "Eytelia",
+        url: "https://eytelia.eu",
+        badge: "Partenaire Brevets & Laboratoire : Eytelia",
+        linkText: "Visiter Eytelia.eu ↗",
+        desc: "Laboratoire belge pionnier et détenteur des brevets mondiaux sur le silicium végétal bio-activé (Bloosil®, Mesoporosil®, Steosil®)."
+      },
+      bioxtract: {
+        name: "BioXtract",
+        url: "https://bioxtract.com",
+        badge: "Laboratoire Clinique Partenaire : BioXtract",
+        linkText: "Visiter BioXtract.com ↗",
+        desc: "Laboratoire scientifique spécialisé dans les extraits botaniques hautement biodisponibles validés par des études cliniques directes sur l'homme."
+      },
+      kitozyme: {
+        name: "KitOzyme",
+        url: "https://kitozyme.com",
+        badge: "Partenaire Innovation Fongique : KitOzyme®",
+        linkText: "Visiter KitOzyme.com ↗",
+        desc: "Leader mondial et détenteur exclusif des brevets de biopolymères fongiques (chitosane végétal & chitine-glucane) pour la santé métabolique et le microbiote."
+      }
+    },
+
 
     // European Regulatory Standards Banner
     qualityBanner: {
@@ -263,6 +316,7 @@ const translations = {
       filterAll: "Tous les Ingrédients",
       filterMicroalgae: "Micro-Algues (Astaxanthine / Phycocyanine)",
       filterSilicium: "Silicium Végétal (Eytelia)",
+      filterKitozyme: "Biopolymères Fongiques (KitOzyme®)",
       filterBioxtract: "Gamme BioXtract® Clinique",
       filterLiposomal: "Actifs Standardisés & Liposomaux",
       viewTdsBtn: "Fiche Technique (TDS)",
@@ -538,6 +592,96 @@ const translations = {
           storage: "À l'abri de la lumière et de l'humidité (< 22°C)",
           packaging: "Poudre vrac en fûts 25 kg ou comprimés/gélules prêts sous blister"
         }
+      },
+      {
+        id: "kionutrime",
+        category: "kitozyme",
+        name: "KiOnutrime® (Chitosane Fongique)",
+        botanical: "Aspergillus niger (Biopolymère Fongique)",
+        tag: "Cardiométabolique & Capteur Lipides",
+        image: "assets/images/logo-kitozyme.png",
+        shortDesc: "Chitosane végétal breveté issu du mycélium d'Aspergillus niger. Capteur naturel de graisses alimentaires avec haute lipophilie pour le contrôle du cholestérol LDL et la gestion pondérale. 100% sans allergène de crustacé.",
+        keySpecs: "Chitosane d'origine fongique ≥ 85% de désacétylation. Capacité de liaison lipidique record. Non-animal, sans OGM, sans allergène crustacé.",
+        applications: ["Gestion du poids & réduction calorique", "Contrôle du cholestérol LDL & santé cardiométabolique", "Compléments alimentaires véganes & sticks minceur"],
+        tds: {
+          productCode: "KZ-KIONUTRIME-CS",
+          cas: "9012-76-4 (Chitosane purifié)",
+          botanicalName: "Aspergillus niger (Biomasse mycélienne)",
+          partUsed: "Paroi cellulaire du mycélium fongique",
+          solvent: "Procédé propre d'éco-extraction aqueuse sans solvant organique",
+          appearance: "Poudre fine fluide blanc cassé à beige clair, inodore",
+          assay: "Degré de désacétylation (DDA) ≥ 85.0% | Pureté chitosane ≥ 80.0%",
+          liposomalCarrier: "Capacité de liaison aux graisses jusqu'à 800× sa masse",
+          particleSize: "100% passant à travers tamis 80 mesh (granulométrie homogène)",
+          bulkDensity: "0.35 - 0.55 g/ml",
+          lossOnDrying: "≤ 10.0%",
+          heavyMetals: "Pb < 0.5 ppm | Cd < 0.1 ppm | Hg < 0.05 ppm | As < 0.5 ppm",
+          pesticides: "Conforme règlement européen n° 396/2005 (zéro résidu)",
+          microbio: "Conforme Ph. Eur. : TAMC < 1000 UFC/g, E. coli absent, Salmonella absente/25g",
+          allergens: "Garanti 100% exempt d'allergènes crustacés, sans gluten, végan",
+          storage: "À conserver dans l'emballage d'origine scellé au sec (< 25°C)",
+          packaging: "Fûts kraft de 10 kg et 25 kg avec doublure polyéthylène hermétique"
+        }
+      },
+      {
+        id: "kiotransine",
+        category: "kitozyme",
+        name: "KiOtransine® (Chitine-Glucane Fongique)",
+        botanical: "Aspergillus niger (Chitine & β(1,3)-Glucane)",
+        tag: "Microbiote & Barrière Intestinale (GLP-1)",
+        image: "assets/images/logo-kitozyme.png",
+        shortDesc: "Biopolymère prébiotique exclusif combinant chitine et bêta-(1,3)-glucane fongiques. Fermentation colique progressive produisant du butyrate (SCFA) sans ballonnement. Soutient la muqueuse intestinale, idéal en accompagnement GLP-1 et régimes hyperprotéinés.",
+        keySpecs: "Chitine-Glucane breveté ≥ 90%. Ratio Chitine/Glucane calibré. Fermentation lente validée par modèles digestifs dynamiques.",
+        applications: ["Renforcement de l'intégrité de la barrière intestinale", "Stimulation du microbiote & synthèse de butyrate (SCFA)", "Accompagnement nutritionnel des agonistes GLP-1 et diètes hyperprotéinées"],
+        tds: {
+          productCode: "KZ-KIOTRANSINE-CG",
+          cas: "Biopolymère complexe Chitine-Glucane breveté",
+          botanicalName: "Aspergillus niger (Biomasse mycélienne)",
+          partUsed: "Paroi cellulaire du mycélium",
+          solvent: "Procédé vert d'extraction doux aqueux sans solvant chimique",
+          appearance: "Poudre fine beige clair fluide, odeur et goût très neutres",
+          assay: "Teneur totale en biopolymère Chitine-Glucane ≥ 90.0%",
+          liposomalCarrier: "Fibre prébiotique non assimilable par l'estomac, fermentescible au côlon",
+          particleSize: "Micro-particules calibrées < 60 μm pour dispersion homogène",
+          bulkDensity: "0.38 - 0.52 g/ml",
+          lossOnDrying: "≤ 8.0%",
+          heavyMetals: "Pb < 0.5 ppm | Cd < 0.1 ppm | Hg < 0.02 ppm | As < 0.3 ppm",
+          pesticides: "Exempt de tout résidu de pesticides (analyses accréditées)",
+          microbio: "Standard pharmaceutique : germes totaux < 500 UFC/g, pathogènes absents",
+          allergens: "Sans allergènes majeurs, sans lactose, sans OGM, certifié végan",
+          storage: "Conserver à l'abri de l'humidité et de la chaleur (< 20°C)",
+          packaging: "Sacs scellés étanches multicouches 10 kg / 25 kg en cartons kraft"
+        }
+      },
+      {
+        id: "kioslim",
+        category: "kitozyme",
+        name: "KiOslim® (Solution Minceur Clé en Main)",
+        botanical: "KiOnutrime® + Konjac Glucomannane",
+        tag: "Solution Minceur Clé en Main & Satiété",
+        image: "assets/images/logo-kitozyme.png",
+        shortDesc: "Formule minceur prête à l'emploi associant la technologie KiOnutrime® et le glucomannane. Solution complète pour marques finies : capte les graisses alimentaires, favorise la satiété mécanique gastrique et diminue l'apport calorique quotidien avec allégations EFSA.",
+        keySpecs: "Prémix formulé prêt au conditionnement. Allégations EFSA validées pour la perte de poids. Études cliniques humaines.",
+        applications: ["Compléments alimentaires minceur finis (sticks, sachets, gélules)", "Modération de l'appétit et induction de satiété rapide", "Réduction de l'absorption calorique globale"],
+        tds: {
+          productCode: "KZ-KIOSLIM-RTU",
+          cas: "Formule synergique brevetée KiOnutrime® / Glucomannane",
+          botanicalName: "Aspergillus niger & Amorphophallus konjac",
+          partUsed: "Mycélium fongique et tubercule de konjac titré",
+          solvent: "Mélange sec et atomisation sans solvants chimiques",
+          appearance: "Poudre fluide homogène ivoire à arôme neutre ou aromatisable",
+          assay: "Ratio synergique standardisé actif Chitosane fongique / Glucomannane",
+          liposomalCarrier: "Capacité de gonflement gastrique supérieure à 50x son volume",
+          particleSize: "Poudre fine dispersible instantanément",
+          bulkDensity: "0.45 - 0.65 g/ml",
+          lossOnDrying: "≤ 7.0%",
+          heavyMetals: "Pb < 0.5 ppm | Cd < 0.1 ppm | Hg < 0.02 ppm | As < 0.5 ppm",
+          pesticides: "Conforme aux réglementations européennes les plus strictes",
+          microbio: "TAMC < 500 UFC/g | Levures/Moisissures < 50 UFC/g | E. coli : Absent",
+          allergens: "100% végétal, sans allergène de crustacé, sans gluten, sans OGM",
+          storage: "Conserver au sec et au frais (< 25°C) dans son emballage d'origine",
+          packaging: "Poudre en vrac fûts 25 kg ou produit fini façonné en sticks / boîtes"
+        }
       }
     ],
 
@@ -780,6 +924,7 @@ const translations = {
       p2: "X-ION Phycocyanin (>51% Purity)",
       p3: "Eytelia Plant Silicon (Bloosil, Steosil)",
       p4: "BioXtract® Clinical Range (Curcumin)",
+      p5: "KitOzyme® Fungal Biopolymers (KiOnutrime, KiOtransine, KiOslim)",
       viewCatalog: "Browse Full Catalog & TDS →",
       catServices: "Industrial Capabilities",
       about: "About Gervais Partners (Since 2009)",
@@ -910,6 +1055,58 @@ const translations = {
       p4_desc: "Natural plant complex combining highly active xanthines: theobromine (from cacao) and caffeine (from green tea) in precise clinical ratios. Boosts mental energy, concentration, motivation, and cognitive clarity while reducing physical fatigue.",
       p4_formats: "Available as bulk raw powder ingredient."
     },
+    kitozymeSection: {
+      tag: "Fungal Biopolymers · KitOzyme® Patented Innovation",
+      partnerBadge: "Patented Innovation Partner: KitOzyme®",
+      partnerLinkText: "Visit KitOzyme.com ↗",
+      partnerUrl: "https://kitozyme.com",
+      title: "KitOzyme® Range: Patented Fungal Biopolymers",
+      subtitle: "Non-animal, vegan, and allergen-free fungal biopolymers for cardiometabolic health, gut microbiota integrity, and weight management.",
+      p1_name: "KiOnutrime®",
+      p1_claim: "Cardiometabolic Health & Fat-Binding",
+      p1_desc: "KitOzyme's patented fungal chitosan ingredient engineered for cardiometabolic health. Natural fat-binding mechanism interacts with dietary fats, clinically positioned to support cholesterol management and healthy weight. 100% non-animal, vegan, crustacean allergen-free alternative.",
+      p1_formats: "Functional ingredient powder for capsules, tablets, and stick-pack formulations.",
+      p2_name: "KiOtransine®",
+      p2_claim: "Gut Health, Microbiota & Intestinal Barrier",
+      p2_desc: "Patented fungal biopolymer combining chitin and β(1,3)-glucan. Next-generation prebiotic fiber progressively fermented across the colon with low gas production. Promotes butyrate synthesis (SCFA), modulates gut microbiota, and reinforces the intestinal epithelial barrier. Excellent support for high-protein diets and GLP-1 nutrition.",
+      p2_formats: "Soluble prebiotic powder for digestive health formulas, powders, and capsules.",
+      p3_name: "KiOslim®",
+      p3_claim: "Turnkey Weight Management & Satiety",
+      p3_desc: "Ready-to-use weight management solution built on KiOnutrime® fungal chitosan technology combined with konjac glucomannan. Clinically validated triple action: fat binding, calorie intake reduction, and long-lasting mechanical satiety. Ready for direct brand commercialization.",
+      p3_formats: "Turnkey finished formulation ready for packaging (sticks, sachets, capsules)."
+    },
+
+    partners: {
+      axabio: {
+        name: "Axabio",
+        url: "https://axabio.com",
+        badge: "Cultivation & R&D Partner: Axabio Europe",
+        linkText: "Visit Axabio.com ↗",
+        desc: "European pioneer in closed photobioreactor biotechnology for pure Haematococcus pluvialis natural astaxanthin cultivation."
+      },
+      eytelia: {
+        name: "Eytelia",
+        url: "https://eytelia.eu",
+        badge: "Patents & Lab Partner: Eytelia",
+        linkText: "Visit Eytelia.eu ↗",
+        desc: "Belgian innovator and global patent holder for bio-activated plant silicon (Bloosil®, Mesoporosil®, Steosil®)."
+      },
+      bioxtract: {
+        name: "BioXtract",
+        url: "https://bioxtract.com",
+        badge: "Clinical Laboratory Partner: BioXtract",
+        linkText: "Visit BioXtract.com ↗",
+        desc: "Scientific laboratory specializing in high-bioavailability botanical extracts backed by direct human clinical trials."
+      },
+      kitozyme: {
+        name: "KitOzyme",
+        url: "https://kitozyme.com",
+        badge: "Fungal Innovation Partner: KitOzyme®",
+        linkText: "Visit KitOzyme.com ↗",
+        desc: "Global leader and exclusive patent holder for fungal biopolymers (vegetal non-animal chitosan & chitin-glucan) for metabolic health and microbiota."
+      }
+    },
+
 
     // European Regulatory Standards Banner
     qualityBanner: {
@@ -945,6 +1142,7 @@ const translations = {
       filterAll: "All Ingredients",
       filterMicroalgae: "Microalgae (Astaxanthin / Phycocyanin)",
       filterSilicium: "Plant Silicon (Eytelia)",
+      filterKitozyme: "Fungal Biopolymers (KitOzyme®)",
       filterBioxtract: "BioXtract® Clinical Range",
       filterLiposomal: "Standardized & Liposomal Actives",
       viewTdsBtn: "Technical Data Sheet (TDS)",
@@ -1219,6 +1417,96 @@ const translations = {
           allergens: "Allergen-free, nanoparticle-free, non-GMO, vegan",
           storage: "Store protected from moisture and light (< 22°C)",
           packaging: "Bulk powder in 25 kg drums or ready-made tablets/capsules in blister packs"
+        }
+      },
+      {
+        id: "kionutrime",
+        category: "kitozyme",
+        name: "KiOnutrime® (Fungal Chitosan)",
+        botanical: "Aspergillus niger (Fungal Biopolymer)",
+        tag: "Cardiometabolic & Fat-Binding",
+        image: "assets/images/logo-kitozyme.png",
+        shortDesc: "Patented fungal chitosan derived from Aspergillus niger mycelium. Natural dietary fat-binding mechanism supporting LDL cholesterol reduction and healthy weight management. 100% crustacean-free, vegan and non-animal.",
+        keySpecs: "Fungal chitosan ≥ 85% deacetylation. High fat-binding capacity up to 800× its mass. Non-animal, non-GMO, zero crustacean allergens.",
+        applications: ["Weight management & caloric intake reduction", "LDL cholesterol control & cardiometabolic health", "Vegan dietary supplements & slimming stick-packs"],
+        tds: {
+          productCode: "KZ-KIONUTRIME-CS",
+          cas: "9012-76-4 (Purified Chitosan)",
+          botanicalName: "Aspergillus niger (Mycelium biomass)",
+          partUsed: "Fungal mycelium cell wall",
+          solvent: "Clean aqueous eco-extraction process without organic solvents",
+          appearance: "Off-white to light beige free-flowing fine powder, odorless",
+          assay: "Deacetylation degree (DDA) ≥ 85.0% | Chitosan purity ≥ 80.0%",
+          liposomalCarrier: "Dietary fat-binding capacity validated in vitro / in vivo",
+          particleSize: "100% passes 80 mesh sieve (uniform particle size)",
+          bulkDensity: "0.35 - 0.55 g/ml",
+          lossOnDrying: "≤ 10.0%",
+          heavyMetals: "Pb < 0.5 ppm | Cd < 0.1 ppm | Hg < 0.05 ppm | As < 0.5 ppm",
+          pesticides: "Complies with EU Regulation No. 396/2005 (zero residues)",
+          microbio: "Ph. Eur. compliant: TAMC < 1000 CFU/g, E. coli absent, Salmonella absent/25g",
+          allergens: "Guaranteed 100% free from crustacean allergens, gluten-free, vegan",
+          storage: "Store in original sealed container in dry conditions (< 25°C)",
+          packaging: "10 kg and 25 kg fiber drums with sealed polyethylene inner liner"
+        }
+      },
+      {
+        id: "kiotransine",
+        category: "kitozyme",
+        name: "KiOtransine® (Fungal Chitin-Glucan)",
+        botanical: "Aspergillus niger (Chitin & β(1,3)-Glucan)",
+        tag: "Microbiota & Gut Barrier (GLP-1)",
+        image: "assets/images/logo-kitozyme.png",
+        shortDesc: "Exclusive prebiotic biopolymer combining fungal chitin and beta-(1,3)-glucan. Slow, progressive colon fermentation producing butyrate (SCFA) with minimal gas formation. Strengthens gut barrier integrity, perfectly suited for high-protein diets and GLP-1 nutrition.",
+        keySpecs: "Patented Chitin-Glucan ≥ 90%. Precision calibrated Chitin/Glucan ratio. Proven slow fermentation via dynamic digestive gut models.",
+        applications: ["Reinforcement of intestinal barrier integrity", "Microbiota modulation & short-chain fatty acid synthesis (Butyrate)", "Supportive nutrition for GLP-1 receptor agonists and high-protein diets"],
+        tds: {
+          productCode: "KZ-KIOTRANSINE-CG",
+          cas: "Patented Chitin-Glucan complex biopolymer",
+          botanicalName: "Aspergillus niger (Mycelium biomass)",
+          partUsed: "Mycelium cell wall",
+          solvent: "Clean gentle aqueous extraction process without harsh chemicals",
+          appearance: "Light beige free-flowing fine powder, neutral taste and odor",
+          assay: "Total Chitin-Glucan biopolymer content ≥ 90.0%",
+          liposomalCarrier: "Prebiotic fiber non-digestible in upper GI, fermentable in colon",
+          particleSize: "Calibrated micro-particles < 60 μm for uniform dispersion",
+          bulkDensity: "0.38 - 0.52 g/ml",
+          lossOnDrying: "≤ 8.0%",
+          heavyMetals: "Pb < 0.5 ppm | Cd < 0.1 ppm | Hg < 0.02 ppm | As < 0.3 ppm",
+          pesticides: "Free from any detectable pesticide residues",
+          microbio: "Pharmaceutical grade: total viable count < 500 CFU/g, pathogens absent",
+          allergens: "Free from major allergens, lactose-free, non-GMO, certified vegan",
+          storage: "Store protected from moisture and heat (< 20°C)",
+          packaging: "10 kg / 25 kg sealed multi-ply barrier bags in kraft outer cartons"
+        }
+      },
+      {
+        id: "kioslim",
+        category: "kitozyme",
+        name: "KiOslim® (Turnkey Weight Loss Solution)",
+        botanical: "KiOnutrime® + Konjac Glucomannan",
+        tag: "Turnkey Satiety & Caloric Control",
+        image: "assets/images/logo-kitozyme.png",
+        shortDesc: "Turnkey ready-to-use weight loss formulation combining KiOnutrime® fungal chitosan and konjac glucomannan. Directly deployable for consumer brands: binds dietary fat, promotes gastric satiety, and reduces caloric intake with authorized EFSA health claims.",
+        keySpecs: "Turnkey formulated premix ready for packaging. Validated EFSA health claims for weight loss. Human clinical backing.",
+        applications: ["Finished slimming dietary supplements (stick-packs, sachets, capsules)", "Appetite moderation and rapid gastric fullness induction", "Overall caloric intake reduction"],
+        tds: {
+          productCode: "KZ-KIOSLIM-RTU",
+          cas: "Patented KiOnutrime® / Glucomannan synergetic formula",
+          botanicalName: "Aspergillus niger & Amorphophallus konjac",
+          partUsed: "Fungal mycelium and standard konjac tuber extract",
+          solvent: "Dry blending and gentle atomization without chemical solvents",
+          appearance: "Homogeneous ivory free-flowing powder, neutral or flavorable",
+          assay: "Standardized active ratio Fungal Chitosan / Glucomannan",
+          liposomalCarrier: "Gastric swelling capacity exceeding 50x original volume",
+          particleSize: "Instant dispersible fine powder",
+          bulkDensity: "0.45 - 0.65 g/ml",
+          lossOnDrying: "≤ 7.0%",
+          heavyMetals: "Pb < 0.5 ppm | Cd < 0.1 ppm | Hg < 0.02 ppm | As < 0.5 ppm",
+          pesticides: "Compliant with strictest European contaminant thresholds",
+          microbio: "TAMC < 500 CFU/g | Yeasts/Molds < 50 CFU/g | E. coli : Absent",
+          allergens: "100% plant-based, crustacean allergen-free, gluten-free, non-GMO",
+          storage: "Store in a dry, cool place (< 25°C) in original packaging",
+          packaging: "Bulk powder in 25 kg drums or turnkey manufactured sticks / boxes"
         }
       }
     ],
