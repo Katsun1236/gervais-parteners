@@ -230,11 +230,14 @@ const translations = {
       p4_formats: "Disponible comme ingrédient en poudre en vrac."
     },
     kitozymeSection: {
+      breadcrumbHome: "Page d'accueil",
+      breadcrumbCurrent: "Gamme KitOzyme® : Biopolymères Fongiques Brevetés",
+      breadcrumbBack: "Retour à l'accueil",
       tag: "Biopolymères Fongiques · Innovation Brevetée KitOzyme®",
-      partnerBadge: "Partenaire Technologique & Brevets : KitOzyme®",
+      partnerBadge: "Laboratoire Partenaire : <strong>KitOzyme.com</strong>",
       partnerLinkText: "Découvrir KitOzyme.com ↗",
       partnerUrl: "https://kitozyme.com",
-      title: "Gamme KitOzyme® : Biopolymères Fongiques Brevetés",
+      title: "Gamme KitOzyme® : <em>Biopolymères Fongiques Brevetés</em>",
       subtitle: "Ingrédients d'origine fongique non-animale (sans crustacé, 100% végan) pour la santé cardiométabolique, le microbiote intestinal et la gestion pondérale.",
       p1_name: "KiOnutrime®",
       p1_claim: "Santé Cardiométabolique & Capteur de Graisses",
@@ -247,7 +250,9 @@ const translations = {
       p3_name: "KiOslim®",
       p3_claim: "Solution Minceur Clé en Main & Satiété",
       p3_desc: "Solution prête à l'emploi combinant la technologie KiOnutrime® (chitosane végétal) et le glucomannane. Triple action cliniquement démontrée : captage des lipides, réduction de l'apport calorique et induction d'une satiété mécanique durable. Prêt à intégrer directement dans votre marque de compléments alimentaires.",
-      p3_formats: "Formule finie prête au conditionnement (sticks poudres, gélules, sachets)."
+      p3_formats: "Formule finie prête au conditionnement (sticks poudres, gélules, sachets).",
+      sampleBtn: "Échantillon R&D",
+      visitPartner: "Visiter le Laboratoire KitOzyme.com"
     },
 
     partners: {
@@ -1056,12 +1061,15 @@ const translations = {
       p4_formats: "Available as bulk raw powder ingredient."
     },
     kitozymeSection: {
+      breadcrumbHome: "Home",
+      breadcrumbCurrent: "KitOzyme® Range: Patented Fungal Biopolymers",
+      breadcrumbBack: "Back to Home",
       tag: "Fungal Biopolymers · KitOzyme® Patented Innovation",
-      partnerBadge: "Patented Innovation Partner: KitOzyme®",
+      partnerBadge: "Partner Laboratory: <strong>KitOzyme.com</strong>",
       partnerLinkText: "Visit KitOzyme.com ↗",
       partnerUrl: "https://kitozyme.com",
-      title: "KitOzyme® Range: Patented Fungal Biopolymers",
-      subtitle: "Non-animal, vegan, and allergen-free fungal biopolymers for cardiometabolic health, gut microbiota integrity, and weight management.",
+      title: "KitOzyme® Range: <em>Patented Fungal Biopolymers</em>",
+      subtitle: "Non-animal, vegan, and crustacean-allergen-free fungal biopolymers for cardiometabolic health, gut microbiota integrity, and weight management.",
       p1_name: "KiOnutrime®",
       p1_claim: "Cardiometabolic Health & Fat-Binding",
       p1_desc: "KitOzyme's patented fungal chitosan ingredient engineered for cardiometabolic health. Natural fat-binding mechanism interacts with dietary fats, clinically positioned to support cholesterol management and healthy weight. 100% non-animal, vegan, crustacean allergen-free alternative.",
@@ -1073,7 +1081,9 @@ const translations = {
       p3_name: "KiOslim®",
       p3_claim: "Turnkey Weight Management & Satiety",
       p3_desc: "Ready-to-use weight management solution built on KiOnutrime® fungal chitosan technology combined with konjac glucomannan. Clinically validated triple action: fat binding, calorie intake reduction, and long-lasting mechanical satiety. Ready for direct brand commercialization.",
-      p3_formats: "Turnkey finished formulation ready for packaging (sticks, sachets, capsules)."
+      p3_formats: "Turnkey finished formulation ready for packaging (sticks, sachets, capsules).",
+      sampleBtn: "R&D Sample",
+      visitPartner: "Visit KitOzyme.com Laboratory"
     },
 
     partners: {
